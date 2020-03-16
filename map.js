@@ -1,19 +1,19 @@
 d3.json("https://raw.githubusercontent.com/princetoncoronavirus/princetoncoronavirus.github.io/master/nj.json?raw=true", function(json) {
 
 //Width and height of map
-var width = 420
-var height = 400
+var width = 300
+var height = 600
 	
-var projection = d3.geo.mercator()
-  .scale(5758)
-  .rotate([74.6,0,0])
-  .translate([width/2, height/0.0864181367160906])
-  .clipAngle(90);
-
 // var projection = d3.geo.mercator()
-//   .scale(4000)
-//   .center([-74, 40])
-//   .translate([width/2, height/2]);
+//   .scale(5758)
+//   .rotate([74.6,0,0])
+//   .translate([width/2, height/0.0864181367160906])
+//   .clipAngle(90);
+
+var projection = d3.geo.mercator()
+  .scale(5000)
+  .center([-74.71, 40.27])
+  .translate([width/2, height/2]);
 	
 var path = d3.geo.path()               // path generator that will convert GeoJSON to SVG paths
 	.projection(projection);
