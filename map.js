@@ -20,13 +20,13 @@ var path = d3.geo.path()               // path generator that will convert GeoJS
 
 	
 //Create SVG element and append map to the SVG
-var svg = d3.select("#map")
+var svg = d3.selectAll("#map")
 			.append("svg")
 			.attr("width", width)
 			.attr("height", height);
         
 // Append Div for tooltip to SVG
-var div = d3.select("#map")
+var div = d3.selectAll("#map")
 		    .append("div")   
     		.attr("class", "tooltip")               
     		.style("opacity", 0);
