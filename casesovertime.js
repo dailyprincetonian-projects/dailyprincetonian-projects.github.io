@@ -81,7 +81,7 @@ d3.csv("prices.csv")
 			.interpolate("cardinal");
 		
 		
-		var svg = d3.select("body").append("svg").attr("id","svg").attr("height","100%").attr("width","100%");
+		var svg = d3.select("#chart").append("svg").attr("id","svg").attr("height","100%").attr("width","100%");
 		var chartGroup = svg.append("g").attr("class","chartGroup").attr("transform","translate("+xNudge+","+yNudge+")");
 		
 		chartGroup.append("path")
