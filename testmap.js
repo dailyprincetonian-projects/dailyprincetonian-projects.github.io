@@ -76,8 +76,8 @@ svg.selectAll("circle")
       	   .duration(200)      
            .style("opacity", .9);      
            div.text(d.county + ' cases: ' + d.cases)
-           .style("left", (projection([d.lon, d.lat])[0]) + "px")     
-           .style("top", (projection([d.lon, d.lat])[1] - 28) + "px");    
+           .style("left", (projection([d.lon, d.lat])[0]))     
+           .style("top", (projection([d.lon, d.lat])[1]));    
 	})   
 
     // fade out tooltip on mouse out               
