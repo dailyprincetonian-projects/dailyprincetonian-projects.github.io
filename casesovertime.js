@@ -48,7 +48,7 @@ d3.csv("casesovertime.csv")
 		
 		
 		var svg = d3.select("#chart").append("svg").attr("width", width)
-			.attr("height", height);
+			.attr("height", height + 20);
 		var chartGroup = svg.append("g").attr("class","chartGroup").attr("transform","translate("+xNudge+","+yNudge+")");
 		
 		chartGroup.append("path")
