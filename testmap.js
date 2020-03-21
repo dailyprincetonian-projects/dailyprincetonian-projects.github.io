@@ -58,7 +58,7 @@ svg.selectAll("path")
 //     .append("title")
 //     .text(d=>d.name);
 	
-d3.csv("cities.csv", function(data) {
+d3.csv("cases.csv", function(data) {
 
 svg.selectAll("circle")
 	.data(data)
@@ -71,7 +71,7 @@ svg.selectAll("circle")
 		return projection([d.lon, d.lat])[1];
 	})
 	.attr("r", function(d) {
-		return 10;
+		return 100;
 	})
 		.style("fill", "#ff8f00")	
 		.style("fill-opacity", 0.5)
