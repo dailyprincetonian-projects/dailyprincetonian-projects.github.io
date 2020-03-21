@@ -77,7 +77,16 @@ svg.selectAll("circle")
 		.style("fill-opacity", 1.0)
 		.style("stroke", "rgb(0,0,0)")
 		.style("stroke-opacity", 1.0)
-	.append("title").text(d=>d.city);
+});
+
+d3.csv("cities.csv", function(data) {
+svg.selectAll("text")
+	.data(data)
+	.enter()
+	.append("text")
+  	.attr("x", function(d) { return projection([d.lon, d.lat])[0]; })
+ 	.attr("y", function(d) { return projection([d.lon, d.lat])[1]; })
+  	.text("bob")
 });
 	
 d3.csv("cases.csv", function(data) {
