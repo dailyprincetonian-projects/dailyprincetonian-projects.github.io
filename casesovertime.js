@@ -8,8 +8,8 @@ var height = 400 - margin.top - margin.bottom;
 
 var max = 0;
 
-var xNudge = 0;
-var yNudge = 0;
+var xNudge = 50;
+var yNudge = 20;
 
 var minDate = new Date();
 var maxDate = new Date();
