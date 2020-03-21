@@ -67,9 +67,9 @@ svg.selectAll("circle")
 		return Math.sqrt(d.cases) * 1.5;
 	})
 		.style("fill", "#ff8f00")	
-		.style("fill-opacity", 0.8)
+		.style("fill-opacity", 0.5)
 		.style("stroke", "#ff8f00")
-		.style("stroke-opacity", 0.8)
+		.style("stroke-opacity", 0.5)
 
 	.on("mouseover", function(d) {      
     	div.transition()        
