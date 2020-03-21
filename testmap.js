@@ -71,7 +71,7 @@ svg.selectAll("circle")
 		return projection([d.lon, d.lat])[1];
 	})
 	.attr("r", function(d) {
-		return 5;
+		return 3;
 	})
 		.style("fill", "rgb(0,0,0)")	
 		.style("fill-opacity", 1.0)
