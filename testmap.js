@@ -77,6 +77,7 @@ svg.selectAll("circle")
 		.style("fill-opacity", 1.0)
 		.style("stroke", "rgb(0,0,0)")
 		.style("stroke-opacity", 1.0)
+	.append("title").text(d=>d.city);
 });
 	
 d3.csv("cases.csv", function(data) {
