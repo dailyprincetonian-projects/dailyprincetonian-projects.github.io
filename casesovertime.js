@@ -47,8 +47,8 @@ d3.csv("casesovertime.csv")
 			.interpolate("cardinal");
 		
 		
-		var svg = d3.select("#chart").append("svg").attr("width", width)
-			.attr("height", height + 20);
+		var svg = d3.select("#chart").append("svg").attr("width", 600)
+			.attr("height", 400);
 		var chartGroup = svg.append("g").attr("class","chartGroup").attr("transform","translate("+xNudge+","+yNudge+")");
 		
 		chartGroup.append("path")
