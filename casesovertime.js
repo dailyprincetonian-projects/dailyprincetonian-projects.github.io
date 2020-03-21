@@ -26,11 +26,9 @@ d3.csv("casesovertime.csv")
 
 
 		var y = d3.scale.linear()
-					.domain([0,max])
 					.range([height,0]);
 		
 		var x = d3.time.scale()
-					.domain([minDate,maxDate])
 					.range([0,width]);
 		
 		var yAxis = d3.svg.axis()
