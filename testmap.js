@@ -40,23 +40,44 @@ svg.selectAll("path")
 	.style("stroke-width", "4.5")
 	.style("fill", "rgb(240,240,240)")
 	
-svg.selectAll('circle')
-    .data("cities.csv")
-    .enter()
-    .append('circle')
-    .each(function (d) {
-            var location = projection([d.lon, d.lat]);
-            d3.select(this).attr({
-            cx: location[0], cy: location[1],
-            r: 15
-            });
-     })
-    .style({
-           fill: 'blue',
-           opacity: 0.75
-     })
-    .append("title")
-    .text(d=>d.name);
+// svg.selectAll('circle')
+//     .data("cities.csv")
+//     .enter()
+//     .append('circle')
+//     .each(function (d) {
+//             var location = projection([d.lon, d.lat]);
+//             d3.select(this).attr({
+//             cx: location[0], cy: location[1],
+//             r: 15
+//             });
+//      })
+//     .style({
+//            fill: 'blue',
+//            opacity: 0.75
+//      })
+//     .append("title")
+//     .text(d=>d.name);
+	
+d3.csv("cities.csv", function(data) {
+
+svg.selectAll("circle")
+	.data(data)
+	.enter()
+	.append("circle")
+	.attr("cx", function(d) {
+		return projection([d.lon, d.lat])[0];
+	})
+	.attr("cy", function(d) {
+		return projection([d.lon, d.lat])[1];
+	})
+	.attr("r", function(d) {
+		return 10;
+	})
+		.style("fill", "#ff8f00")	
+		.style("fill-opacity", 0.5)
+		.style("stroke", "#ff8f00")
+		.style("stroke-opacity", 0.5)
+});
 	
 d3.csv("cases.csv", function(data) {
 
