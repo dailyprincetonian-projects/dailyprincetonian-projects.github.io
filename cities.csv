@@ -1,2 +1,5 @@
-name,lon,lat
-Princeton, -74.667, 40.357
+county,lat,lon,cases,deaths
+Atlantic, 39.4624, -74.7081, 4, 0
+Bergen, 40.9322, -74.0563, 363, 0
+Burlington, 39.9996, -74.7535, 21, 0
+Princeton, 40.357, -74.667, 0, 0
