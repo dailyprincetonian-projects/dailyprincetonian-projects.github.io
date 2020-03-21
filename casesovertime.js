@@ -1,4 +1,4 @@
-var parseDate = d3.time.format("%m/%d/%Y").parse;
+var parseDate = d3.time.format("%d-%b-%y").parse;
 
 var margin = {left: 50, right: 20, top: 20, bottom: 50 };
 
