@@ -85,8 +85,9 @@ svg.selectAll("text")
 	.data(data)
 	.enter()
 	.append("text")
-  	.attr("x", function(d) { return projection([d.lon, d.lat])[0]; })
+  	.attr("x", function(d) { return projection([d.lon, d.lat])[0] - 10; })
  	.attr("y", function(d) { return projection([d.lon, d.lat])[1]; })
+	.attr("text-anchor", "end")
   	.text(d=>d.city)
 });
 	
