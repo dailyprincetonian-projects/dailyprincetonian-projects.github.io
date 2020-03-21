@@ -12,7 +12,7 @@ var height = 775
 
 var projection = d3.geo.mercator()
   .scale(12000)
-  .center([-74.71, 40.25])
+  .center([-74.71, 40.1])
   .translate([width/2, height/2]);
 	
 var path = d3.geo.path()               // path generator that will convert GeoJSON to SVG paths
