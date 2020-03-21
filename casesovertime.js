@@ -1,15 +1,15 @@
 var parseDate = d3.time.format("%m/%d/%Y").parse;
 
-var margin = {left: 50, right: 20, top: 20, bottom: 50 };
+var margin = {left: 0, right: 0, top: 0, bottom: 0 };
 
-var width = 960 - margin.left - margin.right;
-var height = 500 - margin.top - margin.bottom;
+var width = 480;
+var height = 250;
 
 
 var max = 0;
 
-var xNudge = 50;
-var yNudge = 20;
+var xNudge = 0;
+var yNudge = 0;
 
 var minDate = new Date();
 var maxDate = new Date();
