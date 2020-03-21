@@ -1,8 +1,8 @@
 d3.json("https://raw.githubusercontent.com/princetoncoronavirus/princetoncoronavirus.github.io/master/nj.json?raw=true", function(json) {
 
 //Width and height of map
-var width = 300
-var height = 550
+var width = 450
+var height = 775
 	
 // var projection = d3.geo.mercator()
 //   .scale(5758)
@@ -11,7 +11,7 @@ var height = 550
 //   .clipAngle(90);
 
 var projection = d3.geo.mercator()
-  .scale(8000)
+  .scale(12000)
   .center([-74.71, 40.31])
   .translate([width/2, height/2]);
 	
