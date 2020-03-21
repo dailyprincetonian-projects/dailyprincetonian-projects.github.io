@@ -31,7 +31,7 @@ d3.csv("casesovertime.csv")
 		
 		var x = d3.time.scale()
 					.domain([minDate,maxDate])
-					.range([0,width]);
+					.range([0,width]).tickFormat(%b %d);
 		
 		var yAxis = d3.svg.axis()
 						.orient("left")
