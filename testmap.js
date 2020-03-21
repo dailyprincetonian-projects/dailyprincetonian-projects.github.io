@@ -40,7 +40,18 @@ svg.selectAll("path")
 	.style("stroke-width", "0.5")
 	.style("fill", "rgb(245,245,245)")
 	
+aa = [74.667, 40.357];
+	
+svg.selectAll("circle")
+		.data([aa]).enter()
+		.append("circle")
+		.attr("cx", function (d) { console.log(projection(d)); return projection(d)[0]; })
+		.attr("cy", function (d) { return projection(d)[1]; })
+		.attr("r", "8px")
+		.attr("fill", "red");
+	
 d3.csv("cases.csv", function(data) {
+
 
 svg.selectAll("circle")
 	.data(data)
