@@ -38,7 +38,7 @@ svg.selectAll("path")
 	.attr("d", path)
 	.style("stroke", "rgb(255,255,255)")
 	.style("stroke-width", "1.5")
-	.style("fill", "rgb(225,225,225)")
+	.style("fill", "rgb(240,240,240)")
 	
 aa = [74.667, 40.357];
 	
