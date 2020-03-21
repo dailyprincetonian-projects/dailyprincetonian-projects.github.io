@@ -71,12 +71,12 @@ svg.selectAll("circle")
 		return projection([d.lon, d.lat])[1];
 	})
 	.attr("r", function(d) {
-		return 100;
+		return 5;
 	})
-		.style("fill", "#ff8f00")	
-		.style("fill-opacity", 0.5)
-		.style("stroke", "#ff8f00")
-		.style("stroke-opacity", 0.5)
+		.style("fill", "rgb(0,0,0)")	
+		.style("fill-opacity", 1.0)
+		.style("stroke", "rgb(0,0,0)")
+		.style("stroke-opacity", 1.0)
 });
 	
 d3.csv("cases.csv", function(data) {
