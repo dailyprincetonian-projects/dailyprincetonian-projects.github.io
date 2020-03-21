@@ -40,15 +40,23 @@ svg.selectAll("path")
 	.style("stroke-width", "4.5")
 	.style("fill", "rgb(240,240,240)")
 	
-aa = [74.667, 40.357];
-	
-svg.selectAll("circle")
-		.data([aa]).enter()
-		.append("circle")
-		.attr("cx", function (d) { console.log(projection(d)); return projection(d)[0]; })
-		.attr("cy", function (d) { return projection(d)[1]; })
-		.attr("r", "8px")
-		.attr("fill", "red");
+svg.selectAll('circle')
+    .data("cities.csv")
+    .enter()
+    .append('circle')
+    .each(function (d) {
+            var location = projection([d.lon, d.lat]);
+            d3.select(this).attr({
+            cx: location[0], cy: location[1],
+            r: 15
+            });
+     })
+    .style({
+           fill: 'blue',
+           opacity: 0.75
+     })
+    .append("title")
+    .text(d=>d.name);
 	
 d3.csv("cases.csv", function(data) {
 
