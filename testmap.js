@@ -77,8 +77,8 @@ svg.selectAll("text")
 d3.csv("cases.csv", function(data) {
 
 
-svg.selectAll("circle")
-	.data(data, function(d) { return d; })
+svg.selectAll("g")
+	.data(data)
 	.enter()
 	.append("circle")
 	.attr("cx", function(d) {
