@@ -58,7 +58,7 @@ svg.selectAll("path")
 //     .append("title")
 //     .text(d=>d.name);
 	
-d3.csv("cases.csv", function(data) {
+d3.csv("cities.csv", function(data) {
 
 svg.selectAll("circle")
 	.data(data)
