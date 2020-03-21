@@ -35,11 +35,11 @@ d3.csv("casesovertime.csv")
 		
 		var yAxis = d3.svg.axis()
 						.orient("left")
-						.scale(y);
+						.scale(y).ticks(5);
 						
 		var xAxis = d3.svg.axis()
 						.orient("bottom")
-						.scale(x);
+						.scale(x).ticks(5);
 		
 		var line = d3.svg.line()
 			.x(function(d){ return x(d.month); })
