@@ -40,29 +40,45 @@ svg.selectAll("path")
 	.style("stroke-width", "4.5")
 	.style("fill", "rgb(240,240,240)")
 	
-// svg.selectAll('circle')
-//     .data("cities.csv")
-//     .enter()
-//     .append('circle')
-//     .each(function (d) {
-//             var location = projection([d.lon, d.lat]);
-//             d3.select(this).attr({
-//             cx: location[0], cy: location[1],
-//             r: 15
-//             });
-//      })
-//     .style({
-//            fill: 'blue',
-//            opacity: 0.75
-//      })
-//     .append("title")
-//     .text(d=>d.name);
+d3.csv("cities.csv", function(data) {
+svg.selectAll("circle")
+	.data(data)
+	.enter()
+	.append("circle")
+	.attr("cx", function(d) {
+		return projection([d.lon, d.lat])[0];
+	})
+	.attr("cy", function(d) {
+		return projection([d.lon, d.lat])[1];
+	})
+	.attr("r", function(d) {
+		return 3;
+	})
+		.style("fill", "rgb(0,0,0)")	
+		.style("fill-opacity", 1.0)
+		.style("stroke", "rgb(0,0,0)")
+		.style("stroke-opacity", 1.0)
+	.append("title").text(d=>d.city);
+});
+
+d3.csv("cities.csv", function(data) {
+svg.selectAll("text")
+	.data(data)
+	.enter()
+	.append("text")
+  	.attr("x", function(d) { return projection([d.lon, d.lat])[0]; })
+ 	.attr("y", function(d) { return projection([d.lon, d.lat])[1] - 5; })
+	.attr("text-anchor", d=>d.anchor)
+  	.text(d=>d.city)
+});
+	
+	
 	
 d3.csv("cases.csv", function(data) {
 
 
 svg.selectAll("circle")
-	.data(data)
+	.data(data, function(d) { return d; })
 	.enter()
 	.append("circle")
 	.attr("cx", function(d) {
@@ -96,36 +112,3 @@ svg.selectAll("circle")
     });
 });
 }); 
-
-
-d3.csv("cities.csv", function(data) {
-svg.selectAll("circle")
-	.data(data)
-	.enter()
-	.append("circle")
-	.attr("cx", function(d) {
-		return projection([d.lon, d.lat])[0];
-	})
-	.attr("cy", function(d) {
-		return projection([d.lon, d.lat])[1];
-	})
-	.attr("r", function(d) {
-		return 3;
-	})
-		.style("fill", "rgb(0,0,0)")	
-		.style("fill-opacity", 1.0)
-		.style("stroke", "rgb(0,0,0)")
-		.style("stroke-opacity", 1.0)
-	.append("title").text(d=>d.city);
-});
-
-d3.csv("cities.csv", function(data) {
-svg.selectAll("text")
-	.data(data)
-	.enter()
-	.append("text")
-  	.attr("x", function(d) { return projection([d.lon, d.lat])[0]; })
- 	.attr("y", function(d) { return projection([d.lon, d.lat])[1] - 5; })
-	.attr("text-anchor", d=>d.anchor)
-  	.text(d=>d.city)
-});
