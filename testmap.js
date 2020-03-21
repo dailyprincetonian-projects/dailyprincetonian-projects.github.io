@@ -64,12 +64,12 @@ svg.selectAll("circle")
 		return projection([d.lon, d.lat])[1];
 	})
 	.attr("r", function(d) {
-		return Math.sqrt(d.cases);
+		return Math.sqrt(d.cases) * 1.5;
 	})
 		.style("fill", "#ff8f00")	
-		.style("fill-opacity", 0.3)
+		.style("fill-opacity", 0.8)
 		.style("stroke", "#ff8f00")
-		.style("stroke-opacity", 1.0)
+		.style("stroke-opacity", 0.8)
 
 	.on("mouseover", function(d) {      
     	div.transition()        
