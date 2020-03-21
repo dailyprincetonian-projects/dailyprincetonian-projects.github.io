@@ -1,37 +1,3 @@
-<script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
-    <style>
-	    
-	    html, body {
-		    margin: 0;
-		    padding: 0;
-		    height: 100%;
-		    width: 100%;
-	    }
-	    
-	    text {
-		    font-family: arial;
-		    font-size: 12px;
-	    }
-	    
-	     
-	    path.line {
-		    fill: none;
-		    stroke: red;
-		    stroke-width: 3px;
-	    } 
-	    
-		.axis path,
-		.axis line {
-		  fill: none;
-		  stroke: slategray;
-		  shape-rendering: crispEdges;
-		}
-    </style>
-  </head>
-  <body>
-  
-	<script type="text/javascript">
-		
 var parseDate = d3.time.format("%m/%d/%Y").parse;
 
 var margin = {left: 50, right: 20, top: 20, bottom: 50 };
@@ -51,7 +17,7 @@ var maxDate = new Date();
 
 
 
-d3.csv("prices.csv")
+d3.csv("casesovertime.csv")
     .row(function(d) { return { month: parseDate(d.month), price: Number(d.price.trim().slice(1))}; })
     .get(function(error, rows) { 
 	    max = d3.max(rows, function(d) { return d.price; });
@@ -101,9 +67,3 @@ d3.csv("prices.csv")
 
 		
 	});
-    
-
-		
-		
-		
-	</script>
