@@ -87,7 +87,7 @@ svg.selectAll("text")
 	.append("text")
   	.attr("x", function(d) { return projection([d.lon, d.lat])[0]; })
  	.attr("y", function(d) { return projection([d.lon, d.lat])[1]; })
-  	.text(d=>city)
+  	.text(d=>d.city)
 });
 	
 d3.csv("cases.csv", function(data) {
