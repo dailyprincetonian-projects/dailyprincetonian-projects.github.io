@@ -19,7 +19,7 @@ buckets = 12;
 //legendElementWidth = gridSize * 2
 colors = ["rgb(250,250,250)", "#ffe8cc", "#ffd299", "#ffbb66", "#ffa532", "#ff8f00"]
 days = ["Bergen", "Mercer", "Essex", "Warren", "Passaic", "Hudson", "Union"]
-cases = [5, 457, 26, 22, 2, 1, 172, 8, 126, 16, 40, 147, 158, 119, 102, 95, 1, 51, 12, 124, 9]
+cases = [5, 457, 26, 22, 2, 3, 172, 8, 126, 16, 40, 147, 158, 119, 102, 95, 1, 51, 12, 124, 9]
 times = ["1a", "2a", "3a", "4a", "5a", "6a", "7a", "8a", "9a", "10a", "11a", "12a", "1p", "2p", "3p", "4p", "5p", "6p", "7p", "8p", "9p", "10p", "11p", "12p"]
 
 counties = ['Atlantic', 'Bergen', 'Burlington', 'Camden', 'Cape May', 'Cumberland', 'Essex', 'Gloucester', 'Hudson', 'Hunterdon', 'Mercer', 'Middlesex', 'Monmouth', 'Morris', 'Ocean', 'Passaic', 'Salem', 'Somerset', 'Sussex', 'Union', 'Warren']
@@ -51,7 +51,7 @@ var casesScale = d3.scaleBand()
 
 var dayAxis = d3.axisLeft().ticks(19).scale(weekdayScale)
 svg.append('g').attr('class', 'xAxis').call(dayAxis)
-var dayAxis2 = d3.axisRight().scale(weekdayScale).tickValues(cases).ticks(19)
+var dayAxis2 = d3.axisRight().ticks(19).scale(casesScale)
 svg.append('g').attr('class', 'xAxis').attr("transform", "translate(" + width/2 + " ,0)").call(dayAxis2)
 // ^ y axis
 // var timeScale = d3.scaleLinear().domain([1, 24]).range([0, width])
