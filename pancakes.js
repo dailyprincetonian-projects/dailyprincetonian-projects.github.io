@@ -1,13 +1,13 @@
 var margin = {
-  top: 80,
-  right: 30,
+  top: 30,
+  right: 40,
   bottom: 10,
-  left: 100
+  left: 40
 };
 
 //Width and height
 var width = 960 - margin.left - margin.right;
-var height = 500 - margin.top - margin.bottom;
+var height = 1000 - margin.top - margin.bottom;
 var padding = 49;
 
 //gridSize = Math.floor((width - (padding * 2)) / 24) // size of individual gridItem i.e the square which is drawn
@@ -23,7 +23,7 @@ cases = [5, 457, 26, 22, 2, 1, 172, 8, 126, 16, 40, 147, 158, 119, 102, 95, 1, 5
 times = ["1a", "2a", "3a", "4a", "5a", "6a", "7a", "8a", "9a", "10a", "11a", "12a", "1p", "2p", "3p", "4p", "5p", "6p", "7p", "8p", "9p", "10p", "11p", "12p"]
 
 counties = ['Atlantic', 'Bergen', 'Burlington', 'Camden', 'Cape May', 'Cumberland', 'Essex', 'Gloucester', 'Hudson', 'Hunterdon', 'Mercer', 'Middlesex', 'Monmouth', 'Morris', 'Ocean', 'Passaic', 'Salem', 'Somerset', 'Sussex', 'Union', 'Warren']
-dates = ["3/4", "a", "a", "a", "a", "a", "a", "a", "a", "a", "a", "a", "a", "a", "a", "a", "a", "a", "3/22"]
+dates = ["3/4", "3/5", "3/6", "3/7", "3/8", "3/9", "3/10", "3/11", "3/12", "3/13", "3/14", "3/15", "3/16", "3/17", "3/18", "3/19", "3/20", "3/21", "3/22"]
 
 var svg = d3.select('.card')
   .append('svg')
