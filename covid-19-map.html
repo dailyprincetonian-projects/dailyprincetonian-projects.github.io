@@ -183,6 +183,51 @@ a:hover {
 
 }
 	
+	
+#dashboard {
+	background-color: #ffffff;
+	padding: 20px;
+	width: 960px;
+	margin: 50px auto;
+}
+
+	.card {
+		background: white;
+	}
+
+rect.bordered {
+	stroke: #ffffff;
+	stroke-width: 2px;
+}
+
+	.axis {
+		font-family: serif;
+		font-size: 13px;
+		fill: #707070;
+		}
+
+	.axis-worktime,
+	.axis-workweek {
+		fill: #303030;
+		}
+
+path.domain {
+  stroke: none;
+}
+
+path.tick {
+  stroke: none;
+}
+
+.tick line{
+  visibility:hidden;
+}
+
+.xAxis {
+  font-size: 18px;
+  font-weight: 200;
+}
+	
 </style>
 </head>
 <body>
@@ -279,6 +324,12 @@ a:hover {
 	</div>
 	</div>
 </div>
+
+<div id="dashboard">
+  <div class="card">
+
+  </div>
+</div>
 	
 <script src="testmap.js"></script>
 
@@ -297,6 +348,7 @@ function scrollFunction() {
 }
 	
 </script>
+
 
 <div id="footer" style="height: 100px">
 </div>
