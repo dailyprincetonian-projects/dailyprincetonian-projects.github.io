@@ -3,7 +3,7 @@ var parseDate = d3.time.format("%d-%b-%y").parse;
 var margin = {left: 50, right: 20, top: 20, bottom: 50 };
 
 var width = 600 - margin.left - margin.right;
-var height = 400 - margin.top - margin.bottom;
+var height = 1000 - margin.top - margin.bottom;
 
 
 var max = 0;
@@ -48,7 +48,7 @@ d3.csv("casesovertime.csv")
 		
 		
 		var svg = d3.select("#chart").append("svg").attr("width", 600)
-			.attr("height", 400);
+			.attr("height", 1000);
 		var chartGroup = svg.append("g").attr("class","chartGroup").attr("transform","translate("+xNudge+","+yNudge+")");
 		
 		chartGroup.append("path")
