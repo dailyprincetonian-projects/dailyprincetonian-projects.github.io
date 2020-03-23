@@ -23,7 +23,7 @@ cases = [5, 457, 26, 22, 2, 1, 172, 8, 126, 16, 40, 147, 158, 119, 102, 95, 1, 5
 times = ["1a", "2a", "3a", "4a", "5a", "6a", "7a", "8a", "9a", "10a", "11a", "12a", "1p", "2p", "3p", "4p", "5p", "6p", "7p", "8p", "9p", "10p", "11p", "12p"]
 
 counties = ['Atlantic', 'Bergen', 'Burlington', 'Camden', 'Cape May', 'Cumberland', 'Essex', 'Gloucester', 'Hudson', 'Hunterdon', 'Mercer', 'Middlesex', 'Monmouth', 'Morris', 'Ocean', 'Passaic', 'Salem', 'Somerset', 'Sussex', 'Union', 'Warren']
-
+dates = ["3/4", "a", "a", "a", "a", "a", "a", "a", "a", "a", "a", "a", "a", "a", "a", "a", "a", "a", "3/22"]
 
 var svg = d3.select('.card')
   .append('svg')
@@ -62,8 +62,13 @@ var timeScale = d3.scaleBand()
   .range([0, width/2])
   .padding(0.1)
 
-var timeAxis = d3.axisTop().scale(timeScale).ticks(0)
-svg.append('g').attr('class', 'yAxis').call(timeAxis)
+var dateScale = d3.scaleBand()
+  .domain(dates)
+  .range([0, width/2])
+  .padding(0.1)
+
+var dateAxis = d3.axisTop().scale(dateScale).ticks(0)
+svg.append('g').attr('class', 'yAxis').call(dateAxis)
 // x^ axis
 
 d3.csv("pancakes.csv", function(data) {
