@@ -2,7 +2,7 @@ var parseDate = d3.time.format("%d-%b-%y").parse;
 
 var margin = {left: 50, right: 20, top: 20, bottom: 50 };
 
-var width = 600 - margin.left - margin.right;
+var width = 800 - margin.left - margin.right;
 var height = 1000 - margin.top - margin.bottom;
 
 
@@ -47,7 +47,7 @@ d3.csv("casesovertime.csv")
 			.interpolate("cardinal");
 		
 		
-		var svg = d3.select("#chart").append("svg").attr("width", 600)
+		var svg = d3.select("#chart").append("svg").attr("width", 800)
 			.attr("height", 1000);
 		var chartGroup = svg.append("g").attr("class","chartGroup").attr("transform","translate("+xNudge+","+yNudge+")");
 		
