@@ -7,7 +7,7 @@ var margin = {
 
 //Width and height
 var width = 960 - margin.left - margin.right;
-var height = 1000 - margin.top - margin.bottom;
+var height = 1400 - margin.top - margin.bottom;
 var padding = 49;
 
 
