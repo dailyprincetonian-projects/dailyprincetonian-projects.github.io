@@ -1,8 +1,8 @@
 var margin = {
   top: 30,
-  right: 40,
+  right: 50,
   bottom: 10,
-  left: 40
+  left: 110
 };
 
 //Width and height
@@ -49,9 +49,9 @@ var casesScale = d3.scaleBand()
   .range([height, 0])
   .padding(0.4);
 
-var dayAxis = d3.axisLeft().ticks(7).scale(weekdayScale)
+var dayAxis = d3.axisLeft().ticks(19).scale(weekdayScale)
 svg.append('g').attr('class', 'xAxis').call(dayAxis)
-var dayAxis2 = d3.axisRight().ticks(7).scale(casesScale)
+var dayAxis2 = d3.axisRight().ticks(19).scale(casesScale)
 svg.append('g').attr('class', 'xAxis').attr("transform", "translate(" + width/2 + " ,0)").call(dayAxis2)
 // ^ y axis
 // var timeScale = d3.scaleLinear().domain([1, 24]).range([0, width])
