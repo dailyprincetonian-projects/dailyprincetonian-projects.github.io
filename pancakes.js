@@ -74,7 +74,7 @@ svg.append('g').attr('class', 'yAxis').call(dateAxis)
 d3.csv("pancakes.csv", function(data) {
 
 colorScale = d3.scaleQuantile().domain([0, buckets - 1, d3.max(data, d => d.cases)]).range(colors);
-colorScale = d3.scaleThreshold().domain([1,5,25,125,625]).range(colors);
+colorScale = d3.scaleThreshold().domain([1,10,50,100,625]).range(colors);
   
 svg.selectAll('.squares')
   .data(data)
