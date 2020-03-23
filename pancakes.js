@@ -51,7 +51,7 @@ var casesScale = d3.scaleBand()
 
 var dayAxis = d3.axisLeft().ticks(19).scale(weekdayScale)
 svg.append('g').attr('class', 'xAxis').call(dayAxis)
-var dayAxis2 = d3.axisRight().tickValues(cases).scale(weekdayScale)
+var dayAxis2 = d3.axisRight().scale(weekdayScale).tickValues(cases).ticks(19)
 svg.append('g').attr('class', 'xAxis').attr("transform", "translate(" + width/2 + " ,0)").call(dayAxis2)
 // ^ y axis
 // var timeScale = d3.scaleLinear().domain([1, 24]).range([0, width])
