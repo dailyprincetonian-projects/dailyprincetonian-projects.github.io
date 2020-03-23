@@ -24,8 +24,6 @@ times = ["1a", "2a", "3a", "4a", "5a", "6a", "7a", "8a", "9a", "10a", "11a", "12
 
 counties = ['Atlantic', 'Bergen', 'Burlington', 'Camden', 'Cape May', 'Cumberland', 'Essex', 'Gloucester', 'Hudson', 'Hunterdon', 'Mercer', 'Middlesex', 'Monmouth', 'Morris', 'Ocean', 'Passaic', 'Salem', 'Somerset', 'Sussex', 'Union', 'Warren']
 
-colorScale = d3.scaleQuantile().domain([0, buckets - 1, d3.max(dataset, d => d.value)]).range(colors);
-colorScale = d3.scaleThreshold().domain([1,5,25,125,625]).range(colors);
 
 var svg = d3.select('.card')
   .append('svg')
@@ -70,6 +68,9 @@ svg.append('g').attr('class', 'yAxis').call(timeAxis)
 
 d3.csv("pancakes.csv", function(data) {
 
+colorScale = d3.scaleQuantile().domain([0, buckets - 1, d3.max(data, d => d.cases)]).range(colors);
+colorScale = d3.scaleThreshold().domain([1,5,25,125,625]).range(colors);
+  
 svg.selectAll('.squares')
   .data(data)
   .enter()
