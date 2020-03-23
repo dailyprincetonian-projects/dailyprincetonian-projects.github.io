@@ -10,6 +10,7 @@ var width = 960 - margin.left - margin.right;
 var height = 1000 - margin.top - margin.bottom;
 var padding = 49;
 
+
 //gridSize = Math.floor((width - (padding * 2)) / 24) // size of individual gridItem i.e the square which is drawn
 /*
   To calculate the gridSize we take width and subtract padding * 2, why times 2 because padding is on both side of the square (the gridItem). Then we divide 
@@ -25,7 +26,7 @@ times = ["1a", "2a", "3a", "4a", "5a", "6a", "7a", "8a", "9a", "10a", "11a", "12
 counties = ['Atlantic', 'Bergen', 'Burlington', 'Camden', 'Cape May', 'Cumberland', 'Essex', 'Gloucester', 'Hudson', 'Hunterdon', 'Mercer', 'Middlesex', 'Monmouth', 'Morris', 'Ocean', 'Passaic', 'Salem', 'Somerset', 'Sussex', 'Union', 'Warren']
 dates = ["3/4", "3/5", "3/6", "3/7", "3/8", "3/9", "3/10", "3/11", "3/12", "3/13", "3/14", "3/15", "3/16", "3/17", "3/18", "3/19", "3/20", "3/21", "3/22"]
 
-var svg = d3.select('.card')
+var svg = d4.select('.card')
   .append('svg')
   .attr('height', height + margin.top + margin.bottom)
   .attr('width', width + margin.left + margin.right)
@@ -33,48 +34,48 @@ var svg = d3.select('.card')
   .attr('transform', `translate(${margin.left}, ${margin.top})`)
 
 
-//var dayScale = d3.scaleLinear().domain([7, 1]).range([height, 0]);
-var dayScale = d3.scaleBand()
+//var dayScale = d4.scaleLinear().domain([7, 1]).range([height, 0]);
+var dayScale = d4.scaleBand()
   .domain(counties)
   .range([height, 0])
   .padding(0.4);
 
-var weekdayScale = d3.scaleBand()
+var weekdayScale = d4.scaleBand()
   .domain(counties)
   .range([height, 0])
   .padding(0.4);
 
-var casesScale = d3.scaleBand()
+var casesScale = d4.scaleBand()
   .domain(cases)
   .range([height, 0])
   .padding(0.4);
 
-var dayAxis = d3.axisLeft().ticks(19).scale(weekdayScale)
+var dayAxis = d4.axisLeft().ticks(19).scale(weekdayScale)
 svg.append('g').attr('class', 'xAxis').call(dayAxis)
-var dayAxis2 = d3.axisRight().ticks(19).scale(casesScale)
+var dayAxis2 = d4.axisRight().ticks(19).scale(casesScale)
 svg.append('g').attr('class', 'xAxis').attr("transform", "translate(" + width/2 + " ,0)").call(dayAxis2)
 // ^ y axis
-// var timeScale = d3.scaleLinear().domain([1, 24]).range([0, width])
+// var timeScale = d4.scaleLinear().domain([1, 24]).range([0, width])
 
 
-var timeScale = d3.scaleBand()
-  .domain(d3.range(1,20,1))
+var timeScale = d4.scaleBand()
+  .domain(d4.range(1,20,1))
   .range([0, width/2])
   .padding(0.1)
 
-var dateScale = d3.scaleBand()
+var dateScale = d4.scaleBand()
   .domain(dates)
   .range([0, width/2])
   .padding(0.1)
 
-var dateAxis = d3.axisTop().scale(dateScale).ticks(0)
+var dateAxis = d4.axisTop().scale(dateScale).ticks(0)
 svg.append('g').attr('class', 'yAxis').call(dateAxis)
 // x^ axis
 
-d3.csv("pancakes.csv", function(data) {
+d4.csv("pancakes.csv", function(data) {
 
-colorScale = d3.scaleQuantile().domain([0, buckets - 1, d3.max(data, d => d.cases)]).range(colors);
-colorScale = d3.scaleThreshold().domain([1,10,50,100,625]).range(colors);
+colorScale = d4.scaleQuantile().domain([0, buckets - 1, d4.max(data, d => d.cases)]).range(colors);
+colorScale = d4.scaleThreshold().domain([1,10,50,100,625]).range(colors);
   
 svg.selectAll('.squares')
   .data(data)
