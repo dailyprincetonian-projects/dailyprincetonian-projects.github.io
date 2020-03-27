@@ -40,37 +40,37 @@ svg.selectAll("path")
 	.style("stroke-width", "4.5")
 	.style("fill", "rgb(240,240,240)")
 	
-d3.csv("cities.csv", function(data) {
-svg.selectAll("circle")
-	.data(data)
-	.enter()
-	.append("circle")
-	.attr("cx", function(d) {
-		return projection([d.lon, d.lat])[0];
-	})
-	.attr("cy", function(d) {
-		return projection([d.lon, d.lat])[1];
-	})
-	.attr("r", function(d) {
-		return 3;
-	})
-		.style("fill", "rgb(0,0,0)")	
-		.style("fill-opacity", 1.0)
-		.style("stroke", "rgb(0,0,0)")
-		.style("stroke-opacity", 1.0)
-	.append("title").text(d=>d.city);
-});
+// d3.csv("cities.csv", function(data) {
+// svg.selectAll("circle")
+// 	.data(data)
+// 	.enter()
+// 	.append("circle")
+// 	.attr("cx", function(d) {
+// 		return projection([d.lon, d.lat])[0];
+// 	})
+// 	.attr("cy", function(d) {
+// 		return projection([d.lon, d.lat])[1];
+// 	})
+// 	.attr("r", function(d) {
+// 		return 3;
+// 	})
+// 		.style("fill", "rgb(0,0,0)")	
+// 		.style("fill-opacity", 1.0)
+// 		.style("stroke", "rgb(0,0,0)")
+// 		.style("stroke-opacity", 1.0)
+// 	.append("title").text(d=>d.city);
+// });
 
-d3.csv("cities.csv", function(data) {
-svg.selectAll("text")
-	.data(data)
-	.enter()
-	.append("text")
-  	.attr("x", function(d) { return projection([d.lon, d.lat])[0]; })
- 	.attr("y", function(d) { return projection([d.lon, d.lat])[1] - 5; })
-	.attr("text-anchor", d=>d.anchor)
-  	.text(d=>d.city)
-});
+// d3.csv("cities.csv", function(data) {
+// svg.selectAll("text")
+// 	.data(data)
+// 	.enter()
+// 	.append("text")
+//   	.attr("x", function(d) { return projection([d.lon, d.lat])[0]; })
+//  	.attr("y", function(d) { return projection([d.lon, d.lat])[1] - 5; })
+// 	.attr("text-anchor", d=>d.anchor)
+//   	.text(d=>d.city)
+// });
 	
 	
 	
