@@ -88,7 +88,7 @@ svg.selectAll("g")
 		return projection([d.lon, d.lat])[1];
 	})
 	.attr("r", function(d) {
-		return Math.sqrt(d.cases) * 0.75;
+		return Math.sqrt(d.cases) * 0.75; //circle radius
 	})
 		.style("fill", "#ff8f00")	
 		.style("fill-opacity", 0.5)
