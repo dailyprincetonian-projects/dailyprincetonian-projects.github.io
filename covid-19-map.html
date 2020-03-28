@@ -14,9 +14,15 @@
 </script>
 	
 <script>
- function pictureChange()
+ function toLog()
   {
-   document.getElementById("theImage").src="chart-3-28-log.svg";
+   document.getElementById("casesovertimechart").src="chart-3-28-log.svg";
+  }
+</script>
+<script>
+ function toLinear()
+  {
+   document.getElementById("casesovertimechart").src="chart-3-28.svg";
   }
 </script>
 	
@@ -341,9 +347,12 @@ a:hover {
 	</div>
         <div style="text-align:center"> 
 
- 	<img id="theImage" src="chart-3-28.svg">
+ 	<img id="casesovertimechart" src="chart-3-28.svg">
  	<p><input type="button" id="theButton" value="log scale" 
-    	onclick="pictureChange()"></p>
+    	onclick="toLog()"></p>
+	</div>
+	<p><input type="button" id="theButton" value="linear scale" 
+    	onclick="toLinear()"></p>
 	</div>
 	</div>
 	
