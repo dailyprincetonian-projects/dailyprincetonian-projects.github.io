@@ -90,10 +90,10 @@ svg.selectAll("g")
 	.attr("r", function(d) {
 		return Math.sqrt(d.cases) * 0.5;
 	})
-		.style("fill", "#ff8f00")	
-		.style("fill-opacity", 0.5)
-		.style("stroke", "#ff8f00")
-		.style("stroke-opacity", 0.5)
+		.style("fill", "#e77500")	
+		.style("fill-opacity", 0.6)
+		.style("stroke", "#e77500")
+		.style("stroke-opacity", 0.9)
 
 	.on("mouseover", function(d) {      
     	div.transition()        
