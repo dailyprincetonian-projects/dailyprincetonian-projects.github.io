@@ -1,0 +1,266 @@
+<!-- A bit below line 164, you can change the statistics. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>NJ COVID-19 Tracker</title>	
+	
+<meta charset="utf-8">
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<style type="text/css">
+	
+<link href="https://fonts.googleapis.com/css?family=EB+Garamond:700|Open+Sans&display=swap" rel="stylesheet">
+
+#navbar {
+  background-color: #000000;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  display: inline-block;
+  transition: top 0.3s;
+  height: 100%;
+  vertical-align: middle;
+}	
+	
+body {
+    background:  #fff;
+    margin: 0;
+    font-family: 'EB Garamond', serif;
+}	
+	
+/* On mouse hover, lighten state color */
+path:hover {
+	fill-opacity: 1.0;
+}
+
+/* Style for Custom Tooltip */
+div.tooltip {  
+ 	position: absolute;           
+	text-align: center;           
+	width: 90px;                  
+	height: 35px;                 
+	padding: 2px;             
+	font: 15px;      
+	background: white;
+	border: 1px solid #000000;
+  	border-radius: 3px;
+	pointer-events: none;         
+}
+	
+svg {
+    display: block;
+    margin: 0 auto;
+}
+	
+.center {
+  padding: 70px 0;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+li {
+  float: left;
+}
+
+#navhead {
+  display: block;
+  color: #C0C0C0;
+  text-align: center;
+  padding: 13px 0px 0px 20px;
+  text-decoration: none;
+  float: right;
+}
+	
+#navimg {
+  padding: 3px 0px 0px 0px;
+}
+	
+#title {
+	margin:0;
+	font-size: 40px;
+	font-weight: bold;
+}
+#subtitle {
+	font-size: 25px;
+	font-style: italic;
+/* 	font-family: 'Open Sans', sans-serif; */
+}
+#numcases {
+	color: black;
+	font-size: 60px;
+	margin:0;
+	font-weight: bold;
+	opacity: .8;
+	font-family: sans-serif;
+}
+#numcasesdesc {
+	margin:0;
+	color: black;
+	font-family: sans-serif;
+	font-weight: 200;
+}
+#map {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 200;
+}
+#menubar {
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 16px
+}
+#timestamp {
+	font-size: 10px;
+	font-family: 'Open Sans', sans-serif;
+	color: rgb(125,125,125);
+}
+#menulink {
+	font-weight: bold;
+	text-decoration: none;
+	color: rgb(125,125,125);
+}
+#menulink:hover {
+	color: #000000;
+}
+#casesbox {
+	margin:50px; 
+	width: 650px; 
+	background-color:rgb(240,240,240); 
+	border-radius: 25px;
+}
+#chartlabel {
+	font-size:20px;
+	font-family:sans-serif;
+	font-weight:550;
+	margin:30px 0px 0px 30px;
+	text-align:left;
+}
+
+#content-mobile {display: none;}
+
+@media only screen and (max-width: 700px){
+
+#content-desktop {display: none;}
+#content-mobile {display: block;}
+
+}	
+	
+</style>
+</head>
+<body>
+
+	
+	
+</style>
+</head>
+<body>
+	
+<!-- <div id="navbar" style="height: 40px">
+<ul>
+  <li><a href="https://www.dailyprincetonian.com/"><img id="navimg" src="princelogo.png" height="35px"></a></li>
+</ul>
+</div> -->
+
+<!-- <div id="menubar" style="padding: 40px 0px 0px 0px">
+	<b>CORONAVIRUS</b>&emsp;&emsp;&emsp;|&emsp;&emsp;
+	<a href="https://www.dailyprincetonian.com/section/coronavirus" id="menulink">Latest Updates</a>&emsp;&emsp;
+	<a href="https://www.dailyprincetonian.com/article/2020/03/princeton-covid19-the-daily-princetonian-coverage-timeline" id="menulink">Full Coverage</a>
+</div> -->
+	
+<div style="width: 750px; padding: 0px 0px 0px 0px; text-align: center" id="content-desktop">
+	<div id="casesbox">
+	<div style="display:inline-block; text-align: center; width: 300px; margin: 20px 0px 20px 0px">
+		<p id="numcases">44,416</p> <!-- Number of cases in New Jersey -->
+		<p id="numcasesdesc">Cases in<br>New Jersey</p>
+	</div>
+	<div style="display:inline-block; text-align: center; width: 300px; margin: 20px 0px 20px 0px">
+		<p id="numcases">1,232</p> <!-- Number of deaths in New Jersey -->
+		<p id="numcasesdesc">Deaths in<br>New Jersey</p>
+	</div> 
+	</div>
+	
+	<div id="casesbox">
+	<div style="display:inline-block; text-align: center; width: 200px; margin: 20px 0px 20px 0px">
+		<p id="numcases">43</p> <!-- Number of cases in Princeton -->
+		<p id="numcasesdesc">Cases in<br>Princeton</p>
+	</div>
+	<div style="display:inline-block; text-align: center; width: 200px; margin: 20px 0px 20px 0px">
+		<p id="numcases">36</p> <!-- Number of cases in Princeton -->
+		<p id="numcasesdesc">U. Students<br>Positive</p>
+	</div>
+	<div style="display:inline-block; text-align: center; width: 200px; margin: 20px 0px 20px 0px">
+		<p id="numcases">14</p> <!-- Number of cases in Princeton -->
+		<p id="numcasesdesc">U. Staff<br>Positive</p>
+	</div>
+		
+	</div>
+	<p id="chartlabel">New Jersey Cases by County</p>
+        <div id="map"> 
+        </div>
+</div>
+
+<!-- 	FOR MOBILE -->
+<div id="content-mobile">
+        <div style="text-align:center; padding: 100px 0px 0px 0px"> 
+		<p id="title">
+		 New Jersey
+		 <br>
+		 COVID-19 Tracker
+		</p>
+		<p id="subtitle">
+		The Daily Princetonian is tracking every reported coronavirus case in New Jersey.	
+		</p>
+		<div style="width: 120px; display:inline-block; text-align: center;">
+			<p id="numcases">22,255</p> <!-- Number of cases in New Jersey -->
+			<p id="numcasesdesc">Cases in<br>New Jersey</p>
+		</div>
+		<div style="width: 120px; display:inline-block; text-align: center;">
+			<p id="numcases">26</p> <!-- Number of cases in Princeton -->
+			<p id="numcasesdesc">Cases in<br>Princeton</p>
+		</div>
+		<div style="width: 120px; display:inline-block; text-align: center;">
+			<p id="numcases">355</p> <!-- Number of deaths in New Jersey -->
+			<p id="numcasesdesc">Deaths in<br>New Jersey</p>
+		</div> 
+		<p>
+			<span style="font-size: 30px; color: black; font-weight: bold">36</span> students and 
+			<span style="font-size: 30px; color: black; font-weight: bold">14</span> staff have tested positive*.
+		</p>
+		<!-- Time of last update -->
+		<p id="timestamp"><br><span style="color:#ff8f00">UPDATED</span> Wednesday April 1st, 1:54 p.m. EDT
+		<br>Note: Circle area is proportional to the number of the cases. As the number of cases has increased dramatically,
+			we have adjusted the proportions.
+		<br>*Only includes cases reported to University Health Services.
+		</p> 
+        </div>
+        <div style="text-align:center" id="map"> 
+        </div>
+</div>
+	
+<script src="testmap.js"></script>
+	
+<script>
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "0";
+  }
+}
+	
+</script>
+
+<div id="footer" style="height: 100px">
+</div>
+	
+</body>
+</html>
