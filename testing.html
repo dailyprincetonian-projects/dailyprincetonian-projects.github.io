@@ -202,7 +202,8 @@ li {
 	
 	<p id="chartlabel">New Jersey Cases by County</p>
 	<div>
-		<div style="display:inline-block; width: 200px"><embed src="https://docs.google.com/spreadsheets/d/1extQEatsX1pqlR1KqEqXORRsRAyNWausnXkegJE1fZQ/gviz/tq?tqx=out:html&tq&gid=2007406427">
+		<div style="display:inline-block; width: 200px; height: 400px; vertical-align:top; padding:60px 0px 0px 0px">
+			<embed style="height:600px" src="https://docs.google.com/spreadsheets/d/1extQEatsX1pqlR1KqEqXORRsRAyNWausnXkegJE1fZQ/gviz/tq?tqx=out:html&tq&gid=2007406427">
 		</div>
 		<div style="display:inline-block; width: 500px" id="map"></div>
 	</div>
@@ -247,6 +248,8 @@ li {
 </div>
 	
 <script src="testmap.js"></script>
+	
+<script>document.getElementsByTagName("table")[0].style = "font-family:sans-serif; font-weight:200"</script>
 	
 <script>
 // When the user scrolls down 20px from the top of the document, slide down the navbar
