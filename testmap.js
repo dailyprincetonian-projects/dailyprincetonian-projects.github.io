@@ -88,7 +88,7 @@ svg.selectAll("g")
 		return projection([d.lon, d.lat])[1];
 	})
 	.attr("r", function(d) {
-		return Math.sqrt(d.cases) * 0.5;
+		return Math.sqrt(d.cases) * 0.2;
 	})
 		.style("fill", "#e77500")	
 		.style("fill-opacity", 0.6)
