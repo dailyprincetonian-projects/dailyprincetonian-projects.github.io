@@ -25,6 +25,6 @@ h3 {
 
 /* For featured articles */
 .overline { font-family: 'Montserrat', sans-serif; font-weight: 300; font-size: 16px; }
-.title { color: black; }
+.title { color: black; font-weight: bold; }
 .authordate { font-size: 20px; }
 
