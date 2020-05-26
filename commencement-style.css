@@ -2,23 +2,23 @@ body {
   margin: 25px;
   background-color: rgb(240,240,240);
   font-family: arial, sans-serif;
-  font-size: 14px;
+  font-size: 24px;
 }
 
 /* Applies to all <h1>...</h1> elements. */
 h1 {
-  font-size: 54px;
+  font-size: 64px;
   font-weight: bold;
   margin-top: 5px;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
 }
 
 h3 {
-  font-size: 14px;
+  font-size: 24px;
   font-weight: normal;
 }
 
