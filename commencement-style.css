@@ -24,12 +24,15 @@ h3 {
 }
 
 /* Implementing dropcap */
+/* Implementing dropcap */
 p:first-of-type:first-letter {
     float: left;
-    font-size: 120px;
+    font-size: 135px;
     line-height: 1;
     font-weight: bold;
-    margin-right: 9px;
+    margin-right: 20px;
+    margin-top: -10px;
+    margin-bottom: -10px;
 }
 
 /* For featured articles */
