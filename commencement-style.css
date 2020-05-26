@@ -24,7 +24,6 @@ h3 {
 }
 
 /* Implementing dropcap */
-/* Implementing dropcap */
 p:first-of-type:first-letter {
     float: left;
     font-size: 135px;
