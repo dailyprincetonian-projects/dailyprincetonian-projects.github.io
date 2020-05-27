@@ -1,0 +1,215 @@
+body {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  background-color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1 {
+  font-size: 90px;
+  font-weight: bold;
+  margin-top: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+/* For sections */
+section {
+    padding-top:40px;
+}
+
+/* Images*/
+figure {
+    z-index: -1;
+}
+
+figcaption {
+  padding: 2px;
+  text-align: right;
+  font-family: 'Montserrat', san-serif;
+  font-size: 18px;
+}
+
+.credit {
+  font-color: grey;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* Implementing dropcap */
+#sec1 p:first-of-type:first-letter {
+    float: left;
+    font-size: 135px;
+    line-height: 1;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+/* For featured articles */
+.box:nth-child(even) {
+    background-color: rgb(235,235,235);
+}
+.article {margin-left: 15%; margin-right: 15%; padding-top: 2vw; padding-bottom: 2vw;}
+.article h1 { color: black; font-weight: bold; margin:0; padding:0; font-size: 40px;}
+.article h3 { font-family: 'Montserrat', sans-serif; font-weight: 300; font-size: 20px; margin:0; padding:0;}
+.article h2 { font-size: 20px; margin:0; padding:0;}
+.article p {font-size: 24px}
+/* .article a {background-color:rgb(241,197,154)} */
+
+/* Makes full width (ignores margins) */
+.full-width, .box { width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw;
+}
+
+/* TITLE PAGE */
+
+/* social media buttons */
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  opacity: 0.5;
+}
+
+.fa:hover{
+    opacity: 0.8;
+}
+
+.scroll-arrow {
+    position: absolute;
+    top: 85vh;
+    text-align: center;
+    z-index: 999;
+}
+.pulsing {
+    animation: pulse 2s;
+    animation-iteration-count: infinite;
+}
+.arrow:hover {
+    opacity: 0.8;
+}
+@-webkit-keyframes pulse {
+    0%   {opacity: 0.8;}
+    40%  {opacity: 0.3;}
+    60%  {opacity: 0.3;}
+    100% {opacity: 0.8;}
+}
+@keyframes pulse {
+    0%   {opacity: 0.8;}
+    40%  {opacity: 0.3;}
+    60%  {opacity: 0.3;}
+    100% {opacity: 0.8;}
+}
+
+.title-page {
+    position: absolute;
+        z-index: 999;        
+        text-align: center;
+        top: 10vh; /* Adjust this value to move the positioned div up and down */
+        font-family: "Montserrat", sans-serif;
+}
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 35vw;
+  margin-right: 35vw;
+  border: 2px solid #e77500;
+}
+
+header img{
+    opacity: 0.5;
+}
+
+header img:hover {
+    opacity: 0.8;
+}
+
+/* For animating names */
+
+#names {
+  margin-top: 0px;
+  background-color: white;
+  color: lightgrey;
+  font-size: 0.65vw;
+  z-index: 1; /* so the navbar doesn't appear */
+}
+.fading {
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-name: fading;
+    animation-duration: 1.5s;
+    animation-name: fading;
+}
+@-webkit-keyframes fading {
+    0%   {color: lightgrey;}
+    30%  {color: rgb(127,127,127);}
+    70%  {color: rgb(127,127,127);}
+    100% {color: lightgrey;}
+}
+@keyframes fading {
+    0%   {color: lightgrey;}
+    30%  {color: rgb(127,127,127);}
+    70%  {color: rgb(127,127,127);}
+    100% {color: lightgrey;}
+}
+
+/* For navbar */
+nav {
+    font-family: "Montserrat", sans-serif;
+    z-index: 999;
+}
+nav .active{
+  font-weight: bold;
+}
+.navbar {
+    text-align: center;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0;
+}
+.nav {
+    margin: 0px;
+    background-color: white;
+    opacity: 0.9;
+/*     border-bottom: 2px solid black; */
+}
+nav a {
+    color:black;
+    text-decoration:none;
+}
+nav a:hover {
+    font-weight: bold;
+}
+li {
+    display:inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+}
