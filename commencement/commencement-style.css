@@ -29,6 +29,7 @@ body {
 
 a {
     color: black;
+    target="_blank";
 }
 
 a:hover {
@@ -60,6 +61,7 @@ section {
 .year h1 {font-size:20vh}
 .year a {z-index:10; color: white}
 .year a:hover {text-decoration: none}
+.year p {font-size: 2.5vw}
 
 /* Images*/
 figure {
@@ -80,7 +82,7 @@ figcaption {
 }
 
 /* Implementing dropcap */
-#sec1 p:first-of-type:first-letter {
+#first-par p:first-of-type:first-letter {
     float: left;
     font-size: 135px;
     line-height: 1;
@@ -123,7 +125,7 @@ figcaption {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 8vh;
+  font-size: 10vh;
 }
 .right-arrow:hover {
   opacity:0.8;
@@ -149,12 +151,12 @@ figcaption {
 
 /* social media buttons */
 .fa {
-  padding: 10px;
-  font-size: 30px;
-  width: 30px;
+  padding: 1vw;
+  font-size: 3vw;
+  width: 3vw;
   text-align: center;
   text-decoration: none;
-  border-radius: 50%;
+  border-radius: 10%;
   background-color: black;
   color: white;
   opacity: 0.5;
@@ -221,7 +223,7 @@ header img:hover {
   margin-top: 0px;
   background-color: white;
   color: lightgrey;
-  font-size: 0.65vw;
+  font-size: calc(0.4vw + 0.4vh);
   z-index: 1; /* so the navbar doesn't appear */
 }
 .fading {
@@ -308,6 +310,10 @@ input[type=submit]:hover {
   margin-left: 3vw;
   font-family: 'Montserrat', sans-serif;
   border-top: 2px solid black;
+}
+.preorder p {
+    font-family: 'Playfair Display', serif;
+  font-size: 1.5vw;  
 }
 
 footer {
