@@ -1,0 +1,114 @@
+body {
+  margin-left: 15%;
+  margin-right: 15%;
+  background-color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Applies to all <h1>...</h1> elements. */
+h1 {
+  font-size: 64px;
+  font-weight: bold;
+  margin-top: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+/* Image captions */
+figcaption {
+  padding: 2px;
+  text-align: right;
+  font-family: 'Montserrat', san-serif;
+  font-size: 18px;
+}
+
+.credit {
+  font-color: grey;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* Implementing dropcap */
+p:first-of-type:first-letter {
+    float: left;
+    font-size: 135px;
+    line-height: 1;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+/* For featured articles */
+.overline { font-family: 'Montserrat', sans-serif; font-weight: 300; font-size: 16px; margin:0; padding:0;}
+.title { color: black; font-weight: bold; margin:0; padding:0; font-size: 40px; background-color:rgb(241,197,154)}
+.authordate { font-size: 20px; margin:0; padding:0;}
+
+/* Makes full width (ignores margins) */
+.full-width { width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw;
+}
+
+/* For animating names */
+#names {
+  color: lightgrey;
+  font-size: 0.65vw;
+}
+.fading {
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-name: fading;
+    animation-duration: 1.5s;
+    animation-name: fading;
+}
+@-webkit-keyframes fading {
+    0%   {color: lightgrey;}
+    30%  {color: black;}
+    70%  {color: black;}
+    100% {color: lightgrey;}
+}
+@keyframes fading {
+    0%   {color: lightgrey;}
+    30%  {color: black;}
+    70%  {color: black;}
+    100% {color: lightgrey;}
+}
+
+/* For navbar */
+.active{
+  background-color:red;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
