@@ -248,7 +248,7 @@ header img:hover {
 nav {
     font-family: "Montserrat", sans-serif;
     z-index: 999;
-    font-size: 1.7vw;
+    font-size: 1.65vw;
 }
 nav .active{
   font-weight: bold;
