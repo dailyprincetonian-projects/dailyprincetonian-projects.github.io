@@ -1,0 +1,384 @@
+html {
+  padding: env(safe-area-inset);
+}
+
+html, body{
+  overflow-x: hidden;
+}
+
+body {
+  background: white;
+  /* background: black; */
+  margin: 0;
+  padding: 0;
+  font-family: minion-pro, serif;
+}
+
+/* .first-par p:first-of-type:first-letter {
+    float: left;
+    font-size: 60px;
+    line-height: 0.9;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-top: 3px;
+    margin-bottom: -1px;
+} */
+
+a {
+  color: darkslategrey;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.first-par p:first-of-type:first-letter {
+    float: left;
+    font-size: 190px;
+    line-height: 0.7;
+    font-weight: bold;
+    margin-right: 30px;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: -1px;
+}
+
+#title-page {
+  position: relative;
+  margin-left: 30%;
+  margin-right: 5%;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  padding: 20px;
+  background: white;
+  opacity: 0.95;
+  z-index: 2;
+}
+
+#title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 50px;
+  z-index: 2;
+}
+
+#title-image {
+  width: 100vw;
+  height: 120vh; 
+  position: absolute; 
+  top: 0; 
+  z-index: 1;
+  object-fit: cover;
+  object-position: 100% 150%;
+}
+
+.subtitle {
+  margin: 0;
+  font-family: minion-pro, serif;
+  font-weight: 400;
+  color: rgb(100,100,100);
+}
+
+#byline {
+  margin-top: 20px;
+  font-family: franklin-gothic-urw, sans-serif;
+  font-size: 16px;
+}
+
+#overline {
+  margin: 0;
+  font-family: franklin-gothic-urw, sans-serif;
+}
+
+#header {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  background: white;
+  opacity: 0.8;
+  text-align: center;
+  z-index: 2;
+}
+
+#header-logo {
+  height: 30px;
+  padding: 10px;
+  /* margin-left: 45%;
+  margin-right: 45%;
+  padding: 10px;
+  height: 30px; */
+}
+
+.header-item {
+  font-size: 20px;
+  display: inline-block;
+  font-family: franklin-gothic-urw, sans-serif;
+}
+
+.section-break {
+  padding:0px;
+  margin:0px;
+  line-height:0;
+  text-align:center;
+}
+
+.pull-quote {
+  margin-left: -20%;
+  margin-right: -15%;
+  margin-top: 0px;
+  font-size: 60px;
+  font-family: minion-pro-display;
+  font-weight: 500;
+  color: rgb(40,40,40);
+}
+
+.quote-attribution {
+  margin-right: -20%;
+  text-align: right;
+  font-size: 40px;
+  padding-top: 0px;
+  margin-top: 0px;
+  padding-bottom: 30px;
+  color: rgb(40,40,40);
+}
+
+.highlight-line {
+  color: rgb(220,190,180);
+  font-size: 80px;
+  font-weight: 1000;
+  line-height: 0px;
+}
+
+.item {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 0vh;
+  margin-top: 0vh;
+  padding: 20px 40px 20px 40px;
+  background: white;
+  opacity: 0.95;
+  color: black;
+  font-size: 20px;
+  font-family: minion-pro, serif;
+  z-index: 4;
+}
+
+.item-right {
+  margin-right: 5%;
+  margin-left: 55%;
+  margin-bottom: 50vh;
+  padding: 20px 40px 20px 40px;
+  background: white;
+  opacity: 0.95;
+  color: black;
+  font-size: 20px;
+  font-family: minion-pro, serif;
+  z-index: 999;
+}
+
+.full-width {
+  display: table-cell;
+  margin-left: 10%;
+  width: 80%;
+  height: 100vh;
+  padding: 50px;
+  background: black;
+  color: white;
+  vertical-align: middle;
+}
+
+.full-width-img {
+  width: 100vw;
+  margin: 0px;
+  padding: 0px;
+}
+
+figure {
+  margin: 0px;
+  padding: 0px;
+}
+
+figcaption {
+  text-align: right;
+  margin: 0px;
+  padding: 0px;
+  color: grey;
+  z-index: 2;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+}
+
+#background-street {
+  transition: 1s;
+  position: fixed;
+  top: 50px;
+  width: 90vw;
+}
+
+.background-plain {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgb(245,245,245);
+}
+
+.large-caption {
+  position: relative;
+  text-align: left;
+  font-size: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 35px;
+  padding-right: 35px;
+  background: white;
+  opacity: 0.5;
+  z-index: 2;
+}
+
+.large-caption-right {
+  text-align: left;
+  font-size: 20px;
+  margin-left: 55%;
+  margin-right: 5%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 35px;
+  padding-right: 35px;
+  background: white;
+  opacity: 0.5;
+  position: relative;
+  z-index: 2;
+}
+
+.img-normal figcaption {
+  font-size: 15px;
+}
+
+#clubs-1971 {
+  transition: 1.5s;
+}
+
+.street {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#campus, #terrace, #tower, #quad, #ivy, #cottage, #cap, #cloister, #charter, #dial, #colonial, #ti {
+  transition: 2s;
+}
+
+.img-normal-mobile {
+    display: none;
+  }
+
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: inline;
+  }
+
+@media all and (max-width: 1000px) {
+  .large-caption-right {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 18px;
+  }
+  .item-right {
+    margin-left: 0%;
+    margin-right: 0%;
+    font-size: 18px;
+  }
+  .large-caption {
+    font-size: 18px;
+  }
+  .item {
+    width: 100%;
+    font-size: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .item p {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .item h1 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .pull-quote {
+    margin-left: 0%;
+    margin-right: 0%;
+    font-size: 35px;
+  }
+  .quote-attribution {
+  margin-right: 0%;
+  text-align: right;
+  font-size: 20px;
+  margin-top: 0;
+  } 
+  #title-page {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 70px;
+  margin-bottom: 80px;
+  padding: 20px;
+  background: white;
+  opacity: 0.95;
+  }
+  #title-image {
+    height: 140vh;
+  }
+  #title {
+    font-size: 35px;
+  }
+  .subtitle {
+    font-size: 20px;
+  }
+  #header {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    background: white;
+    opacity: 0.8;
+  }
+  #header-logo {
+    padding: 10px;
+    height: 18px;
+  }
+  .full-width-img {
+    display:none;
+  }
+  .img-normal-mobile {
+    display: inline;
+  }
+  .first-par p:first-of-type:first-letter {
+    float: left;
+    font-size: 120px;
+    line-height: 0.8;
+    font-weight: bold;
+    margin-right: 15px;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: -1px;
+  }
+  #background-street {
+  transition: 1s;
+  position: fixed;
+  top: 50px;
+  width: 90vw;
+  }
+  .mobile {
+    display: inline;
+  }
+  .desktop {
+    display: none;
+  }
+}

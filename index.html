@@ -1,576 +1,961 @@
-<html lang="en">
-<head>
-  <meta charset="utf-8">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Eating Clubs</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
 
-  <title>Princeton Commencement 2020 - The Daily Princetonian</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="description" content="The Daily Princetonian's special coverage of Commencement 2020">
-  <meta name="author" content="The Daily Princetonian">
-  
-    <link rel="icon" href="logo.png">
-  
-  <!--Playfair Display and Montserrat Fonts-->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="commencement-style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://code.jquery.com/jquery-2.2.3.js"></script>
-
-  
-</head>
-
-<body>
-
-<!--For vertical display-->
-<div id="warning-message" style="margin:0px">
-
-<div class="vertical-center" style="margin: 0 auto; width: 70%; text-align:center">
-  <p style="font-family:'Montserrat',sans-serif; font-size:6vw"> rotate your device </p>
-<img class="pulsing" src="rotate.png" style="height:20vh">
-<p style="padding-top:8vh; font-family:'Montserrat',sans-serif; font-weight:bold; font-size:6vw; color:#e77500"> <span style="color:black">COMMENCEMENT</span>2020<br><span style="font-family:'Montserrat',sans-serif; font-size:6vw; font-weight:normal; color:black;">SPECIAL ISSUE</span></p>
-<img src="princelogo.png" style="width:50vw">
-<p style="font-family:'Montserrat',sans-serif; font-size:2vw"> view on mobile browser to allow rotation </p>
-
-</div>
-
- </div>
-
-<!--Horizontal display here-->
-<div id="wrapper"> 
-<header>
-    <div class="title-page full-width">
-    <h1 style="margin: 0vh; font-size:7vw">COMMENCEMENT 2020</h1>
-    <hr>
-    <h2 style="font-size: 4vw; font-family: 'Playfair Display', serif; font-weight: normal"> from 2016 to now </h2>
-    <a target="_blank" href="https://www.dailyprincetonian.com">
-    <img src="princelogo.png" style="height:14vh; padding-bottom:4vh">
-    </a>
-    <div>
-    <a target="_blank" href="https://www.facebook.com/DailyPrincetonian" class="fa fa-facebook"></a>
-    <a target="_blank" href="https://twitter.com/princetonian" class="fa fa-twitter"></a>
-    <a target="_blank" href="https://www.instagram.com/dailyprincetonian/" class="fa fa-instagram"></a>
-    <a target="_blank" href="https://www.youtube.com/channel/UC6DZuLRHcb2Nf6bP3nna9VQ" class="fa fa-youtube"></a>
-    </div>
-    </div>
-    
-    <div class="scroll-arrow full-width">
-    <a href="#sec1" class="pulsing">
-    <img src="scrollarrow.png" style="height:6vh" class="arrow">
-    </a>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/gkx8zdh.css">
+  </head>
+  <body>
+<div class="street" data-aos="fade-in" data-aos-duration="1000" style="z-index:0;">
+    <svg id="background-street" data-aos="fade" data-aos-duration="1000" data-aos-anchor="#trigger-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1167 411.3"><defs><style>.a,.b{fill:#fff;}.a,.c{stroke:#282828;stroke-miterlimit:10;}.c{fill:none;}</style></defs><polygon id="terrace" class="a" points="75.23 360.38 77.43 374.21 80.4 373.74 85.11 403.37 100.91 400.85 101.7 405.79 108.57 410.77 120.42 408.89 129.55 396.3 126.88 379.51 147.62 376.21 142.75 345.59 147.69 344.81 142.81 314.19 110.22 319.38 112.11 331.23 96.31 333.74 94.42 321.89 71.71 325.5 77.21 360.07 75.23 360.38"/><polygon id="tower" class="a" points="133.5 192.5 133.5 228.5 157.5 228.5 157.5 246.5 203.5 246.5 203.5 222.5 214.5 222.5 214.5 202.5 202.5 202.5 202.5 181.5 177.5 181.5 177.5 188.5 162.5 188.5 162.5 192.5 133.5 192.5"/><path id="quad" class="a" d="M524.69,339.35v36h4v10h10s3,5,19,5,19-4,19-4h13v-11h3v-9h13v-19h-15v-8Z" transform="translate(-99.19 -139.85)"/><polygon id="ivy" class="a" points="539.5 217.5 539.5 279.5 569.5 279.5 569.5 254.5 604.5 254.5 604.5 279.5 609.5 279.5 609.5 301.5 628.5 301.5 628.5 202.5 604.5 202.5 604.5 207.5 582.5 207.5 582.5 202.5 558.5 202.5 558.5 217.5 539.5 217.5"/><path id="cottage" class="b" d="M852.69,364.35h-4v-20h-20v4h-40v-4h-19v18h-7l-7,3v14l7,5h7v40h19v-5h40v5h20v-40h3l4.5-4.5v-12.5Zm-24,43h-40v-29h40Z" transform="translate(-99.19 -139.85)"/><path class="c" d="M852.69,364.35h-4v-20h-20v4h-40v-4h-19v18h-7l-7,3v14l7,5h7v40h19v-5h40v5h20v-40h3l4.5-4.5v-12.5Zm-24,43h-40v-29h40Z" transform="translate(-99.19 -139.85)"/><polygon id="cap" class="a" points="851.5 290.5 789.5 290.5 789.5 235.5 814.5 235.5 814.5 254.5 842.5 254.5 842.5 248.5 858.5 248.5 858.5 254.5 862.5 254.5 862.5 237.5 884.5 237.5 884.5 257.5 890.5 257.5 890.5 285.5 882.5 285.5 882.5 336.5 851.5 336.5 851.5 290.5"/><polygon id="cloister" class="a" points="958.5 195.5 958.5 234.5 1000.5 234.5 1000.5 254.5 1023.5 254.5 1023.5 195.5 1015.5 195.5 1015.5 186.5 991.5 186.5 991.5 195.5 958.5 195.5"/><polygon id="charter" class="a" points="1082.5 204.5 1082.5 271.5 1117.5 271.5 1117.5 241.5 1144.5 241.5 1144.5 248.5 1166.5 248.5 1166.5 204.5 1144.5 204.5 1144.5 211.5 1105.5 211.5 1105.5 204.5 1082.5 204.5"/><polygon id="ti" class="a" points="617.5 18.5 617.5 68.5 628.5 68.5 628.5 87.5 637.5 87.5 637.5 107.5 702.5 107.5 702.5 18.5 617.5 18.5"/><polygon id="colonial" class="a" points="487.5 51.5 487.5 87.5 516.5 87.5 516.5 102.5 546.5 102.5 546.5 87.5 573.5 87.5 573.5 51.5 546.5 51.5 546.5 38.5 516.5 38.5 516.5 51.5 487.5 51.5"/><polygon id="campus" class="a" points="0.5 186.5 25.5 186.5 25.5 183.5 40.5 183.5 40.5 192.5 65.5 192.5 65.5 198.5 84.5 198.5 84.5 229.5 0.5 229.5 0.5 215.5 4.5 215.5 4.5 210.5 0.5 210.5 0.5 186.5"/><polygon id="dial" class="a" points="319.5 17.5 319.5 58.5 416.5 58.5 416.5 0.5 388.5 0.5 388.5 17.5 319.5 17.5"/></svg>
     </div>
 
-    <div id="names" class="full-width">
-    Seth Paternostro  •  Ilana Perkins  •  Serena Mon  •  Sean Gai  •  Jeremy Nelson  •  Sarah Coffey  •  Michael Peters  •  Maya Walton  •  Alden Hunt  •  Kennedy Leverett  •  Kasey Bersh  •  Jackson Artis  •  Andrei Graur  •  Aidan O'Donnell  •  Traci Mathieu  •  Michael Milam  •  Jackson Caputo  •  Jasper Jarecki  •  HJ Suh  •  Sadie Henderson  •  Annika Kruse  •  Timothy Tang  •  Jonathan Garaffa  •  Bruno Fernandes  •  Vayne Ong  •  Carrie Pritt  •  Mohamed Abdelhamid  •  Sarah Hirschfield  •  John Baek  •  Aria Wong  •  Catherine Benedict  •  Matthew Hallmark  •  Christopher Evanko  •  Taylor Jean-Jacques  •  Madeleine Sumner  •  Alexander Kirschenbauer  •  Fleming Peck  •  Ayo Foster-McCray  •  Laura Hausman  •  Marah Sakkal  •  Riley Chabot  •  Stephen Cornwell  •  Hayoung Park  •  Jonny Hopcroft  •  Elizabeth Wallace  •  Audrey Cheng  •  Christiana Esowhode  •  Gregory Luck  •  Jaspreet Kalsi  •  Andy Lin  •  Marcus Norkaitis  •  Agatha Okobi  •  Eliot Chen  •  Ariane Fong  •  Robert Hickson  •  Kate Andre  •  Karen Wu  •  Lucy Jing  •  Abbie Minard  •  Chris Lawrie  •  Michaela Nickerson  •  Ben Clarke  •  YJ Choi  •  Phoebe Ozuah  •  Ymhani Cloird  •  Robert Liu  •  Christian Novogratz  •  Janice Cheon  •  William Johnson  •  Emma Pannullo  •  Aniela Macek  •  Lauren Von Berg  •  Sarah Kamanzi  •  Karissa Lowe  •  Hadley Irwin  •  Russell Slighton  •  Nazenin Elci  •  Clare McKee  •  Juliana Jiranek  •  Neil Slighton  •  Philip Thompson  •  Hayley Siegel  •  Rachel Granovsky  •  Dylan Galt  •  Laura Pansini  •  Wesley Yuan  •  Andrew Redd  •  Talitha Wisner  •  Jean Somalwar  •  Alexa Adams  •  Calvin Rusley  •  Jack Tait  •  Elizabeth Schwartz  •  Thomas Hoopes  •  Joseph Daniels  •  Nathaniel Gadiano  •  Henry Ando  •  Andrew Brown  •  Olivia Foster  •  Samuel Barmann  •  Sarah Bowen  •  Hunter Campbell  •  Armaan Valvi  •  Christian Sullivan  •  Tiffany Chen  •  Benjamin Edwards  •  Conor Lundy  •  Katherine Wang  •  Derek Sawicki  •  Moses Im  •  Jamie Mercurio  •  Kateryn McReynolds  •  Reece Schachne  •  John Hallman  •  Samantha Einspahr  •  Milo Hughes  •  Jason Wee  •  Juliet McGowen  •  Jesse Thibodeau  •  Rachel Kasdin  •  Charlie Kwitchoff  •  John Willett  •  Michael Kamsky  •  Marisa De Silva  •  Liza Milov  •  Cole Diehl  •  Jacob Sweetow  •  Aditya Cowsik  •  JJ Kim  •  Dovid Braverman  •  Jackie Dong  •  Jordan Allen  •  Patricia Chen  •  Eric Rojas  •  George Huhmann  •  Chi Yu  •  Daniel Hampton  •  Olivia LeSueur  •  Sean Duncan  •  Emma Hopkins  •  Sophie Kader  •  Danny Pinto  •  Todd Gilman  •  Sierra Castaneda  •  Jose Morales  •  Laurie Zielinski  •  Roxana Biglari  •  Marshall Schaffer  •  Watson Weng  •  Natalie Grayson  •  Victor Zhang  •  Cecilia Rojas  •  Vidur Beharry  •  Freddy Marsh  •  Taylor Nolan  •  Joshua Latham  •  McKenna Brownell  •  Evan Elig  •  Kapil Chandran  •  Saahil Katyal  •  Natasha Thomas  •  Kuteara Jamison  •  Chung Kyong Nguen  •  Alina Kido-Matzner  •  Handa Chun  •  Jorina Kardhashi  •  Erin Gray  •  Jenny Xin  •  Payton Holden  •  Winfred Darko  •  Xerxes Libsch  •  Jon Spires  •  Keunho Kim  •  Andres Irribarra Ramirez  •  Max Parsons  •  Tomi Lawal  •  Michael Sowers  •  Joshua Gardner  •  Adhitya Raghavan  •  Wade O'Brien  •  Sneha Iyer  •  Niranjan Shankar  •  Justin Calimlim  •  Maddie Carroll  •  Nathaniel Lambert  •  Morgan Thompson  •  Spencer Sands  •  Jake Caddeau  •  Natalie Grossi  •  Uri Schwartz  •  Natalia Roszkowska  •  Mikaylah Ladue  •  Benjamin Issroff  •  Tony Chen  •  Jerry Xiang  •  Gemma Zhang  •  Kristie Falconer  •  Alexandra Colon  •  Bennett Weissenbach  •  Fatih Kaleoglu  •  Daniel Pallares Bello  •  Adam Teece  •  Katherine Hong  •  Jessica Edouard  •  Mofopefoluwa Olarinmoye  •  Christo Ritter  •  Andrew LeRoux  •  Brandon May  •  Bruce Allen  •  Andy Zheng  •  David Babikian  •  Zach Keller  •  An Lanh Le  •  Alex Ju  •  Vittorio Reynoso-Avila  •  Gary Hu  •  Lydia Zhong  •  Michelle Baird  •  Arul Gupta  •  Barbara Gruszka  •  Sofia Dimitriadoy  •  Ramzi Haddad  •  Hubert Kalinowski  •  Laetitia Fleur Derrough  •  Justin Hamilton  •  Brandon Mintzer  •  Henry Parkhurst  •  Alexandra Koskosidis  •  Will Brown  •  Chamari White-Mink  •  Ivy Xue  •  Grace Baylis  •  Justin Tran  •  Talia Anisfeld  •  Caroline Castleman  •  Alex Rogers  •  Allegra Martschenko  •  Yang Shao  •  Pulkit Singh  •  Jonah Ng  •  Kevin Lin  •  Andrew Spencer  •  Theodore Ando  •  Natalie McGowen  •  Jeremy Du  •  Michael Retoff  •  Matt Conklin  •  Shane Gooding  •  Sofie Kim  •  Hari Santhanam  •  Abraham Joshua  •  Heather Cho  •  Tristan LaCombe  •  Stephanie Neatby  •  Lorraine Cliff  •  Electra Frelinghuysen  •  Kaitlyn MacMillan  •  Jake Kirkham  •  Kierra Laube  •  Narek Galstyan  •  John Colangelo  •  Kevin Finch  •  Rachel Inman  •  Zarnab Virk  •  Alexander Paternostro  •  Jane Sul  •  Miles Lee  •  Jonah Hyman  •  Audrey Shih  •  Abaigeal Blake  •  Phillip Yoon  •  Ryan Quigley  •  Elizabeth Keim  •  Zoe Zeitler  •  Gabriel Vercelli  •  Jacob Brown  •  Brandon Ward  •  Christopher Sayan  •  Olivia Ott  •  Milan Eldridge  •  James Currah  •  Casimir Kothari  •  Julia Hillenbrand  •  Aleksandra Kostic  •  Tingting Sun  •  Jaclyn Hovsmith  •  Bri Yarnoff  •  Benjamin Rosenblatt  •  Sofie Gonzalez  •  Daehee Lee  •  Kevin Hou  •  Becca Senatore  •  Robbie Freeman  •  Jonathan Makepeace  •  Elisabeth Slighton  •  Gagandeep Kaur  •  Mick Sornwanee  •  Tabitha Belshee  •  Daniel Afrifa  •  Jon Kelly  •  Yun Woon Lao  •  Avital Fried  •  Roman Horoszewski  •  Vanessa Moore  •  Jason Bateman  •  Henry McGrath  •  Amanda Cooleen  •  Jenny Kim  •  Lucas Manning  •  Cathleen Kong  •  Jaylin Lugardo  •  Alvin Zhang  •  Dee-Dee Huang  •  Michael Lotito  •  Alexander Glickman  •  Karina Aguilar Guerrero  •  David Kim  •  Alexa Fishman  •  Cole Morokhovich  •  Malik Walker  •  Nebil Ibrahim  •  Kevin Zou  •  Steven Chien  •  Abby Breitfeld  •  John Bachek  •  Elizabeth Lilly  •  Emma Hergenrother  •  Ben Martin  •  Tait Helgaas  •  Adithya Dattatri  •  Aditya Kohli  •  Ben Yap  •  Maximilian Kim  •  Kendra Dombroski  •  Somi Jun  •  Camille Heubner  •  Olivia Johnston  •  Matteo Russo  •  Hansini Bhasker  •  Theodore Goldstein  •  Leland Ko  •  Jessi Dessau  •  Rebecca Ngu  •  Aditi Dhital  •  Celeste Claudio  •  Elliot Davies  •  Joel Ritossa  •  Morgan Nicolao  •  Samuel Li  •  Sam Cuthbert  •  Melissa Fan  •  William Steidl  •  Lencer Ogutu  •  Suzanne Lange  •  Laura Zecca  •  MacKenzie Ebel  •  Carlota Corbella  •  Sophia Taylor  •  Jordan Fogarty  •  Olivia Long  •  Tajreen Ahmed  •  Crystal Wu  •  David Zhou  •  Serena Alagappan  •  Destiny Eisenhour  •  Farrah Lee-Elabd  •  Jeffers Guthrie  •  Richard Huang  •  Christian Schmidt  •  Anthony Chen  •  Alexander Deters  •  Derek Topatigh  •  Dani Peters  •  Mason Cox  •  May Jiang  •  Jaein Jung  •  Kevin Wu  •  Abigail Denton  •  Michelle Yuen  •  Michael Rodriguez  •  Laura Kirkland  •  Jamie Denham  •  David Friedman  •  Amy Cass  •  Eric Zhao  •  Sharon Washio  •  Kezia Otinkorang  •  Bozhidar Stankovikj  •  Carter Mulroe  •  Chase Williams  •  Madison Eller  •  Joseph Gelb  •  Maddy Kushan  •  Yanjun Yang  •  David Todd  •  Cara Giovanetti  •  Sarah Betancourt  •  Jivahn Moradian  •  Chelsea Espinosa  •  Ayushi Sinha  •  Sarah Gordon  •  Haeun Jung  •  Ashley Willingham  •  David Major  •  Shiye Su  •  Danielle Almstead  •  Mashad Arora  •  Rayleen Hu  •  Annie Xie  •  Jiayu Kong  •  Mara Muslea  •  Abigail Kostolansky  •  Sylvie Thode  •  Leo Li  •  Tomi Kennedy  •  Bhaamati Borkhetaria  •  Katie Ward  •  Sera Gorucu  •  Alice Xue  •  Michael Chen  •  Ramzie Fathy  •  Ally Dalman  •  Zachary Stier  •  Kevin Davidson  •  Sophia Gulati  •  Claire Du  •  Alison Heilbronner  •  Gannon Willcutts  •  Eli Kimbell  •  Tyler Desire'  •  Nivida Thomas  •  Matthew Helm  •  Jeffrey Weiner  •  Daniel Arris  •  Ben Press  •  David San Miguel-Tasch  •  Daniel Leung  •  Ty Gardner  •  Adrienne Mandelbaum  •  Winston Lie  •  McGinnis Miller  •  Ayanna Matthews  •  Christine Lu  •  Akash Pattnaik  •  Riley Wagner  •  Alex Caldwell  •  Bill Dong  •  Conor Vance  •  Samantha Goerger  •  Meghan Slattery  •  Nankee Kumar  •  Olivia Zhang  •  Zachary Kelly  •  Ben Parker  •  Phillip Frost  •  Zachary Bampton  •  Maggie Orlova  •  Geoffrey Zheng  •  Lena Hu  •  Johnny Rose  •  Aoife Bennett  •  Marshall Saunders  •  Isabella Alarie  •  Ashley Dong  •  Sirad Hassan  •  Emily McDonnell  •  Leanna Nguyen  •  Shehab Thabet  •  Atarah McCoy  •  F. Gabriel Morgan  •  Katie Zhou  •  Olivia Sheppard  •  Sam Bartusek  •  Nikita Nangia  •  Kevin Liu  •  Ami Berman  •  Michael Stambler  •  Harry Xi  •  Jacob Williams  •  Matthew Hetrick  •  Destiny Salter  •  Taylor Baur  •  Kwame Amaning  •  Maia Hamin  •  Sophia Gavrilenko  •  Jonathan Alicea  •  Emily Spalding  •  Alexander Helman  •  Sonny Huang  •  Caleb Visser  •  Sebastian Quiroz  •  Joseph DeMarco  •  Ishan Sinha  •  Samantha Pai  •  Nitish Jindal  •  Emerson Thomas  •  Glenda Chen  •  McKayla Tyrrell  •  Nico Ciccia  •  Tiffany Chen  •  Rachel Kim  •  Audrey Davis  •  Alison Chang  •  Georgy Noarov  •  Chelsea Peart  •  Daniel Chae  •  Kevin Parker  •  Carrie Hillebrand  •  Yang Tu  •  Mayisha Mahdiya Sultana  •  Christopher Wilks  •  Taylor Branch  •  Thomas Ferrante  •  Nicholas Mehdi  •  Cam On  •  Ethan Sterenfeld  •  Shamailah Azam  •  Eitan Zlatin  •  Tessa Albertson  •  Hannah Semmelhack  •  Reilly Bova  •  Nicholas Johnson  •  Gabriel Stengel  •  Sandra Sequera  •  Chen Arden Xie  •  Leila Ben Halim  •  Benjamin Novello  •  Jonathan Lam  •  Dayna Taiclet  •  Austin Wang  •  Kyle MacMillan  •  Christopher Dragomir  •  Jack Draper  •  Mitashee Das  •  Nick Chen  •  Jessica Harris  •  Phillip Robertson  •  Giselle Uribe  •  Katherine Leung  •  Jacob Goldberg  •  Gabriela Oseguera Serra  •  Caroline Bailey  •  Mariah McVey  •  Milena Chakraverti-Wuerthwein  •  Arielle Lawson  •  Pria Louka  •  Kadence Mitchell  •  Benjamin Huang  •  Aaron Glas  •  Devorah Saffern  •  Molly Muir  •  Conway Niles  •  Anna Marsh  •  Baran Cimen  •  Tavish Rice  •  Nicholas Callegari  •  Daniel Koch  •  Madison Manning  •  Sam Choi  •  Yusha Sun  •  Niroshan Anandasivam  •  Hector Afonso Cruz  •  Devon Peterkin  •  Annique Nyman  •  Thomas Jankovic  •  Alice Wistar  •  Stuti Mishra  •  Malachi Byrd  •  Alexandra Wilson  •  Jessica Dyroff  •  Dennis Duffin  •  Obi Ajah  •  Yousef Elzalabany  •  David Garfunkel  •  Emma Louden  •  Madhumitha Shridharan  •  Osita Ighodaro  •  Andrew Charbonneau  •  Jocelyn Reckford  •  Bhadrajee Hewage  •  Jona Mojados  •  Juston Forte  •  McKalah Hudlin  •  Hadley Wilhoite  •  Jake Strain  •  Edwin Ordonez  •  Hanson Kang  •  Joseph Fallon  •  Haley Rogers  •  Bradley Spicher  •  Gabriel Birman  •  Rafi Lehmann  •  Eliza Ewing  •  Ishanya Anthapur  •  Jacob Schachner  •  Thomas Morris  •  Chelsie Alexandre  •  Emilie Szemraj  •  Alex Laurenzi  •  Laura Makin  •  Juliet Oh  •  Tatum Turetzky  •  Vinay Ramesh  •  Maia Hauschild  •  Carol Lee  •  Andrew Griffin  •  Curtis Leonard  •  Ananya Malhotra  •  Ozichi Okorom  •  Polly Hochman  •  Debby Cheng  •  Maddie Staczek  •  Chris Davis  •  Alexander Cavoli  •  Felicia Saravo  •  Ben Musoke-Lubega  •  Vienna Lunking  •  William Jiao  •  Jayson Saleet  •  Asia Matthews  •  Bobby Evans  •  Zachary Molino  •  Angelica Tai  •  Lucas Makinen  •  Leina Thurn  •  Samuel Fortuno  •  Carly Bullock  •  Joe Ratliffe  •  Alaa Ghoneim  •  Kenji Cataldo  •  Josue Chirinos  •  Miriam Li  •  Mahishan Gnanaseharan  •  Ethan Petno  •  Kade McCorvy  •  Joe McGrath  •  Seamus McDonough  •  Derek Cox  •  Madeleine St John  •  Nell McKenna  •  TJ Smith  •  Micaela Mongelli  •  Manuel Gomez Castano  •  Rebecca Barber  •  Kaveh Badrei  •  Mimi Lin  •  Lyric Perot  •  Preeti Iyer  •  Jane Blaugrund  •  Natalie Nagorski  •  Bryce Mbanefo  •  Nina Arcot  •  Morgan Baker  •  Kevin Tsai  •  Lucas Salvador  •  Shrishti Asthana  •  Viraj Deokar  •  Will Crawford  •  Kevin Jeon  •  Krista Hoffman  •  Davis Wachtell  •  Morlan Osgood  •  Julia Pak  •  Monica Gomez  •  Georgia Hellard Timm  •  Alex Mayo  •  Maya Naphade  •  Carter Green  •  Minsu Park  •  Juan Rodriguez  •  Jason King  •  Samuel Arnesen  •  Christopher Xi  •  Nicole Zivkovic  •  Toni Xu  •  Jacob Shteingart  •  Isaac Martinez  •  Ebun Olunuga  •  Leslie Chan  •  Russell Kim  •  Todd Baldwin  •  Alexander Essig  •  Jad Bechara  •  Albert Wang  •  Liam O'Connor  •  Abigail Rettew  •  Maria Stahl  •  Nicholas Judt  •  Beimnet Shitaye  •  Paulo Frazao  •  Daniel Braga  •  Avanti Divan  •  Jasper Arnold  •  Serge Priam Nsanzineza  •  Vince Schweinhart  •  Liana Cohen  •  Maximo De La Cruz  •  Yang Song  •  Maria Rogers  •  Menelik Graham  •  Alexander Gaura  •  Anne Zou  •  Madison Soukup  •  Elizabeth Wahlstedt  •  Rafael Tafur  •  Christopher Murphy  •  Bayo Okusanya  •  Trevor Carney  •  Jong Hyeon Kevin Shin  •  Iryna Glushchenko  •  Florence Odigie  •  Aizhan Akhmetzhanova  •  Jack Kilgallon  •  Daniel Tjondro  •  Jaafar Shanshal  •  Abelardo Cruz  •  Norman Xiong  •  Blake Alm  •  Yuhan Wen  •  Charity Young  •  Connor McCarthy  •  Joey Smith  •  Douglas Corzine  •  Yasmin AlKhowaiter  •  Ryan Gao  •  Soon Il Higashino  •  David Cordoba  •  Davey Roberts  •  Khyati Agrawal  •  Frederik Pedersen  •  Joshua Choi  •  Michele Montas  •  Benjamin Kimmel  •  Luke Henter  •  June Ho Park  •  Danielle Stephenson  •  Theodore Long  •  Jonathan Haynes  •  Elizabeth Love  •  Matthew Oakland  •  Owen Tedford  •  Devon Block-Funkhouser  •  Steven Nino  •  Micaela Keller  •  Greg McCord  •  Jack Graham  •  Kevin Tsao  •  Adam Azan  •  Benjamin Schiffer  •  Sally Hahn  •  Katie Reilly  •  Jean Cho  •  Arianah Hanke  •  Sandun Bambarandage  •  Marisela Neff  •  William Sweeny  •  Yolanda Jin  •  Katya Vera  •  Jianing Zhao  •  Insiya Essani  •  Neel Ajjarapu  •  Allie Spensley  •  Aleesha Ye  •  Oluwatoyin Edogun  •  Hyungjun Yoon  •  Mitch Bast  •  Max Piasevoli  •  Emily Hilliard  •  Casey Kemper  •  Gianna Garcia  •  Ryan McGregor  •  Grace Ackerman  •  Matthew Merrigan  •  Heather Waters  •  Maddie Bacskai  •  Theodor Marcu  •  Sarah Klebanov  •  Changxiao Xie  •  Camille Moeckel  •  Tali Pelts  •  Charles Hemler  •  Yunah Kim  •  Winnie Brandfield-Harvey  •  Emma Coley  •  Hana Mundiya  •  Zoheb Hossain  •  Tyler Campbell  •  Jordan Colvin  •  Abby Spare  •  Rose Gilbert  •  Emerson Solms  •  Pranav Rekapalli  •  Parker Lewis  •  Irene Ross  •  Eunice Lee  •  Rui De Oliveira  •  Thanh Nguyen  •  Colleen Heidorn  •  Eli Berman  •  Ashlyn Chin  •  Alexander Gottdiener  •  Jacob Wachspress  •  Jonathan Jow  •  Nicolas Ng  •  Michelle Rowicki  •  Anna Wolcke  •  Rosamond van Wingerden  •  Katherine Miao  •  Lauren Peterson  •  Nathan Poland  •  Vivian Ufongene  •  Teodor-Andrei Andronache  •  Ellen Scott-Young  •  Joshua Kim  •  Melissa Yuan  •  Courtney O'Brien  •  Brillian Bao  •  Cecilia Vergara  •  Akiva Jackson  •  Kennan Ewing  •  Alexander Xu  •  Seth Lovelace  •  Nick Bauer  •  Madeleine Dietrich  •  Shaelyn Choi  •  Kelcey Flowers  •  Megan Donahey  •  Arnold Mong  •  Jake Waksbaum  •  Jose Yanez  •  Daniel Stern  •  Jonathan Levine  •  Preeta Acharya  •  Manny Ramirez  •  Sarah Deneher  •  Nye Underwood  •  Sharon Xiang  •  Kalina Tsolova  •  Estibaliz Matulewicz  •  Andrew Wee  •  Rebecca Miller  •  Samuel Aftel  •  E Jeremijenko-Conley  •  Arya Goel  •  Philippa Marks  •  Julian Castellon  •  Sean McGowan  •  Ian Lawrie  •  Krystal Veras  •  Achie Gebre  •  John Nydam  •  Sidra Ahmad  •  Riley Heath  •  Daniel Same Guerra  •  Natasha MacManus  •  Reed Hutchinson  •  Grace Grady  •  Zoe Barnswell  •  Lauren Johnston  •  Jessica Fan  •  Peter Schmidt  •  Ben Liang  •  Ameen Moshirfar  •  Brent Holder  •  Chris Choo  •  Heavyn Jennings  •  Morgan Steelman  •  Ryan Hutzley  •  Shirley Zhang  •  Mensheng Romano  •  Harrison Ceruto  •  Leonard Merkin  •  Amy Li  •  Susan Powell  •  Charlotte Champ  •  Tajin Rogers  •  Sarah Malik  •  June Philippe  •  Jocelyn Wang  •  Nina Filippova  •  Dayna Valek  •  Jaskiran Kaur  •  Alexis Stokes  •  Annabel Lee  •  Eunice Kim  •  Satchel Joseph  •  Rawlison Zhang  •  Ofek Peres  •  Hannah Fein  •  Carson Brisk  •  Sharon Musa  •  Noah Ajram  •  Andre Mendoza  •  Divyanshu Pachisia  •  Stanislav Slavov  •  Matthew Igoe  •  Michael Li  •  Leora Eisenberg  •  Lyra Katzman  •  Carolyn Guan  •  Susan Orth  •  Coco Chou  •  Samer Kadamani  •  Madison Werthmann  •  Alexandra Levinger  •  Matthew Timo  •  Charlie Tomassetti  •  Deniz Keles  •  Chisom Chigozie-Nwosu  •  Serban Eugen Cicortas  •  Cutter Esson  •  William Grear  •  Alexandra Zalewski  •  Veronica Carrasco  •  Alexia Martinez  •  Allison Spann  •  Teddy Hurley  •  Linh Tran  •  Charmaine Chan  •  Wenjuan Du  •  Nicholas Sileo  •  Matteo DeVincenzo  •  Aslesha Parchure  •  Diana Sandoval Siman  •  Adam Beasley  •  Sarah Barnette  •  Mike Zupko  •  Eleanora Schaer  •  Raphael Sitbon-Taylor  •  Mark Kim  •  Simone Downs  •  Haneul Ryoo  •  Zachary Struckman  •  Brendan Galvin  •  Connor Matthews  •  Maria Clara Otani  •  Allison Harvey  •  Stephen Phillips  •  Miah Pitcher  •  Joe Zhang  •  Seyitcan Ucin  •  Udit Basu  •  Thomas Koenig  •  Raluca Cobzaru  •  Collins Metto  •  Jacob Berman  •  Franklin Maloney  •  Caitlin Cheng  •  Joe Tavoso  •  Christopher Howard  •  Oriel Farajun  •  Carl Sun  •  Sarah Jun  •  TJ Floyd  •  Richmond Aririguzoh  •  Khanh Vu  •  Manolo Torres-Llompart  •  Sam Dale  •  Rachel Edelson  •  Arthur Li  •  Dale Lee  •  Rucha Alur  •  Declan Farmer  •  Tess D'Orsi  •  Daniel Afolabi  •  Cole Campbell  •  Kobe Miller  •  Natalia Brokate  •  Alice Vinogradsky  •  Christie Chong  •  Kevin Wadman  •  Isabella Haegg  •  Mabel Felix  •  Jeremy Germain  •  Evan Majic  •  Heide Baron  •  Janet Lee  •  Serena Lu  •  Harry Fosbinder-Elkins  •  Jasmine Young  •  Austin Stiefelmaier  •  Mariesa Cay  •  Benjamin Hildenbrand  •  Seb Benzecry  •  Matthew Kolodzik  •  Anne Marie Wright  •  Katherine Powell  •  Radia Soulmani  •  Eduardo Paz  •  Owen Wheeler  •  Jenna Shaw  •  Rick Raga  •  Adrian Tong  •  Olenka Burghardt  •  Nicholas Apostolakis  •  Rasheeda Saka  •  Jeb Banavige  •  Bilal Mubarack  •  Jennie Yang  •  Paul Horvath  •  Maggie O'Connell  •  Markos Markakis  •  Tiffany Pham  •  Sylvia Wallin  •  Natasha Skov  •  Alyssa Cai  •  Gab Montefalcone  •  Tania Bore  •  Andrea Reino  •  Alexis Rysewyk  •  Rachel Silverman  •  Catherine Nguyen  •  Kelli Calhoun  •  Jacob Wheeler  •  Riley DeMoss  •  Soyeong Park  •  Dionne Chen  •  James Proctor  •  Hyojin Lee  •  Zoya Shoaib  •  Lillian Xu  •  Tom Colen  •  Nicholas Ioffreda  •  Sonia Murthy  •  Kathryn Wen  •  Trina Swanson  •  Tan Shanker  •  Gabriela Rivera  •  Philip Cornell  •  Daniel Lee  •  Elaine Zhou  •  Bojan Lazarevic  •  Catherine Sweeney  •  Hanley Frantz  •  Nathaniel Hickok  •  Yousra Zerouali Boukhal  •  David Selwood  •  Elizabeth Shwe  •  Sonya Isenberg  •  Janette Lu  •  Millian Gehrer  •  Parker Dixon  •  Jhor van der Horst  •  Irene Hsu  •  Katie Liu  •  Jingwen Guo  •  Jason Xu  •  Sydney Wilder  •  Lillian Meng  •  Sara Lewis  •  Erin Boateng  •  Michael Li  •  Conor Nolan  •  Caden McLaughlin  •  Bes Arnaout  •  Katherine Xiao  •  Victor Riveros  •  Janet Zhao  •  Abby Hack  •  Nicole Horner  •  Stephen Liu  •  Nicholas Persaud  •  Andrew Wu  •  Isaac Wolfe  •  Henry Evans  •  Eric Thoman  •  Sofia Bisogno  •  Tigar Cyr  •  Andrew Zeng  •  Shanon FitzGerald  •  William Lin  •  Sydney Reynolds  •  Alexander Bechtold  •  Alexander Cox  •  John Orr  •  Jeff Zymeri  •  Kristen Pagliai  •  Jan Domingo Alsina  •  Emily McLean  •  Megan Whitley  •  Katie Kuk  •  Kesin Ryan Dehejia  •  Harrison Aaron  •  Andrew Witmer  •  Andrew Gnazzo  •  Sunny Sandhu  •  Melita Piercy  •  Ralph Chrappa  •  Nourhan Ibrahim  •  Caton Yang  •  Audrey Spensley  •  Rose Arbittier  •  Billie Runions  •  Sam Johnson  •  Irma Qavolli  •  Carlotta von Gierke  •  Jared Shulkin  •  Hugo Myron  •  Eitan Levin  •  Eric Stinehart  •  Makel Caldwell  •  Andrew Bowman  •  Betsy Vasquez  •  Ellie Breitfeld  •  David Zuluaga  •  Grace Sommers  •  Nikolaus Hofer  •  Alistair MacDiarmid  •  Himaayah Agwedicham  •  Joaquim Brooks  •  Manasseh Matossian  •  Rohan Rao  •  Megan Ormsbee  •  David Bewicke-Copley  •  Kirsten Traudt  •  Katrin Lewis  •  Gabriella Pollner  •  Brittany Grego  •  Ruben Dicker  •  Matthew Fuller  •  Amelia Stucke  •  Nicholas Kick  •  Rohan Shah  •  Ikaia Chu  •  Lauren Ehehalt  •  Naomi Cohen-Shields  •  Jarret Stowe  •  Mona Clappier  •  Tom Salama  •  Kara Dowling  •  Jackson Neus  •  Jackson Cressey  •  Amy Castellano  •  Dominic Saunders  •  Matthew Yeh  •  Roman Ackley  •  Allice Park  •  Jessica Ho  •  Logan MacDonell  •  Sophia Paredes  •  Yashodhar Govil  •  Savannah McIntosh  •  Binita Gupta  •  Carolina Cantu  •  Pamela McGowen  •  Perrin Hagge  •  Rod Eric Joseph  •  Nazifa Chowdhury  •  Annette Chu  •  Richard Du  •  Katie Schneer  •  Kayla Janis Dobies  •  Barrett Gray  •  Andrew Damian  •  Stephanie Domaradsky  •  Arman Medghalchi  •  Ashley Salimbangon  •  Zhengyue Anna Dong  •  Michael Liapin  •  Jasmin Capellan  •  Cecilia Hsu  •  Aliya Somani  •  Clare Cook  •  Camille Liotine  •  Cooper Young  •  Samuel Prentice  •  Matthijs Dijkgraaf  •  Gabriel Swagel  •  Autumn Weyant  •  Esther Julis  •  Alice Xu  •  Grace Searle  •  Urvashi Uberoy  •  Alia Wood  •  Cody Sedillo  •  Jacob Williams  •  William Gladson  •  Nathan Levit  •  Taylor Mills  •  Matan Grinberg  •  Peyton Cunningham  •  Charlie Minns  •  Jessica Schreiber  •  Abby Givens  •  Christina de Soto  •  Nathalie Jimenez  •  Kasia Nixon  •  Sophie Steinman-Gordon  •  Drey Tengan  •  Genevieve Garlock  •  Meredith Hooper  •  Christian Araneo  •  Isabella Chung  •  Jessie Giller  •  Christopher Russo  •  Ananya Mittal  •  Malika Oak  •  Sean Howe  •  Amy Ahn  •  Daniel Che  •  Bisrat Moges  •  Roland Mounier  •  Sarah Schneider  •  Kevin Yu  •  Yunzi Shi  •  Claire Thompson  •  Lily Mannion  •  David Loughran  •  Danielle Hoffman  •  Megan Ostrowski  •  Kiley Coates  •  Sergio De Iudicibus  •  Hassaan Khan  •  Henry Peters  •  John Suh  •  Annie Cory  •  Josh Faires  •  Nicholas Ritter  •  Gregory DeMatteo  •  Tristan Pollner  •  Max Jerdee  •  Charlie Flynn  •  Michael Smilek  •  Joseph Collins  •  Liam Grande  •  Daniel Schwarzhoff  •  Richard Peng  •  Alice Lin  •  David Harding  •  Sanna Lee  •  Yafah Edelman  •  Shazia'Ayn Babul  •  Brandon Levy  •  Danielle Newton  •  Anvay Grover  •  Sara Howell  •  Tamupuwa Kamba  •  Harry Lord  •  Hannah Chomiczewski  •  Adam Chang  •  Diana Chen  •  Katherine Stiefel  •  Bora Kiyan  •  Kolby McDaniel  •  Apria Pinkett  •  Evan Quinn  •  Liam Kelly  •  Graham Adomitis  •  Anne Elizabeth Sidamon-Eristoff  •  Gabe Roth  •  Justice Dixon  •  Richard Furchtgott  •  Erin Endres  •  Couty Fall  •  Caroline Taber  •  Ryan Golant  •  Kathleen Farace  •  David Sturtz  •  Patrick Nian  •  Bhavani Srinivas  •  Shirley Klimkiewicz  •  Luqman Issah  •  Tim Ruszala  •  Michael Hill-Oliva  •  Molly Milligan  •  Nicholas Garvey  •  Alex Jiang  •  Jai Amin
-  </div>
-  <script src="names.js"></script>
-</header>
+    <div id="header">
+      <a href="https://www.dailyprincetonian.com/">
+    <img id="header-logo" src="prince_logo_inline.png"></a>
+    </div>
+    <figure>
+    <img id="title-image" src="TI.png">
+    </figure>
 
-<nav class="full-width navbar">
-    <p class="nav">
-<a href="#sec1">Introduction</a>
-<a href="#sec2">Class of 2020</a>
-<a href="#sec3">Year 1</a>
-<a href="#sec4">Year 2</a>
-<a href="#sec5">Year 3</a>
-<a href="#sec6">Year 4</a>
-<a href="#sec7">What's Next</a>
+    
+    <div id="title-page">
+      <h3 id="overline"> Retrospective </h3>
+      <h1 id="title"> How the Eating Clubs Went Coed </h1>
+      <h2 class="subtitle"> Thirty years since the New Jersey Supreme Court ruled against Princeton’s last all-male eating clubs, The Daily Princetonian takes a retrospective look at the fight that won women full access to Prospect Avenue. </h2>
+
+      <h2 class="subtitle" style="padding-top: 10px; padding-bottom: 10px;">Editor's Note: This piece recounts events that some readers may find distressing.</h2>
+      
+      <p id="byline" class="desktop" style="font-weight:600"> By Evelyn Doskoch and Alex Gjaja | July 13th, 2020<br><span style="color:rgb(100,100,100); font-weight: 200; font-size: 15px">Web Design by Kenny Peng, Cover Illustration by Harsimran Makkad</span> </p>
+      <p id="byline" class="mobile" style="font-weight:600"> By Evelyn Doskoch and Alex Gjaja<br>July 13th, 2020<br><span style="color:rgb(100,100,100); font-weight: 200; font-size: 15px">Web Design by Kenny Peng<br>Cover Illustration by Harsimran Makkad</span> </p>
+    </div>
+
+    <p class="desktop" style="position: absolute; top: 130vh;text-align:right">Cover Illustration by Harsimran Makkad / The Daily Princetonian</p>
+    <div style="background:white; position:relative; z-index: 1">
+      
+      <!-- data-aos="fade-in" data-aos-duration="1500" -->
+    <div class="item" style="position: relative; z-index:100">
+      <div class="first-par">
+      <p>
+In the autumn of 1977, a Princeton sophomore walked into the Dean of Student Affairs office to request a bicker questionnaire. Following the typical registration process, the student filled out a form, answering questions with a well-worn pen. 
 </p>
-</nav>
- 
-<section id="sec1">
-
-<script type="text/javascript">
-function changeText(submitId){
-var submit = document.getElementById(submitId);
-submit.value = 'Submitted';
-return false;
-};
-</script>
-<div id="first-par">
 <p>
-On September 11, 2016, nearly all <a target="_blank" href="https://www.dailyprincetonian.com/article/2016/09/class-of-2020-who-they-are-and-where-they-come-from">1,312 members</a> of the Class of 2020 streamed into the University Chapel for Opening Exercises. It was one of their first times together as a class.
-</p></div><p>
-Twenty years prior, Toni Morrison had <a target="_blank" href="https://pr.princeton.edu/news/96/q4/1025spch.htm">found</a> Princeton “redolent with the breath of the emotional life lived here and the intellectual life made manifest here.” Over their four years on campus, the students of the Class of 2020 would make good on both.
-</p><p> 
-Those students, however, arrived at a university wrestling with its own past. The previous November, students from the Black Justice League had <a target="_blank" href="https://www.newyorker.com/news/news-desk/princeton-and-the-fight-over-woodrow-wilsons-legacy">occupied</a> the office of President Christopher L. Eisgruber ’83, in protest against the University’s celebration of white supremacist Woodrow Wilson Class of 1879.
+<br>
+Name: S.B. Frank.
+<br>
+Gender: Male.
 </p>
-<div class="preorder" style="width:45%; float:right">
-<h2> Commemorate Commencement </h2>
-<h3 style="text-align:left"> preorder our special print issue </h3>
-<p>By pre-ordering, you will be the first to hear when the issue is available, but you will not be obligated to purchase one at that point. We will not use your email address for any other purpose than to let you know when the Commencement Issue is available!</p>
-
-<script type="text/javascript">var submitted=false;</script>
-     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='thanks.html'}"></iframe>
-
-  <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfeGQPTjjRs4Pk0aFCeVeuYmyo_Op0pDy39g5Pw1zjlUoG5dw/formResponse" method="post" target="hidden_iframe"
-    onsubmit="submitted=true;">
-    <input type="text" id="fname" name="entry.1882313251" placeholder="your email">
-    
-<input id="submitbutton" type="submit" value="Submit">
-</form>
-</div>
-<p> 
-On that September afternoon, as the Class of 2020 sat awe-struck beneath granite pillars and stained glass, acrimony and prejudice surged across the world. As Eisgruber <a target="_blank" target="_blank" href="https://president.princeton.edu/blogs/opening-exercises-2016-course-human-events">reflected</a>, “This September follows a searing summer, a summer filled with loss and grief and violence around our planet and in this country.”
-</p><p>
-Fifty-eight days later, Donald Trump would win the presidency of the United States. Just as Princeton was grappling with its historical contradictions, so too was the nation.
-</p><p>
-Today, historic achievements distinguish the Class of 2020, which includes musicians and athletes, mathematicians and anthropologists, artists and engineers. On Sunday, Nicholas Johnson, the <a target="_blank" href="https://www.dailyprincetonian.com/article/2020/05/princeton-first-black-valedictorian-nicholas-johnson-qa">first Black valedictorian</a> in Princeton’s 274-year history, will address his peers.
-</p><p>
-As the Class of 2020 celebrates all it has achieved, campus will be empty. But the work of making Princeton a better place continues. To that centuries-long conversation, the Class of 2020 has submitted its own indelible contribution.
-</p><p>
-This, then, is the story of a remarkable Class and its students — the triumphs they earned and the travails they endured, the heights they scaled and the legacies they leave behind.
-</p>
-
-<script type="text/javascript">
-function changeText(submitId){
-var submit = document.getElementById(submitId);
-submit.value = 'Submitted';
-return false;
-};
-</script>
-</section>
-
-<section id="sec2">
-  <h1> This Year's Class </h1>
 <p>
-  The Class of 2020 comprises a diverse and vibrant array of students, whose unique backgrounds and experiences inform the Class’ collective perspective.
-</p><p>
-In 2015, 29,303 students applied to Princeton, in what was then the <a target="_blank" href="https://www.dailyprincetonian.com/article/2016/09/class-of-2020-who-they-are-and-where-they-come-from">largest applicant pool</a> in the University’s history. The following fall, 1,312 matriculated as members of the Class of 2020.
-</p><p>
-Of those students, 20 percent identified as Asian, 9 percent as Hispanic, 8 percent as African American, and less than 1 percent as American Indian.
-</p><p>
-In total, 153 students, or 12 percent of the Class, hailed from 49 countries beyond the United States. Stateside, 200 students came from New Jersey, 156 from New York, and 129 from California.
-
-<figure class="full-width">
-<div style="text-align:center; background-color:rgb(235,235,235);">
-  <img src="map.png" style="width:80%">
-  </div>
-  <figcaption><span class="credit">Mark Dodici / The Daily Princetonian</span></figcaption>
-  </figure>
-  
-</p><p>
-During their time at Princeton, members of the Class studied a striking range of subjects, from philosophy to chemical engineering, from geosciences to African American studies. On Sunday, approximately 76 percent of the Class will receive Bachelor of the Arts (AB) degrees, while the other quarter will receive Bachelors of Science in Engineering (BSE).
-
-<figure class="full-width">
-  <img src="concentrations.png" style="width:100%">
-  <figcaption><span class="credit">Harsimran Makkad / The Daily Princetonian</span></figcaption>
-  </figure>
-</p><p>
-In the classroom, on the field, and on the stage, graduating seniors have earned countless honors, as they’ve sought academic challenge, won championships, and captivated audiences. 
-</p><p>
-Among many other incredible students, the Class of 2020 includes <a target="_blank" href="https://www.dailyprincetonian.com/article/2019/11/alagappan-20-malhotra-20-wins-2020-rhodes-scholarship">two Rhodes Scholars</a>, a <a target="_blank" href="https://www.dailyprincetonian.com/article/2020/02/sirad-hassan-20-to-participate-in-jeopardy-college-championship">Jeopardy! contestant</a>, and the <a target="_blank" href="https://www.dailyprincetonian.com/article/2020/04/bella-alarie-20-selected-fifth-overall-in-wnba-draft">fifth pick</a> in the 2020 WNBA draft.
-</p><p>
-Under the Class of 2020’s leadership, Princeton became <a target="_blank" href="https://www.dailyprincetonian.com/article/2020/02/the-first-to-500-princeton-first-ivy-league-to-secure-500th-ivy-league-championship">the first Ivy League school</a> to secure 500 Ivy League Championships.
-</p><p>
-In this special retrospective, we chronicle how the Class of 2020 got here.
+Like many male sophomores, the student left the office with an appointment at all five selective eating clubs: Cap & Gown Club, Cottage Club, Tiger Inn (TI), Tower Club, and Ivy Club. Unlike the male sophomores, however, S.B. Frank’s initials did not stand for a name like Samuel or Steven.
 </p>
-  
-  </section>
-  
-  <div>
-  <figure class="full-width">
-  <img src="sky.png" style="width:100%; position: absolute; z-index:-1;">
-  <h1 style="position: absolute; top: 5vh; text-align: center; color: white; font-size:10vw"> Looking back at the last four years </h1>
-  <img src="nassauhall.png" style="width:100%; position: relative; padding-top:35vh">
-  <figcaption>Nassau Hall.<br><span class="credit">Harsimran Makkad / The Daily Princetonian</span></figcaption>
-  </figure>
-  </div>
-  
-<section id="sec3">
-<div class="full-width">
-<div class="year"> 
-  <h1>YEAR 1</h1>
-  <p>
-  As Princeton <a target="_blank" href="https://www.dailyprincetonian.com/article/2016/10/u-unveils-new-medallion-with-updated-motto">adopted</a> a new motto, students <a target="_blank" href="https://www.dailyprincetonian.com/article/2016/11/u-community-members-protest-to-call-for-u-action-protecting-undocumented-immigrants">advocated</a> for undocumented immigrants and <a target="_blank" href="https://www.dailyprincetonian.com/article/2016/11/u-community-members-protest-election-of-donald-trump">protested</a> the election of Donald Trump. Myesha Jemison ’18 made history as the first Black woman elected Undergraduate Student Government president, and Bella Alarie ’20 <a target="_blank" href="https://www.dailyprincetonian.com/article/2017/12/2017-year-in-review-from-big-dances-to-elite-8s-we-look-back-at-a-year-of-tiger-sports">played</a> on the USA Basketball Women’s Under-19 World Cup Team.
-  </p>
-</div>
-</div>
-
-<figure class="full-width">
-  <img src="year1.png" style="width:100%; z-index:-1;">
-  <figcaption><span class="credit">Mark Dodici / The Daily Princetonian</span></figcaption>
-</figure>
-  
-  
-
- 
- <!-- PUT ARTICLES HERE FOR YEAR 1 -->
- <div class="box" style="position: absolute; opacity: 0.8"><div class="article"><h3>NEWS</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2016/11/u-community-members-protest-to-call-for-u-action-protecting-undocumented-immigrants">U. community members protest to call for U. action protecting undocumented immigrants</a> </h1><h2> By Catherine Benedict&ensp;&ensp;November 17, 2016</h2></div></div>
- <figure class="full-width" style="padding: 0px; margin-top:0px">
-  <img src="16_4.jpg" style="width:100%">
-  <figcaption>A student holds a sign in front of Nassau Hall during the protest. <br><span class="credit">Vincent Po / The Daily Princetonian</span></figcaption>
-  </figure>
-  
-<div class="box"><div class="article"><h3>NEWS</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2016/12/profile-on-myesha-jemison">Myesha Jemison '18 brings life of leadership experience to USG Presidency</a> </h1><h2> By Maya Wesby&ensp;&ensp;December 12, 2016</h2></div></div>
-<div class="box"><div class="article"><h3>SPORTS</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2017/03/tigers-fight-to-the-wire-fall-to-notre-dame-58-60">Tigers fight to the wire, fall to Notre Dame 58-60 in March Madness' round of 64</a> </h1><h2> By Chris Murphy&ensp;&ensp;March 16, 2017</h2></div></div>
-<div class="box"><div class="article"><h3>OPINION</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2017/03/journalism-certificate">Princeton needs a journalism certificate. Here's why.</a> </h1><h2> By Emily Erdos&ensp;&ensp;March 30, 2017</h2><p>Three years ago, then-sophomore Emily Erdos ’19 called for Princeton to offer a journalism certificate. Just over a year later, the faculty unanimously approved just such a program.</p></div></div>
-<div class="box"><div class="article"><h3>NEWS</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2017/04/u-renames-spaces-for-morrison-lewis">U. to rename spaces for Toni Morrison, Sir Arthur Lewis</a> </h1><h2> By Marcia Brown &ensp;&ensp;April 18, 2017</h2></div></div>
-<div class="box"><div class="article"><h3>OPINION</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2017/04/workers-message-to-students?_h=fe06b4c1-ffc1-491a-8f24-ef341fedd01c&fbclid=IwAR1B3wEdlmCX5lCIcOHFO1IlHlg4biP1ds8S1OBYmqdGM3nESmaPH5cQt-M">Letter to the Editor: Workers' message to students</a> </h1><h2> By Christiana Augustine and Russel Weiss-Irwin&ensp;&ensp;April 26, 2017</h2><p>“When a snowstorm hit this past winter, essential campus dining staff…were offered the opportunity to come to campus the night before. That was good, but the conditions workers found when we arrived were not.”</p></div></div>
-<div class="box"><div class="article"><h3>NEWS</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2017/06/bjl-feature">BJL members reflect on successes, seek greater engagement</a> </h1><h2> By Rebecca Ngu&ensp;&ensp;June 1, 2017</h2><p>Along with other acts of civil disobedience, the Black Justice League (BJL) in November 2015 occupied President Eisgruber's office to force the administration to consider demands intended to make Princeton more hospitable to Black students. Their displays of resistance would reverberate throughout the Class of 2020's time at Princeton.</p></div></div>
-<div class="box"><div class="article"><h3>NEWS</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2017/07/breaking-xiyue-wang-sentenced-for-espionage-in-iran">U. confirms U.S. citizenship of graduate student convicted of espionage in Iran</a> </h1><h2> By Marcia Brown&ensp;&ensp;July 16, 2017</h2><p>An Iranian court convicted Xiyue Wang, a History graduate student, on espionage charges, sentencing him to 10 years in prison. Over the next four years, his case would spark widespread outrage, as an international coalition worked towards his eventual release.</p></div></div>
-
- 
-  
-  <section id="sec4">
-  <div class="full-width">
-<div class="year"> 
-  <h1>YEAR 2</h1>
-  <p>
-  With Honor Code <a target="_blank" href="https://www.dailyprincetonian.com/article/2017/12/honor-code-referenda-student-body">referenda</a>, a newly-resumed transfer <a target="_blank" href="https://www.dailyprincetonian.com/article/2017/08/u-to-review-transfer-applications">program</a>, and faculty approval of a new <a target="_blank" href="https://www.dailyprincetonian.com/article/2018/04/calendar-reform-approved-at-faculty-meeting">calendar</a>, reform swept campus as the Class of 2020 finished its second year. Institutional <a target="_blank" href="https://www.dailyprincetonian.com/article/2017/11/princeton-and-slavery-website-launches">reckoning</a> and classroom <a target="_blank" href="https://www.dailyprincetonian.com/article/2018/02/students-walk-out-of-anthropology-lecture-after-professor-uses-the-word-nr">controversy</a> only added to the debate. In sports, field hockey <a target="_blank" href="https://www.dailyprincetonian.com/article/2017/12/2017-year-in-review-from-big-dances-to-elite-8s-we-look-back-at-a-year-of-tiger-sports">reached</a> the NCAA quarterfinals.
-  </p>
-</div>
-</div>
-
-<figure class="full-width">
-  <img src="year2.png" style="width:100%; z-index:-1;">
-  <figcaption><span class="credit">Mark Dodici / The Daily Princetonian</span></figcaption>
-</figure>  
-
- <!-- PUT ARTICLES HERE FOR YEAR 2 -->
-<div class="box"><div class="article"><h3>NEWS</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2017/11/u-sues-admin-daca">U. undergraduate, Microsoft sue Trump over DACA</a> </h1><h2> By Marcia Brown and Rose Gilbert&ensp;&ensp;November 3, 2017</h2><p>The University's joint complaint was one of the first to challenge the Trump administration's decision to terminate The Deferred Action for Childhood Arrivals program (DACA). Three years later, the Supreme Court would hear oral arguments on cases challenging this termination, including the complaint filed during the Class of 2020's second year on campus.</p></div></div>
-<div class="box"><div class="article"><h3>SPORTS</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2018/03/2018-ivy-league-tournament-champion-tigers-heading-to-ncaa-tournament">Women’s basketball clinches Ivy League Championship, heads to NCAA Tournament</a> </h1><h2> By Christopher Murphy&ensp;&ensp;March 11, 2018</h2><p>In 2018, the Tigers won by 29 points in the Ivy League Tournament Final, avenging last year's lost to Penn in the same game and punching their ticket to the 2018 NCAA Tournament. 
-That same year, the women's field hockey team swept the Ivy League and advanced to the quarterfinals in the NCAA tournament.</p></div></div>
-<div class="box"><div class="article"><h3>NEWS</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2018/03/gun-rally">Hundreds turn out for gun control protest at Frist</a> </h1><h2> By Rose Gilbert&ensp;&ensp;March 15, 2018</h2><p>Several hundred demonstrators <a target="_blank" href="https://www.youtube.com/watch?v=9Zu-qznv3h8">gathered</a> in front of Frist Campus Center to protest for increased gun control after the Stoneman Douglas High School shooting in Parkland, Fla., which killed 17 people.</p></div></div>
-<div class="box"><div class="article"><h3>OPINION</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2018/04/mercy-should-be-the-guiding-principle-of-honor-code-reform">Mercy should be the guiding principle of Honor Code reform</a> </h1><h2> By Samuel Aftel&ensp;&ensp;April 8, 2018</h2><p>On March 26, the Honor System Review Committee discussed its preliminary findings regarding the three suspended referenda — which passed with overwhelming support from the student body.<p></div></div>
-<div class="box"><div class="article"><h3>NEWS</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2018/04/university-approves-asian-american-studies-certificate">U. approves certificate program in Asian American Studies</a> </h1><h2> By Rebecca Ngu&ensp;&ensp;April 27, 2018</h2><p>Four decades of campaigning by Asian-American students, alumni, faculty, and staff culminated in the University’s creation of an Asian American Studies certificate.</p></div></div>
-<div class="box"><div class="article"><h3>NEWS</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2018/05/twenty-years-of-female-leadership-on-prospect-avenue">20 years of female leadership on Prospect Avenue</a> </h1><h2> By Ariel Chen&ensp;&ensp;May 3, 2018</h2></div></div>
-<div class="box"><div class="article"><h3>OPINION</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2018/05/taking-stock-fifty-years-of-women-at-princeton">Editorial: How Women Became Tigers</a> </h1><h2> By Daily Princetonian Editorial Board &ensp;&ensp;May 4, 2018</h2><p>“Despite progress for women on campus, the University has a long way to go in addressing sexual misconduct, combating misogyny on male sports teams, and rectifying the lack of female mentors.”</p></div></div>
-
-
-
-  </section>
-    
-  <section id="sec5">
-  <div>
-    <div class="full-width">
-<div class="year"> 
-  <h1>YEAR 3</h1>
-  <p>
-  As students and faculty <a target="_blank" href="https://www.dailyprincetonian.com/article/2019/04/proposed-changes-to-distribution-requirements-would-add-new-category-give-students-more-flexibility">considered</a> curricular equity and the wrestling team made <a target="_blank" href="https://www.dailyprincetonian.com/article/2019/03/wrestling-ncaas-full-recap-2019">history</a>, Maria Ressa ’86 <a target="_blank" href="https://www.dailyprincetonian.com/article/2019/02/princeton-in-the-service-of-free-speech-final">endured</a> political repression in the Philippines. The year culminated in <a target="_blank" href="https://www.dailyprincetonian.com/article/2019/05/title-ix-office-protests-come-to-a-close-after-demonstration-in-front-of-prospect-house">student protests</a> to reform Princeton’s Title IX office.
-  </p>
-</div>
-</div>
-
-<figure class="full-width">
-  <img src="year3.png" style="width:100%; z-index:-1;">
-  <figcaption><span class="credit">Mark Dodici / The Daily Princetonian</span></figcaption>
-</figure>
-
- <!-- PUT ARTICLES HERE FOR YEAR 3 -->
- 
-<div class="box"><div class="article"><h3>PROSPECT</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2018/10/pumpkin-carving-with-refugees-an-encounter">Pumpkin carving with refugees: An encounter</a> </h1><h2> By Shira Moolten &ensp;&ensp;October 26, 2018</h2><p>This event, which began during the Class of 2020's first year at Princeton, has since blossomed into an annual tradition.</p></div></div>
- 
- <div style="margin: 0px; padding: 0px">
-<div class="box" style="background-color: black; position: absolute; opacity: 0.8; text-align:right; height: 20vw">
-<div style="float:left; margin-left:18%; width:5%">
-<button class="right-arrow vertical-center pulsing" onclick="plusDivs(-1)">&#10094;</button>
-</div>
-
-<div style="float:left; margin-left:30%; width:60%">
-<div class="article-dark mySlides">
-<h2 class="dots"><span style="color:grey">&#9679;</span><span style="color:white">&#9679;</span><span style="color:grey">&#9679;</span><span style="color:grey">&#9679;</span></h2>
-<h3>SPORTS</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2018/11/football-overwhelms-yale-5943-to-clinch-ivy-title-first-bonfire-since-2013">Football overwhelms Yale 59–43 to clinch Ivy Title, first bonfire since 2013</a> </h1><h2> By Jack Graham and Christopher Murphy&ensp;&ensp;November 10, 2018</h2></div>
-
-<div class="article-dark mySlides">
-<h2 class="dots"><span style="color:white">&#9679;</span><span style="color:grey">&#9679;</span><span style="color:grey">&#9679;</span><span style="color:grey">&#9679;</span></h2>
-<h3>NEWS</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2018/11/u-community-gathers-chants-and-yeets-during-first-bonfire-since-2013">U. community gathers, chants, ‘yeets’ during first bonfire since 2013</a> </h1><h2> By Zachary Shevin&ensp;&ensp;November 19, 2018</h2></div>
-
-<div class="article-dark mySlides">
-<h2 class="dots"><span style="color:grey">&#9679;</span><span style="color:grey">&#9679;</span><span style="color:white">&#9679;</span><span style="color:grey">&#9679;</span></h2>
-<h3>OPINION</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2018/12/bonfires-are-for-the-boys">Bonfires are for the boys</a> </h1><h2> By Avner Goldstein&ensp;&ensp;December 3, 2018</h2></div>
-
-<div class="article-dark mySlides">
-<h2 class="dots"><span style="color:grey">&#9679;</span><span style="color:grey">&#9679;</span><span style="color:grey">&#9679;</span><span style="color:white">&#9679;</span></h2>
-<h3>VIDEO</h3><h1> <a target="_blank" href="https://youtu.be/p46fnH3Y7_M">Undefeated football team celebrates with a bonfire.</a> </h1><h2> Video by Adam Hazelton, Mark Dodici, Sarah W. Hirschfield, and Sam Parsons<br>November 18, 2018</h2></div>
-
-
-<div style="height: 35px; border-left: 2px white;">
-<button class="right-arrow vertical-center pulsing" onclick="plusDivs(1)">&#10095;</button>
-</div>
-
-</div>
-</div>
-</div>
-
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-</script>
- 
- <figure class="full-width" style="margin-top:0px">
-  <img src="football.png" style="width:100%">
-  <figcaption>The football team celebrates with a bonfire after an undefeated season. <br><span class="credit">Jon Ort / The Daily Princetonian</span></figcaption>
-  </figure>
- 
-<div class="box"><div class="article"><h3>OPINION</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2018/11/dear-tigertones-please-stop-singing-kiss-the-girl">Dear Tigertones, please stop singing 'Kiss the Girl'</a> </h1><h2> By Noa Wollstein&ensp;&ensp;November 26, 2018</h2><p>News outlets across the country <a target="_blank" href="https://www.nytimes.com/2018/12/03/arts/music/princeton-tigertones-kiss-the-girl-little-mermaid.html">covered</a> Noa Wollstein's column criticizing the Tigertones' performance of the song, which contravened the boundaries of consent. In response, the Tigertones removed the song from their repertoire.</p></div></div>
-<div class="box"><div class="article"><h3>PROSPECT</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2018/12/hamentaschens-victorious-in-most-important-debate-of-the-year">Hamentaschens victorious in most important debate of the year</a> </h1><h2> By Noa Wollstein&ensp;&ensp;December 5, 2018</h2><p>The contentious Latke-Hamentaschen Debate occurs annually at Princeton.</p></div></div>
-<div class="box"><div class="article"><h3>OPINION</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2018/12/the-other-side-of-paradise">The Other Side of Paradise</a> </h1><h2> By Liam O'Connor&ensp;&ensp;December 13, 2018</h2><p>Eating club demographics reveal stark social stratification.</p></div></div>
-<div class="box"><div class="article"><h3>NEWS</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2019/01/protesters-stand-in-solidarity-against-cancelled-white-supremacy-rally">Protesters stand in solidarity against cancelled white supremacy rally</a> </h1><h2> By Rebecca Han and Oliver Effron&ensp;&ensp;January 13, 2019</h2></div></div>
-<div class="box"><div class="article"><h3>PROSPECT</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2019/02/coffee-club-is-on-the-grind">Coffee Club is on the grind</a> </h1><h2> By Jack Allen&ensp;&ensp;February 4, 2019</h2><p>The Coffee Club, a popular student-run coffee shop located in the Campus Club Tap Room, started during the Class of 2020's junior year on campus.</p></div></div>
-<div class="box"><div class="article"><h3>NEWS</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2019/03/liberating-new-south-how-black-student-activists-inspired-change-through-protest">Liberating New South: How Black student activists inspired change through protest</a> </h1><h2> By Ivy Truong and Benjamin Ball&ensp;&ensp;March 7, 2019</h2><p>The ‘Prince’ commemorated the 50th anniversary of the student occupation of New South, in protest of the University’s investments in apartheid South Africa, for the special issue “Power of a United People.”</p></div></div>
-<div class="box"><div class="article"><h3>SPORTS</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2019/03/wrestling-heads-to-ncaa-championship-2019">In bid to make history, wrestling heads to NCAA Championships</a> </h1><h2> By Josephine de La Bruyère&ensp;&ensp;March 21, 2019</h2></div></div>
-<div class="box" style="position:absolute; opacity:0.8"><div class="article"><h3>NEWS</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2019/05/ban-the-box-walk-out">SPEAR holds walk out and teach-in at CPUC meeting</a> </h1><h2> By Haleigh Gundy&ensp;&ensp;May 7, 2019</h2><p>This demonstration was part of the "Ban the Box" movement, which aims to remove the conviction question on applications for undergraduate admission to the University. </p></div></div>
- <figure class="full-width" style="padding: 0px; margin-top:0px">
-  <img src="18_4.jpeg" style="width:100%">
-  <figcaption>Approximately 100 students participated in the walk out and teach-in. <br><span class="credit">Jon Ort / The Daily Princetonian</span></figcaption>
-  </figure>
-  
-  
- <div style="margin: 0px; padding: 0px">
-<div class="box" style="background-color: black; position: absolute; opacity: 0.8; text-align:right; height: 18vw">
-<div style="float:left; margin-left:8%; width:5%">
-<button class="right-arrow vertical-center pulsing" onclick="plusDivs2(-1)">&#10094;</button>
-</div>
-<div style="float:left; margin-left:20%; width:70%">
-<div class="article-dark mySlides2">
-<h2 class="dots"><span style="color:white">&#9679;</span><span style="color:grey">&#9679;</span><span style="color:grey">&#9679;</span></h2>
-<h3>NEWS</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2019/05/title-ix-office-protests-come-to-a-close-after-demonstration-in-front-of-prospect-house">Title IX office protests come to a close, will return for the P-rade</a> </h1><h2> By Ivy Truong&ensp;&ensp;May 16, 2019</h2></div>
-
-<div class="article-dark mySlides2">
-<h2 class="dots"><span style="color:grey">&#9679;</span><span style="color:white">&#9679;</span><span style="color:grey">&#9679;</span></h2>
-<h3>OPINION</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2019/05/we-cant-speak-freely-open-expression-monitors-suppress-campus-free-speech">We Can't Speak Freely</a> </h1><h2> By Daily Princetonian Editorial Board&ensp;&ensp;May 31, 2019</h2></div>
-
-<div class="article-dark mySlides2">
-<h2 class="dots"><span style="color:grey">&#9679;</span><span style="color:grey">&#9679;</span><span style="color:white">&#9679;</span></h2>
-<h3>VIDEO</h3><h1> <a target="_blank" href="https://youtu.be/0D7Qr4BIe-g">Students involved in Title IX reform protests turned away from Durkee ’69 retirement event</a> </h1><h2> Video by Mark Dodici&ensp;&ensp;May 10, 2019</h2></div>
-
-
-<div style="height: 35px; border-left: 2px white;">
-<button class="right-arrow vertical-center pulsing" onclick="plusDivs2(1)">&#10095;</button>
-</div>
-
-</div>
-</div>
-</div>
-
-<script>
-var slideIndex2 = 1;
-showDivs2(slideIndex2);
-
-function plusDivs2(n) {
-  showDivs2(slideIndex2 += n);
-}
-
-function showDivs2(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides2");
-  if (n > x.length) {slideIndex2 = 1}
-  if (n < 1) {slideIndex2 = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex2-1].style.display = "block";  
-}
-</script>
- 
- <figure class="full-width" style="margin-top:0px">
-  <img src="title9.jpg" style="width:100%">
-  <figcaption><span class="credit">Ivy Truong / The Daily Princetonian</span></figcaption>
-  </figure>
-
-
-
-  </section>
-    
-  <section id="sec6">
-    <div class="full-width">
-<div class="year"> 
-  <h1>YEAR 4</h1>
-  <p>
-  Though the rising seniors had weathered years of <a target="_blank" href="https://www.dailyprincetonian.com/article/2019/11/marie-yovanovitch-testimony">political upheaval</a>, nothing could prepare them for COVID-19. With <a target="_blank" href="https://www.dailyprincetonian.com/article/2020/04/a-season-lost-princeton-athletics-reflects-on-cancellation-of-collegiate-sports">seasons cut short</a> and <a target="_blank" href="https://www.dailyprincetonian.com/article/2020/03/half-built-hoverboards-forgotten-fruit-flies">theses interrupted</a>, the Class of 2020 has demonstrated extraordinary <a target="_blank" href="https://www.dailyprincetonian.com/article/2020/04/letting-go-of-the-normal-princeton-pandemic-and-religious-life">strength</a> and <a target="_blank" href="https://www.dailyprincetonian.com/article/2020/03/covid-19-and-princeton-university-performing-arts">community</a> in the face of a global crisis.
-  </p>
-</div>
-</div>
-
-<figure class="full-width">
-  <img src="year4.png" style="width:100%; z-index:-1;">
-  <figcaption><span class="credit">Mark Dodici / The Daily Princetonian</span></figcaption>
-</figure>
-  
- <!-- PUT ARTICLES HERE FOR YEAR 4 -->
-
-<div class="box"><div class="article"><h3>NEWS</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2019/08/toni-morrison-dies">‘Beloved’ author and U. professor Toni Morrison dies at 88</a> </h1><h2> By Allan Shen&ensp;&ensp;August 6, 2019</h2></div></div>
-
-<div style="margin: 0px; padding: 0px">
-<div class="box" style="background-color: black; position: absolute; opacity: 0.8; text-align:right; height: 28vw">
-<div style="float:left; margin-left:18%; width:5%">
-<button class="right-arrow vertical-center pulsing" onclick="plusDivs4(-1)">&#10094;</button>
-</div>
-<div style="float:left; margin-left:30%; width:60%">
-<div class="article-dark mySlides4">
-<h2 class="dots"><span style="color:white">&#9679;</span><span style="color:grey">&#9679;</span><span style="color:grey">&#9679;</span></h2>
-<h3>OPINION</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2019/10/a-concrete-step-backwards">A concrete step backwards </a> </h1><h2> By KiKi Gilbert and Nathan Poland&ensp;&ensp;October 4, 2019</h2><p>“In this case, the University’s concrete step backwards is yet another memorial on campus dedicated to avowed white supremacist Woodrow Wilson.”</p></div>
-
-<div class="article-dark mySlides4">
-<h2 class="dots"><span style="color:grey">&#9679;</span><span style="color:white">&#9679;</span><span style="color:grey">&#9679;</span></h2>
-<h3>VIDEO</h3><h1> <a target="_blank" href="https://www.youtube.com/watch?v=1ToigxzHPuw">Princeton students protest new Woodrow Wilson installation, institutional racism</a> </h1><h2> Video by Sarah W. Hirschfield&ensp;&ensp;October 5, 2019</h2></div>
-
-<div class="article-dark mySlides4">
-<h2 class="dots"><span style="color:grey">&#9679;</span><span style="color:grey">&#9679;</span><span style="color:white">&#9679;</span></h2>
-<h3>NEWS</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2019/10/double-sights-protest">U. community members protest at ‘Double Sights’ dedication</a> </h1><h2> By Rose Gilbert&ensp;&ensp;October 7, 2019</h2></div>
-
-<div style="height: 35px; border-left: 2px white;">
-<button class="right-arrow vertical-center pulsing" onclick="plusDivs4(1)">&#10095;</button>
-</div>
-
-</div>
-</div>
-</div>
-
-<script>
-var slideIndex4 = 1;
-showDivs4(slideIndex4);
-
-function plusDivs4(n) {
-  showDivs4(slideIndex4 += n);
-}
-
-function showDivs4(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides4");
-  if (n > x.length) {slideIndex4 = 1}
-  if (n < 1) {slideIndex4 = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex4-1].style.display = "block";  
-}
-</script>
- 
- <figure class="full-width" style="margin-top:0px">
-  <img src="DSC2383.jpeg" style="width:100%">
-  <figcaption>The "Double Sights" installation, designed by Walter Hood.<br><span class="credit">Jon Ort / The Daily Princetonian</span></figcaption>
-  </figure>
-  
-
-<div class="box"><div class="article"><h3>NEWS</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2019/10/obama-85-sends-surprise-video-message-to-thrive-conference">Obama ’85 sends surprise video message to Thrive conference</a> </h1><h2> By Benjamin Ball&ensp;&ensp;October 6, 2019</h2><p>The historic conference, entitled “Thrive: Empowering and Celebrating Princeton’s Black Alumni,” featured alumni presentations, discussions, and social programming. It was the fourth conference of its kind.</p></div></div>
-<div class="box"><div class="article"><h3>OPINION</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2019/10/why-affirmative-action-still-matters">Why affirmative action still matters</a> </h1><h2> By Julia Chaffers&ensp;&ensp;October 10, 2019</h2></div></div>
-<div class="box"><div class="article"><h3>NEWS</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2019/11/supreme-court-hears-oral-argument-on-daca-including-complaint-from-u">Supreme Court hears oral argument on DACA, including complaint from U.</a> </h1><h2> By Benjamin Ball&ensp;&ensp;November 12, 2019</h2><p>The November 2017 complaint, which was one of the first challenges to the government’s decision to end DACA, alleged that the program’s termination violated both the United States Constitution and federal law. The University filed the suit jointly with Microsoft President and University trustee Brad Smith ’81 and DACA recipient María Perales Sánchez ’18.</p></div></div>
-<div class="box"><div class="article"><h3>OPINION</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2019/12/impeachment-hearings-donald-trump-and-princetons-public-service">Impeachment hearings, Donald Trump, and Princeton's public service</a> </h1><h2> By Kaveh Badrei&ensp;&ensp;December 2, 2019</h2></div></div>
-<div class="full-width" style="position:absolute"><div style="height:calc(30vw + 0vh)"></div><div class="box" style="opacity:0.8"><div class="article"><h3>NEWS</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2019/12/xiyue-wang-released-from-detainment-in-iran">Xiyue Wang released from detainment in Iran</a> </h1><h2> By Linh Nguyen , Zachary Shevin and Rooya Rahin&ensp;&ensp;December 7, 2019</h2><p style="font-size:1.8vw">Over three years after his original arrest in 2016, University graduate student Xiyue Wang returned to Princeton, N.J. During the previous three years, the Free Xiyue Wang Working Group arose among graduate students, holding vigils in his honor and fighting for his release.</p></div></div></div>
-<figure class="full-width" style="padding: 0px; margin-top:0px">
-  <img src="19_2.jpeg" style="width:100%">
-  <figcaption><span class="credit">Jon Ort / The Daily Princetonian</span></figcaption>
-  </figure>
-
-<div class="box"><div class="article"><h3>SPORTS</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2020/02/dream-over-dynasty-wrestling-wins-ivy-league-title">Dream over dynasty: Princeton wrestling defeats 17-time champ Cornell for Ivy League title</a> </h1><h2> By Josephine de La Bruyère&ensp;&ensp;February 11, 2020</h2></div></div>
-<div class="box"><div class="article"><h3>SPORTS</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2020/03/princeton-womens-hockey-defeats-cornell-for-first-ecac-title-in-program-history">Princeton women’s hockey defeats Cornell for first ECAC title in program history</a> </h1><h2> By Owen Tedford and Chris Murphy&ensp;&ensp;March 8, 2020</h2></div></div>
-<div class="box"><div class="article"><h3>VIDEO</h3><h1> <a target="_blank" href="https://www.youtube.com/watch?v=nUsZzOKd2qE&t=1s">Princeton U. is sending students home -- rapid reactions from Frist Campus Center</a> </h1><h2> Video by Mark Dodici and Zachary Shevin&ensp;&ensp;March 12, 2020</h2></div></div>
-<div class="box"><div class="article"><h3>OPINION</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2020/03/when-hate-is-more-contagious">When hate is more contagious</a> </h1><h2> By Siyang Liu&ensp;&ensp;March 22, 2020</h2><p>“I understand that people’s entire lives have been upended because so has mine. But that in no way justifies the mindless anger and insults which dehumanize innocent Chinese civilians, who themselves have suffered tremendously.”</p></div></div>
-<div class="box"><div class="article"><h3>PHOTO</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2020/03/princeton-campus-deserted-photoseries">In photos: A campus deserted</a> </h1><h2> By Daily Princetonian Staff and Mark Dodici&ensp;&ensp;March 25, 2020</h2></div></div>
-
-<div style="margin: 0px; padding: 0px">
-<div class="box" style="background-color: black; position: absolute; opacity: 0.8; text-align:right; height: 20vw">
-<div style="float:left; margin-left:13%; width:5%">
-<button class="right-arrow vertical-center pulsing" onclick="plusDivs3(-1)">&#10094;</button>
-</div>
-<div style="float:left; margin-left:25%; width:65%">
-<div class="article-dark mySlides3">
-<h2 class="dots"><span style="color:white">&#9679;</span><span style="color:grey">&#9679;</span><span style="color:grey">&#9679;</span></h2>
-<h3>FEATURES</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2020/03/half-built-hoverboards-forgotten-fruit-flies">Half-built hoverboards, forgotten fruit flies: the senior theses that never were</a> </h1><h2> By Patrycja Pajdak&ensp;&ensp;March 30, 2020</h2></div>
-
-<div class="article-dark mySlides3">
-<h2 class="dots"><span style="color:grey">&#9679;</span><span style="color:white">&#9679;</span><span style="color:grey">&#9679;</span></h2>
-<h3>FEATURES</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2020/03/the-end-of-the-world-how-students-said-goodbye-to-campus">‘The end of the world’: how students said goodbye to campus</a> </h1><h2> By Alex Gjaja&ensp;&ensp;March 23, 2020</h2></div>
-
-<div class="article-dark mySlides3">
-<h2 class="dots"><span style="color:grey">&#9679;</span><span style="color:grey">&#9679;</span><span style="color:white">&#9679;</span></h2>
-<h3>FEATURES/SPORTS</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2020/04/a-season-lost-princeton-athletics-reflects-on-cancellation-of-collegiate-sports">A season, lost: Princeton athletes reflect on cancellation of collegiate sports</a> </h1><h2> By Christopher Murphy and Rachel McQuigge&ensp;&ensp;April 8, 2020</h2></div>
-
-
-<div style="height: 35px; border-left: 2px white;">
-<button class="right-arrow vertical-center pulsing" onclick="plusDivs3(1)">&#10095;</button>
-</div>
-
-</div>
-</div>
-</div>
-
-<script>
-var slideIndex3 = 1;
-showDivs3(slideIndex3);
-
-function plusDivs3(n) {
-  showDivs3(slideIndex3 += n);
-}
-
-function showDivs3(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides3");
-  if (n > x.length) {slideIndex3 = 1}
-  if (n < 1) {slideIndex3 = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex3-1].style.display = "block";  
-}
-</script>
- 
- <figure class="full-width" style="margin-top:0px">
-  <img src="cancelled-season.jpeg" style="width:100%">
-  <figcaption>Palmer Stadium. <br><span class="credit">Jon Ort / The Daily Princetonian</span></figcaption>
-  </figure>
-
-
-<div class="box"><div class="article"><h3>PHOTO</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2020/04/in-photos-when-senior-year-ends-early">In photos: When senior year ends early</a> </h1><h2> By Jon Ort , Ivy Truong and Mark Dodici&ensp;&ensp;April 1, 2020</h2><p>The ‘Prince’ invited students from the Class of 2020 to participate in a photo essay that aimed to create alternative thesis photos — in honor of all the seniors who will not be able to celebrate the capstone of their Princeton careers on campus.</p></div></div>
-<div class="box"><div class="article"><h3>OPINION</h3><h1> <a target="_blank" href="https://www.dailyprincetonian.com/article/2020/04/a-group-of-princeton-athletes-speak-out">OP-ED | ‘Time will prove this choice misguided’: A group of Princeton athletes speak out</a> </h1><h2> By Guest Contributors&ensp;&ensp;April 10, 2020</h2></div></div>
-<div class="box"><div class="article"><h3>VIDEO</h3><h1> <a target="_blank" href="https://www.youtube.com/watch?v=Z4T_XZNxk1A#action=share">Spirit of Princeton Award winners reflect on their college experiences</a> </h1><h2>By Zack Shevin and Mark Dodici&ensp;&ensp;May 25, 2020</h2></div></div>
-   </section>
-   
-<section id="sec7">
-  <h1> What's Next </h1>
-<p>For the Class of 2020, this weekend should have been the bittersweet culmination to four years on campus. Yet, ten weeks ago, COVID-19 forced the Class to bid Princeton an abrupt and unwelcome <a target="_blank" href="https://www.dailyprincetonian.com/article/2020/03/all-students-but-those-meeting-specific-criteria-must-return-home-for-rest-of-semester">farewell</a>. 
-</p><p>
-As the coronavirus overtook the world, seniors navigated the most formidable challenges they had ever faced — not least, finishing their <a target="_blank" href=”https://www.dailyprincetonian.com/article/2020/03/half-built-hoverboards-forgotten-fruit-flies”>theses</a> and <a target="_blank" href="https://www.dailyprincetonian.com/article/2020/03/covid-19-and-princeton-university-performing-arts">capstone projects</a> amid a pandemic.
-</p><p>
-In the same 1996 speech in which she celebrated the “breath” of Princeton’s emotional and intellectual lives, Morrison pondered the institution’s future. She <a target="_blank" href="https://pr.princeton.edu/news/96/q4/1025spch.htm">asked</a>, “Will instruction be executed solely in solitude by the isolated handling of sophisticated new machines?”
-</p><p>
-Today, Morrison’s question resonates with stunning prescience — especially considering that Eisgruber <a target="_blank" href="https://president.princeton.edu/blogs/opening-exercises-2019-wisdom-dead-and-energy-living">cited</a> those very words nine months ago, as the Class of 2023 sat in the Chapel for its own Opening Exercises. Though unthinkable then, the pandemic now leaves us no choice but to learn “solely in solitude.”
-</p><p>
-At this critical moment, the Class of 2020 is poised to fulfill the motto unveiled in its first year: to live “in the nation’s service and the service of humanity.”
-</p><p>
-Tomorrow, an incredible community of leaders, advocates, scholars, and visionaries will become Princeton alumni. A world in need of remaking awaits them.
+<p>
+S.B. Frank was Sally B. Frank ’80. And, having intentionally checked male instead of female, she had secured bicker appointments at five clubs — three more than she should have.
+</p>
+<p>
+When, a few days later, she began her walk down Prospect Avenue, Frank did not simply fulfill her bicker appointments. She posed a challenge to the bedrock of Princeton’s social hierarchy. Nearly a decade prior, when confronted with the reality of a coeducational campus, three eating clubs broke from the rest and made the controversial choice to exclude women.
+</p>
+<p>
+The seeds for Frank’s dissent had been planted in 1969, when the University <a href="https://www.dailyprincetonian.com/article/2018/05/one-year-of-committees-nearly-50-years-of-women">admitted</a> its first class of female undergraduates.
 </p>
 
+<div data-aos="fade-in" data-aos-id="trigger-3" id="trigger-3" style="height: 20vh"></div>
+      </div>
+    </div>
+    <!-- <h1 style="padding:0px; margin:0px; color:black; font-size:100px; line-height:100px; position: relative; z-index:100">Prospect Ave.</h1> -->
+    </div>
+    <div style="margin-top: 0px; background:rgb(40,40,40); height: 100vh; padding-bottom: 0px; margin-bottom: 0px;">
+    </div>
+    <div style="background:rgb(40,40,40); padding-bottom:0px">
+    </div>
+    
+    <div style="background:rgb(40,40,40)">
+    <div class="large-caption" data-aos="fade-out" data-aos-id="caption-1969" data-aos-duration="1500" style="opacity: 0.85">
+      <h3> 1969: U. Goes Coed</h3> 
+      <p> When these female students stepped on campus for the first time in fall 1969, several eating clubs immediately warmed to coeducation. Campus Club and Terrace Club (which both had non-undergraduate female members) continued their coed policies, and members of Colonial and Charter Clubs voted to accept women. </p>
+    </div>
 
-</section>
-   
-<footer class="full-width" style="text-align:center">
-<div style="margin:1%">
-<a target="_blank" href="https://www.dailyprincetonian.com">
-    <img src="princelogo.png" style="height:14vh; padding-bottom:1vh; padding-top:1vh">
-    </a>
+    <div style="height: 110vh"></div>
+    <div class="large-caption" data-aos="fade-out" data-aos-id="caption-1970" data-aos-duration="1500" style="opacity: 0.85">
+      <h3> 1970: Five More Clubs Welcome Women </h3> 
+      <p> Shortly thereafter, Cloister Inn, Dial Lodge, Tower, Quadrangle Club, and Cap & Gown voted to accept women. </p>
+    </div>
+
+    <div style="height: 90vh"></div>
+    <div class="large-caption-right" data-aos="fade-out" data-aos-id="caption-1971" data-aos-duration="1500" style="opacity: 0.85">
+      <h3> 1971: The Final Three </h3> 
+      <p> By fall bicker, only three all-male clubs remained: Cottage, Ivy, and TI. </p>
+    </div>
+
+    <div style="height: 40vh"></div>
+    <div data-aos="fade-out" data-aos-id="end-graphic" style="height: 20vh"></div>
+    <div class="item">
+      <div>
+        <p>
+With coeducation, gender equality on campus seemed to many a foregone conclusion. But three male-only clubs showed no sign of bowing to progress.
+</p>
+<p>
+Cottage, Ivy, and TI owed their exclusive, male-only status to the practice of bicker. Unlike sign-in clubs, which students could join without any vetting, bicker clubs decided who to admit through a lengthy interview process. A hallmark of the Princeton social scene <a href="https://mysideofparadiseblog.wordpress.com/2018/03/11/bicker/">since 1914</a>, bicker allowed some clubs to keep women out, even as the University strived to place them on equal footing.
+</p>
+<p>
+At Ivy, members blocked a proposed alteration to a constitutional clause that banned women. At TI, a minority of members could exclude a student from bicker for any reason — meaning that so long as just a few opposed coeducation, women could not bicker.
+</p>
+<p>
+But as the years passed, women on campus were no longer a tiny fraction of the student body, and increasingly a force with which the clubs had to contend. A group that began as just 10 percent of all undergraduates had <a href="https://books.google.com/books?id=tKw0DwAAQBAJ&pg=PA151&lpg=PA151&dq=percentage+of+female+undergraduates+princeton+1976&source=bl&ots=gS91NfluYf&sig=ACfU3U3Keiyvxba8eLyrZZeNjNi2dE6MwQ&hl=en&sa=X&ved=2ahUKEwjgtZuXusjqAhVXQ80KHWDyDsUQ6AEwAHoECA4QAQ#v=onepage&q=percentage%20of%20female%20undergraduates%20princeton%201976&f=false">climbed</a> to over 35 percent by 1979.
+</p>
+<p>
+Still, at Cottage, Ivy, and TI, little had changed. It would take a decade of legal battles, scores of campus activists, and countless attacks on Frank’s integrity before her dream of gender equality on the Street could be realized.
+</p>
+      </div>
+    </div>
+    <div style="height: 40vh"></div>
+    <div style="height: 10vh; margin-top:0px"></div>
+    <h1 class="desktop" style="padding:0px; margin:0px; color:white; font-size:100px; line-height:100px">§1&ensp;S.B. Frank</h1>
+    <h1 class="mobile" style="padding:0px; margin:0px; color:white; font-size:90px; line-height:90px">§1<br>S.B. Frank</h1>
+    </div>
+
+    <div class="item">
+    <div class="first-par" style="z-index:999">
+    <p>
+When Sally Frank walked out of the Dean of Student Affairs office her sophomore year, she had secured bicker appointments at TI, Cottage and Ivy. In so doing, she challenged the century-old, all-male status quo manifested in the eating clubs.
+</p>
+<p>
+Ivy Club, famously described in Fitzgerald’s “This Side of Paradise” as “detached and breathlessly aristocratic,” was the University’s first eating club, dating back to 1879 and known for its wealthy and influential members. Cottage Club was founded five years later, in 1884, and over time grew popular among Southern students. Fitzgerald wrote that Tiger Inn, founded in 1890, contained “broad-shouldered and athletic” types.
+</p>
+<p>
+While Frank was allowed to attend her bicker appointments at the three all-male clubs, the members, who had no intention of handing bids to women, largely ignored her and two other women bickering. At the time, Cottage president John K. Herbert ’78 <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19780206-01.2.4&srpos=6&e=------197-en-20--1--txt-txIN-Sally+frank----1978--">told</a> The Daily Princetonian that women were “not legitimate candidates.”
+</p>
+<p>
+The president of Tiger Inn, J. Gary Moffat ’78, agreed. “They were not offered a bid because they were registered illegally for Bicker,” he said.
+</p>
+<p>
+“There was this concept that you can’t just generally associate with women as friends or hang out, that you have to be different when women were around,” Frank explained in an interview with the ‘Prince.’ “Tiger Inn members would say to me, ‘Well, we’d have to dress up for breakfast.’”
+</p>
+<p>
+In Ivy, if a woman walked in while members were having a meal, all of them would rise.
+</p>
+<p>
+“It was a chivalrous thing that they thought was polite, but the woman is feeling very awkward,” Frank said. “It’s not a feeling of equality.”
+</p>
+<p>
+Although the clubs’ discrimination incensed her, Frank understood that the private institutions were beyond her reach as an activist — that is, until a summer job at the ACLU of New Jersey changed her mind.
+</p>
+<p>
+As Frank describes it now, she was complaining to the executive director about how “awful” the all-male clubs were.
+</p>
+<p>
+“Well, why don’t you sue?” he asked.
+</p>
+<p>
+Frank: “They’re private.”
+</p>
+<p>
+“No. They’re public accommodations.”
+</p>
+<p>
+That was all it took. “Okay,” she replied.
+</p>
+<p>
+As she recounted that moment, Frank paused and chuckled: “Little did I know it would take years of litigation to establish that point.”
+</p>
+<p>
+Returning her junior year with the intention to sue, Frank again registered for bicker. It would be better for her lawsuit, she thought, if she demonstrated repeated attempts to join the all-male clubs. This time, she put her name down as S.B. Frank, but checked neither male nor female.
+</p>
+<p>
+Familiar with this “S.B. Frank,” Cottage and TI refused to grant Frank an appointment. 
+</p>
+<figure class="img-normal">
+<img src="sallyfrank.png" style="width:100%">
+<figcaption> Sally Frank in the Daily Princetonian, April 9th, 1979
+</figure>
+<p>
+"We can't ask members of this club to spend time with a female who can't enter," Cottage President Donald R. Seitz ’79 <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19790205-01.2.4&srpos=17&e=------197-en-20--1--txt-txIN-sally+frank----1979--">said</a> in a February 1979 issue of The Daily Princetonian.
+</p>
+<p>
+President Howard S. Lewis ’79 of Tiger Inn felt that Frank bickering his club would “disrupt the process.”
+</p>
+<p>
+Ivy let her come for an interview, but spoke with her only after all the male candidates had bickered. President William C. Ford Jr. ’79 explained in February 1979 that the members wanted to “let her see what the whole process is about.”
+</p>
+<p>
+Still, he admitted that Frank had little chance of getting a bid.
+</p>
+<p>
+Denied for two years in a row, Frank was now ready to file her lawsuit. 
+</p>
+<p>
+“I think I didn’t appreciate this back then,” said Vicky Benedict ’91, one of Ivy’s first female members, “because to bring her suit she had to actually, physically show up, ask to bicker and get rejected. You know, as an adult and as a mom of someone, I mean that’s a humiliating experience.”
+</p>
+<p>
+On February 20, 1979, future Supreme Court Justice Elena Kagan ’81 reported in the ‘Prince’ that Frank had <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19790221-01.2.3&srpos=7&e=------197-en-20--1--txt-txIN-sally+frank----1979--">filed</a> a lawsuit with the New Jersey Division on Civil Rights.
+</p>
+<p>
+In the suit, Frank named the University and the three all-male eating clubs, all of which insisted that the clubs were exempt from the antidiscrimination law she cited.
+</p>
+<p>
+“We’re independent of the University,” Cottage president Seitz argued. “We’re not breaking any law and we’re not imposing on her rights any more than she is on ours.”
+</p>
+<p>
+In June, the N.J. Division on Civil Rights <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19790912-01.2.8&srpos=5&e=------197-en-20--1--txt-txIN-sally+frank----1979--">ruled</a> that the clubs were “essentially private,” in what would be the first loss of many for Frank.
+</p>
+<p>
+On October 4, Frank brought the fight to a new arena, lodging a <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19791108-02.2.11&srpos=18&e=------197-en-20--1--txt-txIN-Sally+Frank-ARTICLE---1979--">complaint</a> with what is now the U.S. Department of Health and Human Services. She asserted that under Title IX of the Higher Education Act of 1972, the clubs’ refusal to admit women constituted discrimination on the basis of sex.
+</p>
+<p>
+By providing security and maintenance for the clubs, she <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19791011-01.2.22&srpos=2&e=------197-en-20--1--txt-txIN-sally+frank----1979--">alleged</a>, the University endorsed a discriminatory policy — it was complicit in the clubs’ misdeeds.
+</p>
+<p>
+In November, the department began its investigation, only to <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19800430-01.2.2&srpos=18&e=-------en-20-Princetonian-1-byDA-txt-txIN-NJ+Division+of+Civil+Rights------">dismiss</a> the case in April of 1980. But all was not lost. Four months earlier, in January 1980, the N.J. Division on Civil Rights had <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19800109-01.2.9&srpos=12&e=-------en-20-Princetonian-1-byDA-txt-txIN-NJ+Division+of+Civil+Rights------">agreed</a> to re-hear the case.
+</p>
+<p>
+As the lawsuit survived its first tumultuous year, Frank was in the midst of an entirely different fight — the struggle to endure her final years as an undergraduate.
+</p>
+    </div>
+    </div>
+    <div class="section-break"><h1>*</h1></div>
+    <div class="item">
+      <p>
+In November of her junior year, before her second attempt at bickering, Frank went to a party at Cottage for students planning to bicker. She expected disagreement from her peers; she hadn’t anticipated harassment or physical assault. 
+</p>
+<p>
+“I thought, ‘Oh well, we’ll argue,’” she told the ‘Prince.’ “I had beer poured on me. And people were chanting that they’d throw me in the fountain. I was very freaked out.”
+</p>
+<p>
+Frank alleges that after she filed the lawsuit, a group of primarily Cottage members harassed her for the rest of the semester. She frequently <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19790409-01.2.5&srpos=2&e=-------en-20--1--txt-txIN-playboy+sally+frank------">received</a> obscene phone calls. Residents of 1937 Hall hung a picture outside their room of a nude Playboy model, with Frank’s face glued on top.   
+</p>
+<p>
+Even after Frank’s graduation, her name was derided. Benedict, who arrived on campus seven years after Frank had left, said, “She was very vilified, in a very ugly and personal way.”
+</p>
+<p>
+“It probably felt very lonely,” said Jen Weiner ’91, the founder of the Coalition for Coeducated Eating Clubs and a well-known novelist. “I think that she was an outlier.”
+</p>
+
+<p class="pull-quote"><span class="highlight-line">______</span><br>As she recounted that moment, Frank paused and chuckled: “Little did I know it would take years of litigation to establish that point.”</p>
 
 <p>
-<a style="padding:2vw" href="https://www.dailyprincetonian.com/page/donate-to-the-daily-princetonian">DONATE</a>
-<a style="padding:2vw" href="https://www.dailyprincetonian.com/page/advertise">ADVERTISE</a>
-<a style="padding:2vw" href="https://www.dailyprincetonian.com/page/masthead">MASTHEAD</a>
-<a style="padding:2vw" href="https://forms.gle/YYqin958dDp69CUV7">PREORDER PRINT ISSUE</a>
+On the legal front, too, Frank was forced to contend with misogynist attitudes. Despite plentiful female representation among the legal teams — including one of Ivy Club’s attorneys — Frank remembers clear displays of sexism during ordinary administrative meetings.
 </p>
-  <p style="font-size:1vw">A Daily Princetonian project by Louis Aaron, Mark Dodici, Harsimran Makkad, Abby Nishiwaki, Lizzie Parker, Kenny Peng, Jon Ort, Ivy Truong, and Cy Watsky.</p>
-<p style="font-size:1vw"> Note: Data for the graphics and names of the graduates were compiled from Tigerbook.</p>
-  </div>
-</footer>
+<p>
+“Tiger [Inn]’s lawyer seemed to revel in his sexism,” she told the ‘Prince.’ “At the settlement conference in front of the judge, he had a jacket on — but he took his jacket off when he was talking with the lawyers, and he had suspenders that were Playboy bunnies.”
+</p>
+<p>
+Even the man’s choice of language in the legal setting demeaned Frank.
+</p>
+<p>
+“He'd call everybody by last name, but me by first name. …That was particularly annoying. It's one thing if you're calling people by first name or calling people by last name, but when you call only me by first name, then that's wrong.”
+</p>
+<p>
+Frank graduated from the University in 1980 with her lawsuit still unresolved. She would go on to attend New York University School of Law, where serving as her own co-counsel in the ongoing suit would give her invaluable practical experience with the law.
+</p>
+<p>
+As Frank’s relationship with the eating clubs now centered only on administrative and legal questions, the responsibility to continue feminist activism on campus fell on the women who came after her. Throughout the next decade, Frank’s fight for equality raged on, well after her departure from the Orange Bubble.
+</p>
+    </div>
 
 
-<!--nav animations, needs to be after all sections-->
-<script src="nav.js"></script>
 
-</div> <!--end horizontal display-->
-</body>
+    <div class="item">
+      <h1> Campus Culture: “Better Dead than Coed” </h1>
+      <p>
+In 1985, sophomores Katharine Greider ’88 and Kathryn Hayward ’88 took up Frank’s mantle. As part of a group of roughly 40 organizers and activists, they circulated a <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19851121-01.2.5&srpos=1&e=-------en-20--1--txt-txIN-Coed+Petition+Garners+300+Names%2c+Students+Urge+Women+To+Bicker------">petition</a>, co-written by Greider, that called for the all-male eating clubs to accept women.
+</p>
+<p>
+“Women will not be fully accepted into coeducational life at Princeton until all the eating clubs are coeducational,” the petition read.
+</p>
+<p>
+Organizers advertised the petition liberally, circulating copies at Firestone Library and the Student Center, and posting copies in departmental offices to gain faculty support. They tracked down alumni mailing lists and drew upon the resources of the Women’s Center, <a href="http://women.princeton.edu/who-we-are">established</a> in 1971, to legitimize the petition.
+</p>
+<p>
+The group planned to present the collected signatures to the presidents of the all-male clubs and University President William G. Bowen GS ’58 in advance of the February bicker sessions. Their goal? “To demonstrate that many people disagree with those clubs' practice of barring women from membership.”
+</p>
+<p>
+But in addition to protesting the all-male clubs, the petition served as a rallying cry to sophomore women, who organizers urged to bicker. Both Hayward and Greider promised to bicker at least one of the three male-only clubs in February, and emphasized that additional female bickerees would help their long-term cause.
+</p>
+<p>
+“They were — in terms of the movement on campus, the feminist push to say this is not okay, and this should change — they were really the leaders,” Lydia Denworth ’88, also a sophomore at the time, told the ‘Prince.’
+</p>
+<figure class="img-normal">
+    <img style="width: 100%"" src="coed_img0_mobile.png">
+<figcaption>The Daily Princetonian, November 21st, 1985</figcaption>
+</figure>
+<p>
+Their advocacy met fervent opposition — brewing a volatile climate at the clubs, where a woman venturing onto Prospect Avenue might be met with a warm welcome or a shocking display of sexism, depending on the club she chose to enter.
+</p>
+<p>
+“I remember very distinctly going on a date to Ivy with a guy,” Denworth told the ‘Prince.’ “I think this must have been freshman year. And there was a signup sheet by the door for ‘<em>Better Dead than Coed</em>’ T-shirts.”
+</p>
+<p>
+Denworth describes the confrontation that followed: “I just sort of stopped and looked at it. And I said to [my date], ‘really, you’d rather be dead than have me be in your club?’ And he was like, ‘Oh, you know… it’s just a thing.’ But I felt it really viscerally.”
+</p>
+<p>
+In a 1985 <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19851205-01.2.16&srpos=9&e=-------en-20--1--txt-txIN-male+eating+clubs+letters------">letter</a> published in the ‘Prince,’ Michael Kaneb ’87 expressed support for his club, Cottage, and for the system of all-male eating clubs.
+</p>
+<p>
+“I am not going to argue the legality of the question; Ms. Frank certainly demonstrated her mastery in that area,” he wrote. “Seven years of an obsession tends to produce that sort of effect. If the law insists that clubs must admit women, I think the law is wrong and harmful.”
+</p>
+<p>
+“I am, by Ms. Frank’s definition, a sexist,” he remarked.
+</p>
+<p>
+“I don't find any inferiority or superiority, just differences,” Kaneb explained. “In admitting the value of these differences, then, it follows that I believe all-male and all-female clubs can be worthwhile, in that they cultivate and reinforce these essentially masculine or essentially feminine qualities.”
+</p>
+<p>
+Asked now to comment on his letter — 35 years after it was penned — Kaneb wrote to the ‘Prince’ his letter was “totally uninformed, totally wrong, and totally thoughtless.”
+</p>
+<p>
+“Even at 20 years old and with a decent education, some people really do not know what they are talking about and should not be listened to,” he added.
+</p>
+</div>
+
+    <div class="section-break"><h1>*</h1></div>
+    
+    <div class="item">
+      <p>
+While Kaneb litigated his case in the pages of the ‘Prince,’ Frank was busy in court. Although the N.J. Division on Civil Rights’s 1980 decision to re-hear the case seemed like a victory, Frank learned in January 1982 that the Division had dismissed the case a second time. She appealed to the New Jersey Superior Court, which <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19830908-01.2.6&srpos=4&e=------198-en-20--1--txt-txIN-New+Jersey+Division+of+Civil+Rights----1983--">ruled</a> in her favor, mandating that the Division reconsider the case. In May 1985, the Division <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19850515-01.2.5&srpos=8&e=------198-en-20--1--txt-txIN-%22New+Jersey+division+on+civil+rights%22----1985--">reversed</a> its 1982 decision, ruling in Frank’s favor.
+</p>
+<p>
+“Sometimes it was like, ‘Okay, bring out the champagne’ and sometimes it was like, ‘Ah!’” Frank said.
+</p>
+<p>
+1985 saw the biggest victory to date for Frank, Greider, Hayward and their allies. In December, the Cottage Club graduate board <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19860203-01.2.2&e=-------en-20-Princetonian-1--txt-txIN-bicker+T.I+1991------">voted</a> to admit women, and Cottage <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19860110-01.2.2&srpos=70&e=------198-en-20-Princetonian-61-byDA-txt-txIN-sally+frank+case-ARTICLE-----">announced</a> that the next month’s bicker would be coed.
+</p>
+<p>
+For the first time, Frank felt she had achieved real change.
+</p>
+
+<figure class="img-normal-mobile">
+    <img style="width: 100%" src="coed_img1_mobile.png">
+    </figure>
+
+    </div>
+    
+    <figure style="margin-bottom: 0px; padding-bottom: 0px;">
+    <img class="full-width-img" style="opacity: 0.8;" src="coed_img1.png">
+    </figure>
+
+
+    <div style="background: rgb(220,190,180); opacity:1; padding-top: 200px; margin-top: -7px;">
+    <h1 class="desktop" style="padding:0px; margin:0px; color:white; font-size:100px; line-height:100px">§2&ensp;Taking Back ‘The Street’</h1>
+    <h1 class="mobile" style="padding:0px; margin:0px; color:white; font-size:90px; line-height:90px">§2<br>Taking<br>Back<br>‘The <br>Street’</h1>
+    </div>
+
+  
+    <div class="item">
+      <div class="first-par">
+<p>
+Bicker Sunday. February 2, 1986.
+</p>
+<p>
+At 1:00 p.m., approximately 70 sophomore women stepped foot into Cottage.
+</p>
+<p>
+At Ivy, four women entered the club but weren’t granted interviews. At TI, at least two women — Greider and Hayward — <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19860203-01.2.2&srpos=13&e=------198-en-20-Princetonian-1--txt-txIN-first+bicker+cottage+women-ARTICLE-----">tried</a> to enter and weren’t let in the door.
+</p>
+<p>
+“TI and Ivy ignored us,” said Dina Brewer ’88, one of the first female Cottage members, in an interview with the ‘Prince.’ “I remember going into Ivy and sitting in the bathroom with a couple of my girlfriends, and the guys were using the girls' bathroom to bicker people because there weren't supposed to be any women there!”
+</p>
+<p>
+But at Cottage, things were different. There was a buzz in the air. A feeling of possibility.
+</p>
+<p>
+As Michelle Mendez ’88 <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19860204-01.2.2&srpos=8&e=------198-en-20-Princetonian-1--txt-txIN-first+bicker+cottage+women-ARTICLE-----">recounted</a> in the ‘Prince’ later that week, “This was the first time that 100-year-old Cottage had let women bicker — I was making history.”
+</p>
+<p>
+“I certainly wondered whether they would accept any of us,” Denworth said. “But I felt like it was a continuation of the work.”
+</p>
+<p>
+Women described that year’s bicker process positively, reporting little animosity.
+</p>
+<p>
+“To my surprise, bicker was actually fun, although I got bored of saying what college I was in and where I was from,” Mendez said in the same article. “I was bickered from the bar to the balcony, and talked about everything from quail hunting and Eddie Murphy to the space shuttle explosion.”
+</p>
+<p>
+One bickeree <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19860203-01.2.2&srpos=13&e=------198-en-20-Princetonian-1--txt-txIN-first+bicker+cottage+women-ARTICLE-----">spoke</a> to the ‘Prince’ anonymously. “It was a lot more relaxed than I expected it to be. The problem of it being coed really didn't surface,” she said.
+</p>
+<p>
+“The girl issue isn't that big of a deal for me,” <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19860203-01.2.2&srpos=13&e=------198-en-20-Princetonian-1--txt-txIN-first+bicker+cottage+women-ARTICLE-----">said</a> Cottage member Chip Nuzzo ’87. “I think my friends judge people one on one. I’m glad I’m around people who are open-minded enough not to discriminate. I couldn’t live with myself if I did that.”
+</p>
+<p>
+The club admitted 27 women from the class of 1988. Greider and Hayward weren’t among them.
+</p>
+<p>
+Greider told the ‘Prince’ in a 1986 <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19860203-01.2.2&srpos=13&e=------198-en-20-Princetonian-1--txt-txIN-first+bicker+cottage+women-ARTICLE-----">article</a> that she assumed she would be bickered just like anyone else but suspected that her “outspoken opposition to the all-male tradition” placed a target on her back.
+</p>
+<p>
+“That's what I thought,” Denworth agreed, looking back recently in an interview with the ‘Prince.’ “I can't say that I know that, [but] I'm pretty sure that's what everybody else assumed as well.”
+</p>
+<p>
+New female members notwithstanding, the debate around coeducation persisted among Cottage members and alumni.
+</p>
+
+<p>
+The next year, anti-coeducation alumni staged a “hostile takeover” of Cottage, according to Denworth. The alumni elected themselves as the new graduate board and nullified the previous board, which had inaugurated coeducation.
+</p>
+<p>
+“There were three ‘no’s,” Denworth said. “It was me and my [future] husband and the other officer voting that they should <em>not</em> be able to take over and establish their own graduate board and then kick out the women ... They had stacked the room full of people who think this way. But it was meaningless because in fact, they didn't have the power to do that.”
+</p>
+<p>
+Though the coup ultimately failed, it revealed a divide between the older, more accepting graduate board and the younger alumni, set on maintaining the traditions they’d enjoyed just a few years prior. The Cottage graduate board <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19860110-01.2.2&srpos=33&e=------198-en-20-Princetonian-21-byDA-txt-txIN-cottage+club+to+admit+women-ARTICLE-----">polled</a> alumni members about the issue, and found that from 700 responses, 67 percent of respondents who had graduated before 1970 favored going coed, while 60 percent of alumni who graduated after 1970 favored being all-male.
+</p>
+<p>
+Denworth’s everyday experiences in the club were “really a mixed bag,” she recalled.
+</p>
+<p>
+“There were these guys that you would think were your friends, and then you would discover that they had what I thought of as — well, they had very sexist views a lot of the time,” she said.
+</p>
+<p>
+Denworth explained that male members did “a lot of little things,” which she said would now be considered microaggressions.
+</p>
+<p>
+“It felt like a bit of a battle the whole way through to [defend] your claim to be there,” she explained. “There was an antipathy on the part of not everybody, obviously, but on the part of some people the whole way through, or certainly in that first year.”
+</p>
+<p>
+For other women, like Brewer, everyday interactions helped her feel more at home in the club.
+</p>
+<p>
+“I learned to play pool at Cottage,” she said. “That’s how I got to know the guys.”
+</p>
+<figure class="img-normal">
+  <img src="cottage_table.png" style="width:100%">
+  <figcaption>The Daily Princetonian, January 10th, 1986</figcaption>
+  </figure>
+<p>
+Sitting in the next available seat at meals alleviated much of the isolation she might have otherwise faced.
+</p>
+<p>
+“I think it would have been much harder if they didn’t have that policy … I might not have felt comfortable just imposing myself as one woman and 15 guys at a table,” she said. “But because you had to sit at the next available seat and then the person who came in after you had to sit, I think that was actually a really good policy.”
+</p>
+<p>
+Many of the women had joined, in Brewer’s words, “because it was the right thing for Princeton.” But ultimately, they were also looking for a positive college experience.
+</p>
+<p>
+“Of course we were excited when we got in,” Denworth added. “It felt like a big victory, but also, you know — we thought it was going to be fun.”
+</p>
+
+    </div>
+    </div>
+
+    <div class="item">
+      <h1> Formal Ties, Symbolic Moments </h1>
+      <p>
+Meanwhile, Frank’s legal odyssey was far from over.
+</p>
+<p>
+On February 13, 1986, a new challenge emerged when Ivy and TI <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19860222-01.2.2&srpos=20&e=------198-en-20--1--txt-txIN-Ivy+coed------">filed</a> separate countersuits in the U.S. District Court in Trenton. They sought to overturn the May 1985 decision by the N.J. Division on Civil Rights, which had ruled against the clubs’ claim to being private, and appeal to the state appellate court.
+</p>
+<p>
+Frank’s lawsuit screeched to a halt. The countersuits <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19860221-01.2.3&srpos=37&e=------198-en-20--21--txt-txIN-Ivy+coed------">postponed</a> a hearing by administrative law judge Robert Miller, who was set to rule on whether the clubs had discriminated against Frank. Had he ruled in Franks’ favor, the remedy likely would have included an order that the clubs admit women. By disputing that “distinctly private” clubs fell under state jurisdiction, Ivy, TI, and their lawyers hoped to stave off this order, at least for a few years.
+</p>
+<p>
+They need not have worried. Almost a year later, Miller <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19870202-01.2.6&srpos=63&e=------198-en-20--61--txt-txIN-Ivy+coed------">issued</a> a non-binding recommendation back to the N.J. Division on Civil Rights. He sided largely with the eating clubs, finding that TI and Ivy could sever any formal ties with the University, rather than admit women.
+</p>
+<p>
+“Formal ties” included programs such as Meal Exchange and the sidewalk shoveling provided by the University. It seemed the clubs had an easy way out of coeducation.
+</p>
+<p>
+Yet, in September 1986 — a few months before Miller’s decision — Frank <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=WeeklyBulletin19860914-01.2.6&srpos=27&e=------198-en-20--21--txt-txIN-Sally+Frank----1986--">settled</a> with the University itself, which agreed to pay her $27,500 in attorney’s fees. The University expressed public support for Frank for the first time, voicing dissatisfaction with Ivy and TI’s all-male policies.
+</p>
+
+<p class="pull-quote" style="margin-bottom:10px"><span class="highlight-line">______</span><br>“Princeton’s educational purposes will be served best when the Prospect Street clubs also are fully accessible to women.”</p>
+<p class="quote-attribution">University counsel Thomas Wright ’62
+</p>
+
+<p>
+Shifting alliances spelled trouble for Miller’s 1987 recommendation, which would have otherwise been a full victory for TI and Ivy. University counsel <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=TownTopics19870304-01.2.15&srpos=2&e=------198-en-20--1--txt-txIN-university+exception------">filed</a> an exception to Pamela Poff, the director of the Division on Civil Rights, urging her to disregard Miller’s recommendation and instead follow her May 1985 ruling that the clubs and the University were bound by “historical,” not just superficial, ties.
+</p>
+<p>
+Poff agreed, <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=TownTopics19870527-01.2.4&srpos=39&e=------198-en-20--21--txt-txIN-Ivy+coed------">ruling</a> in May 1987 that the law required Ivy and TI to admit female members. 
+</p>
+<p>
+“This institution made a commitment to coeducation in 1969. Princeton’s educational purposes will be served best when the Prospect Street clubs also are fully accessible to women,” the University’s general counsel, Thomas Wright ’62, told the ‘Prince’ at the time, supporting Poff’s ruling.
+</p>
+<p>
+Looking back on her eventual alliance with Nassau Hall, Frank expressed gratitude. She recalled a decades-long partnership grounded in symbolic moments.
+</p>
+<p>
+“One year, I think ’83, I was at Reunions and the P-Rade ended at a field but we walked past the clubs. And when I walked past, Bill Bowen — who was president at the time — asked me to wait for him to walk back,” she remembered. “He walked back to campus with me. Princeton’s a very symbolic place, and he was making a statement by doing that.”
+</p>
+<p>
+Even the University’s assistance, however, couldn’t stem the flood of bad news for Frank. To sever its ties with Princeton, TI withdrew from Meal Exchange and the intramural sports program in summer 1987. By September, Poff was forced to delay her order, when TI and Ivy <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19870910-01.2.2&srpos=52&e=------198-en-20--41--txt-txIN-Ivy+coed------">appealed</a>. And in February 1988, Ivy and TI members <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=TownTopics19880217-01.2.15&srpos=2&e=-------en-20--1--txt-txIN-male+eating+clubs------">voted</a> once again to remain all-male. 
+</p>
+<p>
+The final blow came in October 1988, when Frank learned that a ruling in her favor had been <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19881005-01.2.2&srpos=58&e=------198-en-20--41--txt-txIN-Ivy+coed------">reversed</a>. She would need to start a new trial in a lower court.
+</p>
+<p>
+With no time to waste mourning the setback, Frank regrouped and filed a petition with the New Jersey Supreme Court. By now, she had graduated from law school and was acting as her own counsel alongside ACLU representative Nadine Taub.
+</p>
+<p>
+“You can’t be emotional and be lawyering,” Frank said. “We had kind of figured out how to share duties and differentiate the two roles. In this case most of it was a political, legal question to me. But she did the more personal things so that when I was lawyering, I could be a lawyer and not look at it from a personal perspective.”
+</p>
+<p>
+As Frank faced yet another uphill climb, campus activists were growing in number and conviction. More and more students were ready to stand against all-male clubs.
+</p>
+</div>
+
+<div class="item">
+  <h1> “An Outrage and a Scandal”</h1>
+  <p>
+On April 23, 1987, around 300 students <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19870424-01.2.3&srpos=1&e=------198-en-20-Princetonian-1--txt-txIN-take+back+the+night------">gathered</a> on campus for the University’s first-ever “Take Back the Night” march. The event joined a decade-old nationwide movement intended to raise awareness about sexual violence and amplify the voices of survivors. Participants stopped at nine pre-planned locations across campus — each the site of an alleged sexual assault or instance of harassment — and spoke to the crowd about their experiences.
+</p>
+<p>
+“Friends of mine were carrying candles and people were walking around the campus and stopping at places where events had occurred where women had felt unsafe,” Brewer said. “It really resonated with me because I hadn't had that experience. And it was the first time in a public way that people were talking about this.”
+</p>
+<p>
+After the final speech, which took place at 1879 Arch, a portion of the crowd moved to Prospect Avenue, where they encountered intoxicated male students shouting obscenities.
+</p>
+
+<figure class="img-normal">
+  <img src="take_back_the_night.png" style="width:100%">
+  <figcaption>The Daily Princetonian, April 24th, 1987</figcaption>
+  </figure>
+
+<p>
+“There were guys at Cottage Club standing outside the club when the march went up and down Prospect Avenue,” Denworth said. “And they were mooning people, and throwing beer bottles. And I just [thought], who raised these people? So you’re saying you’re <em>for</em> sexual assault?”
+</p>
+<p>
+One student, Theodore Green ’89, was <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19870427-01.2.4&srpos=3&e=------198-en-20--1--txt-txIN-%22Theodore+green%22--51-1000---">videotaped</a> in front of Dial Lodge — a sign-in club that eventually merged with Cannon — pulling down his pants, throwing beers at marchers, and shouting, “The Women’s Center sucks. They can suck my d---.”
+</p>
+<p>
+Green was ultimately <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19870508-01.2.6&srpos=5&e=------198-en-20--1--txt-txIN-%22Theodore+green%22------">fined</a>, placed on University probation, and expelled from Cottage for his actions at the march.
+</p>
+<p>
+“They were drunk,” Denworth added. “They were immature. One of the things I recognize now is how young we all were. And so I do think that people behave in ways that they regret later in life.”
+</p>
+<p>
+But a few nights after the march, an incident exposed the darker side of resistance to gender equality. Thirty-five men <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19870427-01.2.4&srpos=3&e=------198-en-20--1--txt-txIN-%22Theodore+green%22--51-1000---">gathered</a> in front of Spelman Hall at approximately 10:30 p.m and chanted, “We can rape anyone we want.”
+</p>
+<p>
+The Spelman men remained unidentified.
+</p>
+</div>
+
+<div class="section-break"><h1>*</h1></div>
+
+<div class="item">
+ <p>
+To many, the “Take Back the Night” march signaled a larger shift in campus culture. Despite vestiges of its all-male past, such as urinals in female bathrooms, the University was taking steps toward change.
+</p>
+<p>
+Even stereotypes about campus activists — “a handful of angry, hairy-legged feminists” — were beginning to fade away, said Weiner, the founder of the Coalition for Coeducated Eating Clubs.
+</p>
+<p>
+“I think that groups like mine were able to sort of change the narrative and point to this as more of a systemic problem,” she explained.
+</p>
+<p>
+“Once we were able to reframe it as that,” she said, “and sort of broaden it out and bring into the movement professors, administrators, alums, former members of the clubs — who were all sort of saying that it’s time to make this change — then I think that’s when the perception shifted.”
+</p>
+<p>
+Ivy and TI faced both internal and external pressures to join Cottage in accepting women, she explained. Activist organizers made pins reading “Ivy, TI, Go Coed” and distributed them across campus.
+</p>
+<p>
+“If you were in TI [or] Ivy and you walked into your classroom and you saw your professor with a button that said that this institution that you belong to is doing something deleterious and harmful to your classmates, I think that has to change the way that you feel,” Weiner said.
+</p>
+<p>
+At Whig-Clio, a public <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19891122-01.2.12.2&srpos=3&e=------198-en-20-Princetonian-1-byDA.rev-txt-txIN-whig+clio------">debate</a> revealed just how much campus attitudes had shifted.
+</p>
+<p>
+According to Weiner, “The guy who was the president of TI stood up in front of hundreds of people and said, ‘Well, like I’m really sorry, but membership has its privileges’ — which was a slogan of American Express, first of all — and people just hissed at him.”
+</p>
+<p>
+“You’re telling me, ‘I don’t belong here?’ Because I’m pretty sure I do,” she added.
+</p>
+</div>
+
+
+
+<div class="item">
+<figure class="img-normal">
+    <img style="width: 100%"" src="chants_slogans.png">
+<figcaption>The Daily Princetonian, November 21st, 1985</figcaption>
+</figure>
+
+  <p>
+In January of 1989, students protested outside Ivy and TI as the clubs proceeded with all-male spring bicker. Fifty students, both male and female, gathered on Prospect Ave, chanting and holding up signs. The ‘Prince’ <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19890130-01.2.2&srpos=46&e=------198-en-20--41--txt-txIN-Ivy+coed------">reported</a>:
+</p>
+<p style="margin-left: 10%; margin-right: 10%; font-style:italic">
+Calls and echoes throughout the protest, chants like “All-male bicker isn't right — think about it hard tonight,” reverberated on both sides of Prospect Avenue.
+</p>
+<p>
+
+<p>
+Two months later, Ivy’s undergraduate members held a <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19890303-01.2.6&srpos=29&e=------198-en-20--21--txt-txIN-Ivy+coed------">vote</a> on whether to accept women. They split down the middle: 42 in favor, 42 opposed. The graduate board announced it would take no action until a majority of members voted to accept women for two consecutive years.
+</p>
+<p>
+In 1990, the Coalition for Coeducated Eating Clubs held another demonstration, this time with campus sponsorships: the Undergraduate Student Government (USG), the Office of the Dean of Students, and the Women’s Center. Advertised in the ‘Prince,’ the event <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19900205-01.2.13.1&srpos=1&e=------199-en-20-Princetonian-1-byDA-txt-txIN-february+1990+ivy+tiger------">would</a> feature two class presidents, the USG president, then-head of Mathey College Barrie Royce, professors of the History, English, and Classics departments, Sally Frank, and “live music.”
+</p>
+<p>
+One speaker, English professor Thomas Keenan, <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19900124-01.2.14&srpos=2&e=------199-en-20-Princetonian-1-byDA-txt-txIN-ivy+tiger+vote------">told</a> the ‘Prince’ the all-male eating clubs were “an outrage and a scandal.”
+</p>
+<figure class="img-normal-mobile">
+    <img style="width: 100%" src="protest_mobile.png">
+</figure>
+</div>
+
+<figure>
+    <img class="full-width-img" style="opacity: 0.8" src="protest.png">
+<figcaption>The Daily Princetonian, February 7th, 1990</figcaption>
+</figure>
+<div class="item">
+<p>
+In September 1989, Frank got word of a big win: the N.J. Supreme Court had <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19890914-01.2.15&srpos=71&e=------198-en-20--61--txt-txIN-Ivy+coed------">agreed</a> to hear her case. And a few months later, the on-campus movement saw a victory of its own.
+</p>
+<p>
+On February 13, 1990, Ivy <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19900214-01.2.2&srpos=4&e=------199-en-20-Princetonian-1-byDA-txt-txIN-ivy+tiger+vote------">voted</a> to accept women. A week later, TI members voted <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19900220-01.2.5&srpos=5&e=------199-en-20-Princetonian-1-byDA-txt-txIN-ivy+tiger+vote------">the same way</a>. These preliminary votes, however, were not binding — at least, not yet. According to both clubs’ graduate boards, admitting women would require another year of a majority vote.
+</p>
+<p>
+But before the next school year could begin, Frank finally got the answer she had first sought a decade prior. On July 3, 1990, the N.J. Supreme Court ruled that Ivy and TI would have to open to women.
+</p>
+</div>
+
+<!-- SECTION
+3
+3
+3
+3
+3
+3
+3
+3
+3
+BEGINNING
+HERE -->
+
+<div style="background: darkslategrey; opacity:1; padding-top: 200px">
+    <h1 class="desktop" style="padding:0px; margin:0px; color:white; font-size:100px; line-height:100px">§3&ensp;The Last “First Women”</h1>
+    <h1 class="mobile" style="padding:0px; margin:0px; color:white; font-size:90px; line-height:90px">§3<br>The<br>Last<br>“First<br>Women”</h1>
+    </div>
+
+<div class="item">
+  <div class="first-par">
+    <p>
+Fall 1990 brought new undergraduates, falling temperatures, and, for the first time, female bickerees to Ivy. Thirty-eight women <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19900926-01.2.4&srpos=8&e=------199-en-20--1--txt-txIN-Ivy+Club----1990--">threw</a> their hats in the ring.
+</p>
+<p>
+Among the potential female members was Marilyn White Lawrence ’91, a senior intrigued by Ivy’s close-knit environment.
+</p>
+<p>
+“It was a really wonderful process,” she told the ‘Prince.’ “They were just really fruitful, wonderful, connective conversations without any time limit.”
+</p>
+<figure class="img-normal">
+  <img src="ivy.png" style="width:100%">
+  <figcaption>The Daily Princetonian, February 14th, 1990</figcaption>
+  </figure>
+<p>
+Benedict, who also bickered Ivy, agreed with Lawrence. “It was just a pleasant process,” she said. “It wasn’t a scary thing because it was in the fall and, worst case, my feelings would be hurt but I’d just go back to Charter, which I really enjoyed.”
+</p>
+<p>
+Both Lawrence and Benedict emphasized that they had not bickered as activists.
+</p>
+<p>
+“While I knew this was a historical event, I wasn’t bickering to make a big political point,” Lawrence said. “It felt like an opportunity that had opened up to me and other women, and that I wanted to seize on that opportunity while I could.”
+</p>
+<p>
+Though delighted by Ivy’s decision, neither Lawrence nor Benedict had expected to bicker there. As Benedict explained, “In the ’80s, it seemed like nothing really would change and institutions were institutions and they moved at a really glacial pace. It was kind of like, ‘The sky is blue, these clubs are all-male, that’s never going to change.’”
+</p>
+<p>
+But it wasn’t just the chance to bicker that surprised the women. Equally unexpected for Ivy’s new women members was the ease with which they assimilated into club life.
+</p>
+<p>
+“It was like I had my sorority friends, and I was sort of in a fraternity too,” Benedict said.
+</p>
+<p>
+They found that entering the club required adaptation on both sides.
+</p>
+<p>
+“If and when challenges arose, it was more because we were women entering into an all-male world and the membership was used to behaving in kind of all-male ways,” Lawrence said. “You had your smoking room, you had your billiards room.”
+</p>
+<p>
+She explained that though many of Ivy’s male members would take time to adjust, the women were “respectful of that and understanding of that.”
+</p>
+<p>
+“I remember being very empathic to their situation,” Lawrence said. “I grew up going to an all-girls high school, which I loved … so I could appreciate the benefits of being in a single-sex community.”
+</p>
+<p>
+“I understood why the men wouldn’t want to go coed, and I really do have to salute them for making it a pleasant process,” said Benedict, who also attended an all-girls’ school.
+</p>
+<p class="pull-quote" style="margin-bottom:10px"><span class="highlight-line">______</span><br>“It was like I had my sorority friends, and I was sort of in a fraternity too.”</p>
+<p class="quote-attribution">Vicky Benedict ’91
+</p>
+<p>
+In Benedict’s view, “There was no ugliness whatsoever.”
+</p>
+<p>
+“In fact,” she added, “I reached out to the undergraduate president of Ivy my senior year and told him at our 25th [reunion], ‘you really set the tone.’  … From the second bicker started everyone was very, very welcoming and very kind.”
+</p>
+<p>
+Lawrence, Benedict and their fellow female Ivy members did have a few practical concerns.
+</p>
+<p>
+For Lawrence, the most pressing challenge was dietary. Before joining Ivy, she was the artistic director of Expressions Dance Company and, as she put it, “used to eating like a vegetarian dancer.” But meals were a bit different at Ivy.
+</p>
+<p>
+“It was some sort of meat, potatoes and beans every night,” she chuckled. “So after a couple weeks of eating potatoes and beans, I was like, ‘Ok, I can’t. I’m going to starve.’ And I broke down and became omnivorous again.”
+</p>
+<p>
+Another concern pertained to the neckties that Ivy men typically received during club initiations. According to Lawrence, they “didn’t have the equivalent sartorial swag item for women.” Eager to adapt, the women designed an Ivy scarf, “a real symbolic moment” that Lawrence remembers to this day.
+</p>
+<p>
+But the most meaningful symbol resides in Ivy’s basement library, where 14 butterflies decorate a stained glass window alongside a small plaque.
+</p>
+<p>
+The butterflies represent the 14 original women of Ivy — serving as a permanent reminder of the progress they made towards equality, and of the final steps yet to come.
+</p>
+
+<p>
+Only TI, the final bastion of Princeton’s all-male past, remained. The members not only voted to continue the club’s all-male status, but also appealed the case all the way to the U.S. Supreme Court.
+</p>
+<p>
+But the death knell for their case came in January 1991, when the Supreme Court <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19910216-01.2.2&srpos=1&e=------199-en-20--1--txt-txIN-Ivy+Club----1991--">denied</a> TI’s petition and refused to reverse the N.J. Supreme Court’s decision. By 1991, Princeton’s last all-male eating club had fallen.
+</p>
+<figure class="img-normal-mobile">
+    <img style="width: 100%" src="ti_bicker_mobile.png">
+</figure>
+</div>
+</div>
+
+<figure>
+    <img class="full-width-img" style="opacity: 0.8" src="ti_bicker.png">
+<figcaption>The Daily Princetonian, February 4th, 1991</figcaption>
+</figure>
+
+<div class="item">
+  <h1>Fur Tops and Turkey Legs: Welcome to TI</h1>
+  <p>
+When roughly 50 women <a href="https://theprince.princeton.edu/princetonperiodicals/?a=d&d=Princetonian19910204-01.2.2&srpos=5&e=-------en-20-Princetonian-1--txt-txIN-bicker+t.i+1991------">bickered</a> TI in February 1991, they knew they were the last set of “first women” to bicker a Princeton eating club. They arrived on Feb. 4, eyes bright, ready to experience the “most fun” club on campus.
+</p>
+<p>
+At least, most of them did. One of the eventual members was a little late to the scene.
+</p>
+<p>
+Jessica Hope ’92 felt conflicted. On the one hand, many of her rowing teammates and friends — particularly from the lightweight men’s team — were already members of Tiger Inn, and she always felt “more comfortable at TI than at any other club.” But the lawsuit’s outcome made her uncomfortable.
+</p>
+<p>
+“Well, I’m not going to bicker there, because I don’t like that they’re being forced,” Hope recalled thinking. “If they don’t want women, I don’t want to be a part of making the club worse in their eyes.”
+</p>
+<p>
+Eventually, her friends’ insistence that she come to bicker so that they could take her, not “random other girls,” won out. Despite being a day late, Hope was accepted and joined a class of 27 new women members.
+</p>
+<p>
+From then on, Hope said, “It felt totally relaxed and normal.”
+</p>
+<p>
+A fellow junior, Margaret Deluca ’92, agreed. After spending the first semester of junior year partying with her boyfriend at TI — a boyfriend who she happened to have met at the club — she decided to bicker.
+</p>
+<p>
+“I loved it,” she told the ‘Prince.’
+</p>
+<p>
+Still, there were hurdles to overcome.
+</p>
+<p>
+Deluca recalled that the alumni were very “anti-women” at the time. “Some of my classmates went to a TI reunion around that time, and they told me how misogynistic and how angry they were about the lawsuit.”
+</p>
+<p>
+But sexism among the alumni hardly shocked the women. Far more of a concern were some of TI’s cherished traditions, which would have to be modified for the new coed membership.
+</p>
+
+<p class="pull-quote" style="margin-bottom:10px"><span class="highlight-line">______</span><br>“If they don’t want women, I don’t want to be a part of making the club worse in their eyes.”</p>
+<p class="quote-attribution">Jessica Hope ’92
+</p>
+
+<p>
+One of the most well-known traditions occurred at TI initiations, where new members were passed down the stairs, “totally naked except for their new TI tie.” 
+</p>
+<p>
+“People were aware that you’ve got all these men’s hands all over you, because there are no girls in that crowd, and they’re passing you down the stairs,” said Deluca. “They’re gonna touch places that may be bad. So that was the biggest issue we had.”
+</p>
+<p>
+Fortunately, the men were willing to adapt.
+</p>
+<p>
+“With us, we kept bras and underwear on,” said Hope. “It was actually the guys who said, ‘You know what? Why don’t you guys stay partly dressed?,’ and not the women needing to say, ‘We don’t feel comfortable with that.’ ”
+</p>
+<p>
+Naked initiations may have been the “biggest issue” for the women, but the men worried about a different tradition.
+</p>
+<p>
+Even during Frank’s time at Princeton, TI members raised concerns about what adding women would do to their most beloved ritual, “Trees and Trolls.” Prior to 1991, this event involved a face-off between TI members shorter than 6’0’’ — “Trolls” — and those taller than 6’0” — “Trees.”
+</p>
+<p>
+Those fears soon proved unfounded.
+</p>
+<p>
+Since the event coincided with Viking night, a dinner in which the members dressed up in furs and ate “giant turkey legs,” Deluca received the moniker “Peggy Fleming Viking” for her all-white fur outfit reminiscent of a famous figure skater.
+</p>
+<p>
+Hope received costume help and outfit advice. “Some of my guy friends went shopping for me — I had class or something — and they bought fur for me. They even had the idea that I could make like a little fur top or something.”
+</p>
+
+<p>
+Bedecked in their Viking furs, the women and the men gathered on Cannon Green. Since all the women would be grouped into “Trolls” under the normal classifications, the members decided that the tallest women should join the “Tree” side. Then, the wrestling began.
+</p>
+<p>
+Though Frank believed the “Trees and Trolls” spectacle might <a href="https://www.dailyprincetonian.com/article/2018/05/sally-frank-80-describes-the-tiger-inn-of-1979-a-club-she-sued-for-not-accepting-women">deter</a> women, the first class of TI women seemed to enjoy it.
+</p>
+<p>
+“It was fun and inclusive,” Hope said.
+</p>
+<p>
+“I was short so I could kind of skirt the edges, until I got knocked on my ass,” said Deluca. “I think three people ended up in casts after. It was very dangerous, and fun.”
+</p>
+<p>
+But more daunting than both the wrestling or alumni sexism? It was, like in Ivy, the food.
+</p>
+<p>
+“They had to change the food at TI because it was all meat and potatoes,” said Deluca. “I ate nothing but Lucky Charms for the entire time I was a member there because I’m like, ‘I don’t want to eat steak every night. I don’t even like steak!’”
+</p>
+<p>
+Despite the dubious diet, Deluca remembered her time at TI with nothing but fondness.
+</p>
+<p>
+“I actually have a recurring nightmare that I <em>stopped</em> going to TI. For some reason I stopped feeling comfortable there, and I hadn’t set foot in there all year or talked to any of my friends. That’s like a nightmare I have!” 
+</p>
+</div>
+
+
+<!-- EPILOGUE
+BEGINS
+HERE
+
+EPILOGUE
+BEGINS
+HERE -->
+
+<div style="background: rgb(40,40,40); opacity:1; padding-top: 200px">
+    <h1 class="desktop" style="padding:0px; margin:0px; color:white; font-size:100px; line-height:100px">§&ensp;Epilogue</h1>
+    <h1 class="mobile" style="padding:0px; margin:0px; color:white; font-size:90px; line-height:90px">§&ensp;Epilogue</h1>
+    </div>
+
+
+    <div class="item">
+      <div class="first-par">
+        <figure class="img-normal" style="margin-left:20%; margin-right:20%">
+  <img src="cartoon.png" style="width:100%">
+  <figcaption>The Daily Princetonian, February 6th, 1990</figcaption>
+  </figure>
+
+        <p>
+For Weiner, the challenge lay in getting the eating clubs to open their doors to women — and letting the rest, she said, unfold “organically.”
+</p>
+<p>
+“Let Ivy attract the kind of Princetonians, not just Princeton men, but the <em>Princetonians</em> that Ivy traditionally attracts. Let TI attract the people that TI traditionally attracts,” Weiner said.
+</p>
+<p>
+This method seems to have worked. While Sally Frank and other leading activists never won spots at Cottage, Ivy, or TI, the women who did often remarked that they did not closely follow the lawsuit, or appreciate the enormity of Frank’s effort, at the time. 
+</p>
+<p>
+“I felt like I had been raised as though women had every right that men did,” Hope told the ‘Prince.’ “And I never had felt discriminated against in any way. So it never occurred to me really to think that she had a point, to be honest. At that time in my life, I was like, ‘Oh, this woman’s being a big pain and interfering with Princeton’s traditions.’”
+</p>
+<p>
+Deluca, too, understood the appeal of all-male tradition, having attended an all-girls’ secondary school in her teenage years.
+</p>
+<p>
+“I kind of saw it as a holdover, a rational and reasonable holdover, from a period of time where the school was all-male,” she said. “It was like, ‘Well, if it’s going to be coed, then I’ll join,” but I wasn’t personally for it. It just was a different time.”
+</p>
+<p>
+“Like now I would be so beyond pissed off,” Deluca added, “as a working woman who’s like, ‘Equal pay for equal work!’ and all that. I just wasn't that person back then.”
+</p>
+<p>
+Hope also felt that she had changed since college, though she still questioned whether Frank was right to sue the clubs.
+</p>
+<p>
+“Now that I’m older,” she said, “I totally see what her point was and why she did what she did. I’m still not sure I support it. I think there would have been better ways to achieve that.”
+</p>
+<p>
+But Weiner defended Frank’s actions, arguing that women on campus should not have settled for incremental progress.
+</p>
+<p>
+“I think the position that she took probably <em>felt</em> very radical,” Weiner said. She explained that on campus, women were expected to be “grateful that you’re here.”
+</p>
+<p>
+“You’re getting half a loaf,” she added, “but at least you’re not getting nothing, or just crumbs anymore. You’re getting most of what Princeton has to offer.”
+</p>
+<p>
+She continued, “I think that people were able to evolve and say, ‘Anyone who’s here should be able to get everything that Princeton has to offer.’”
+</p>
+      </div>
+<p class="pull-quote" style="margin-bottom:10px"><span class="highlight-line">______</span><br>“The ‘Be slow. Don’t protest. Don’t disrupt things. We’ll get to it eventually’ is the ‘We’ll never get to it.”</p>
+<p class="quote-attribution">Sally Frank ’90
+</p>
+<p>
+  <p>
+One crucial question remained on the minds of many of these “first women” as they reflected on their experiences over thirty years ago: “Is Sally Frank bitter?”
+</p>
+<p>
+To this, she had one response: No.
+</p>
+<p>
+“I could separate the political issue from the person,” Frank said. “You can be a very good person and disagree with me on a problem, and on whether something is a problem or on how to solve the problem. That doesn’t mean you’re evil, that means we disagree on a political question.”
+</p>
+<p>
+She credits her amicable relationship with William Ford ’79 — the president of Ivy during her junior year and the only president of the three all-male clubs to let her attend bicker — with helping her make that distinction.
+</p>
+<p>
+“[He] treated it as a political issue,” she said. “He did not take it personally. It helped me not to generalize everybody as the opposition and everybody in the opposition as bad people … So I did not think that the members of the clubs were evil or bad people. They were perpetuating a bad policy.”
+</p>
+<p>
+To those who still challenge her decision to sue, Frank offered another succinct response. 
+</p>
+<p>
+“The ‘Be slow. Don’t protest. Don’t disrupt things. We’ll get to it eventually’ is the ‘We’ll never get to it,” she said.
+</p>
+</div>
+
+<div class="section-break"><h1>*</h1></div>
+
+<div class="item">
+  <p>
+As the years pass, the fight for gender equality in the eating clubs falls further into the recesses of Princeton’s institutional memory.
+</p>
+<p>
+Denworth spoke to the ‘Prince’ about a time when, as a senior at bicker, she met a sophomore bickeree who believed that Cottage had always been coed. Despite being just two years younger than Denworth, she had been in high school when the fight to open Cottage to women took place and had no knowledge of the legal and cultural struggle.
+</p>
+<p>
+“It told me that change can happen very quickly on a college campus,” Denworth said. “But also, it felt like we’d been fighting this fight, and then people [had already] forgotten how hard it was.”
+</p>
+<p>
+In a world where <a href=" https://www.dailyprincetonian.com/article/2018/05/twenty-years-of-female-leadership-on-prospect-avenue">nine</a> of the eleven eating club presidents were women in 2018 — and when a pandemic <a href="https://www.dailyprincetonian.com/article/2020/07/princeton-fall-announcement-social-distancing-sophomores-seniors-spring-schedule-change-testing">casts</a> the eating clubs’ future into doubt — Denworth’s reflections resonate strongly. 
+</p>
+<p>
+But the women have not forgotten their time in the eating clubs.
+</p>
+<p>
+Lawrence became a volunteer firefighter and the first female Assistant Chief of her fire department in Fire Island, Long Island. She credits the lessons she learned adapting to the all-male traditions of Ivy with her success in a historically all-male fire department.
+</p>
+<p>
+Her success required “finding a way to be true to myself as a woman,” she said, “and entering these traditionally male-dominated spaces in a way where I can hold my own while understanding that I can’t revolutionize that space overnight.”
+</p>
+<p>
+Deluca is now an attorney, helping clients with estate and trust administration. 
+</p>
+<p>
+“I have to read the room every time I walk in to meet a new client and figure out who they’re looking to talk to,” she said. “Are they looking to talk to Greenwich Academy Meg? … The daughter of a guy who owns a construction company Meg? … Princeton Meg? Who are they gonna identify with?”
+</p>
+<p>
+“Sometimes they identify with ‘the woman who plays well with men’ Meg and who could fit into something that was all-male,” Deluca said.
+</p>
+<p>
+For Weiner, her time as an activist on campus shaped both her continued advocacy and her eventual career as a writer. She looks back on those days with pride.
+</p>
+<p>
+“I remember when we were graduating,” Weiner said, “and the yearbook sent out a survey [that] asked ‘What is the hardest thing that you did at Princeton?’”
+</p>
+<p>
+Weiner smiled. “My answer was, ‘I tried to change it.’” &#x25FC;
+</p>
+</div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  </body>
 </html>
