@@ -361,8 +361,8 @@ figcaption {
   }
   .first-par p:first-of-type:first-letter {
     float: left;
-    font-size: 120px;
-    line-height: 0.8;
+    font-size: 100px;
+    line-height: 0.85;
     font-weight: bold;
     margin-right: 15px;
     padding: 0px;
